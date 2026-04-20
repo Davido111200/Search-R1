@@ -1,0 +1,422 @@
+CUDA_VISIBLE_DEVICES=0,1,2,3
+GPU 0: Tesla V100-SXM2-32GB (UUID: GPU-414564c5-81fd-d144-80ca-fe221dc511be)
+GPU 1: Tesla V100-SXM2-32GB (UUID: GPU-a8ce26d2-c37b-c3d1-297e-a9859947f0ba)
+GPU 2: Tesla V100-SXM2-32GB (UUID: GPU-7f6131f0-47f4-57e7-b07e-bd2dad42aeac)
+GPU 3: Tesla V100-SXM2-32GB (UUID: GPU-d2a8411b-62ef-63ee-bd7c-131092d6a09c)
+2026-04-17 23:37:29,281	INFO worker.py:2012 -- Started a local Ray instance.
+/home/s223540177/.conda/envs/searchr1/lib/python3.9/site-packages/ray/_private/worker.py:2051: FutureWarning: Tip: In future versions of Ray, Ray will no longer override accelerator visible devices env var if num_gpus=0 or num_gpus=None (default). To enable this behavior and turn off this error message, set RAY_ACCEL_ENV_VAR_OVERRIDE_ON_ZERO=0
+  warnings.warn(
+[36m(main_task pid=3596212)[0m {'actor_rollout_ref': {'actor': {'autocast_dtype': 'fp16',
+[36m(main_task pid=3596212)[0m                                  'clip_ratio': 0.2,
+[36m(main_task pid=3596212)[0m                                  'entropy_coeff': 0.001,
+[36m(main_task pid=3596212)[0m                                  'fsdp_config': {'fsdp_size': -1,
+[36m(main_task pid=3596212)[0m                                                  'grad_offload': True,
+[36m(main_task pid=3596212)[0m                                                  'mixed_precision': {'buffer_dtype': 'fp32',
+[36m(main_task pid=3596212)[0m                                                                      'param_dtype': 'fp16',
+[36m(main_task pid=3596212)[0m                                                                      'reduce_dtype': 'fp32'},
+[36m(main_task pid=3596212)[0m                                                  'optimizer_offload': True,
+[36m(main_task pid=3596212)[0m                                                  'param_offload': True,
+[36m(main_task pid=3596212)[0m                                                  'wrap_policy': {'min_num_params': 0}},
+[36m(main_task pid=3596212)[0m                                  'grad_clip': 1.0,
+[36m(main_task pid=3596212)[0m                                  'kl_loss_coef': 0.001,
+[36m(main_task pid=3596212)[0m                                  'kl_loss_type': 'low_var_kl',
+[36m(main_task pid=3596212)[0m                                  'optim': {'lr': 1e-06,
+[36m(main_task pid=3596212)[0m                                            'lr_warmup_steps_ratio': 0.285,
+[36m(main_task pid=3596212)[0m                                            'min_lr_ratio': None,
+[36m(main_task pid=3596212)[0m                                            'total_training_steps': -1,
+[36m(main_task pid=3596212)[0m                                            'warmup_style': 'constant'},
+[36m(main_task pid=3596212)[0m                                  'ppo_epochs': 1,
+[36m(main_task pid=3596212)[0m                                  'ppo_max_token_len_per_gpu': 16384,
+[36m(main_task pid=3596212)[0m                                  'ppo_micro_batch_size': 64,
+[36m(main_task pid=3596212)[0m                                  'ppo_mini_batch_size': 256,
+[36m(main_task pid=3596212)[0m                                  'shuffle': False,
+[36m(main_task pid=3596212)[0m                                  'state_masking': True,
+[36m(main_task pid=3596212)[0m                                  'strategy': 'fsdp',
+[36m(main_task pid=3596212)[0m                                  'ulysses_sequence_parallel_size': 1,
+[36m(main_task pid=3596212)[0m                                  'use_dynamic_bsz': False,
+[36m(main_task pid=3596212)[0m                                  'use_kl_loss': False},
+[36m(main_task pid=3596212)[0m                        'hybrid_engine': True,
+[36m(main_task pid=3596212)[0m                        'model': {'attn_implementation': 'sdpa',
+[36m(main_task pid=3596212)[0m                                  'enable_gradient_checkpointing': True,
+[36m(main_task pid=3596212)[0m                                  'external_lib': None,
+[36m(main_task pid=3596212)[0m                                  'override_config': {},
+[36m(main_task pid=3596212)[0m                                  'path': 'meta-llama/Llama-3.2-3B',
+[36m(main_task pid=3596212)[0m                                  'use_remove_padding': False},
+[36m(main_task pid=3596212)[0m                        'ref': {'fsdp_config': {'fsdp_size': -1,
+[36m(main_task pid=3596212)[0m                                                'param_offload': True,
+[36m(main_task pid=3596212)[0m                                                'wrap_policy': {'min_num_params': 0}},
+[36m(main_task pid=3596212)[0m                                'log_prob_max_token_len_per_gpu': 16384,
+[36m(main_task pid=3596212)[0m                                'log_prob_micro_batch_size': 128,
+[36m(main_task pid=3596212)[0m                                'log_prob_use_dynamic_bsz': False,
+[36m(main_task pid=3596212)[0m                                'ulysses_sequence_parallel_size': 1},
+[36m(main_task pid=3596212)[0m                        'rollout': {'do_sample': True,
+[36m(main_task pid=3596212)[0m                                    'dtype': 'half',
+[36m(main_task pid=3596212)[0m                                    'enforce_eager': True,
+[36m(main_task pid=3596212)[0m                                    'free_cache_engine': True,
+[36m(main_task pid=3596212)[0m                                    'gpu_memory_utilization': 0.6,
+[36m(main_task pid=3596212)[0m                                    'ignore_eos': False,
+[36m(main_task pid=3596212)[0m                                    'load_format': 'dummy_dtensor',
+[36m(main_task pid=3596212)[0m                                    'log_prob_max_token_len_per_gpu': 16384,
+[36m(main_task pid=3596212)[0m                                    'log_prob_micro_batch_size': 128,
+[36m(main_task pid=3596212)[0m                                    'log_prob_use_dynamic_bsz': False,
+[36m(main_task pid=3596212)[0m                                    'max_num_batched_tokens': 8192,
+[36m(main_task pid=3596212)[0m                                    'max_num_seqs': 1024,
+[36m(main_task pid=3596212)[0m                                    'n': 1,
+[36m(main_task pid=3596212)[0m                                    'n_agent': 1,
+[36m(main_task pid=3596212)[0m                                    'name': 'vllm',
+[36m(main_task pid=3596212)[0m                                    'prompt_length': 4096,
+[36m(main_task pid=3596212)[0m                                    'response_length': 500,
+[36m(main_task pid=3596212)[0m                                    'temperature': 1,
+[36m(main_task pid=3596212)[0m                                    'tensor_model_parallel_size': 1,
+[36m(main_task pid=3596212)[0m                                    'top_k': -1,
+[36m(main_task pid=3596212)[0m                                    'top_p': 0.95}},
+[36m(main_task pid=3596212)[0m  'algorithm': {'adv_estimator': 'gae',
+[36m(main_task pid=3596212)[0m                'gamma': 1.0,
+[36m(main_task pid=3596212)[0m                'kl_ctrl': {'kl_coef': 0.001, 'type': 'fixed'},
+[36m(main_task pid=3596212)[0m                'kl_penalty': 'kl',
+[36m(main_task pid=3596212)[0m                'lam': 1.0,
+[36m(main_task pid=3596212)[0m                'no_think_rl': False,
+[36m(main_task pid=3596212)[0m                'state_masking': {'end_state_marker': '</information>',
+[36m(main_task pid=3596212)[0m                                  'start_state_marker': '<information>'}},
+[36m(main_task pid=3596212)[0m  'critic': {'autocast_dtype': 'fp16',
+[36m(main_task pid=3596212)[0m             'cliprange_value': 0.5,
+[36m(main_task pid=3596212)[0m             'forward_max_token_len_per_gpu': 32768,
+[36m(main_task pid=3596212)[0m             'forward_micro_batch_size': 8,
+[36m(main_task pid=3596212)[0m             'grad_clip': 1.0,
+[36m(main_task pid=3596212)[0m             'model': {'attn_implementation': 'sdpa',
+[36m(main_task pid=3596212)[0m                       'enable_gradient_checkpointing': True,
+[36m(main_task pid=3596212)[0m                       'external_lib': None,
+[36m(main_task pid=3596212)[0m                       'fsdp_config': {'fsdp_size': -1,
+[36m(main_task pid=3596212)[0m                                       'grad_offload': True,
+[36m(main_task pid=3596212)[0m                                       'mixed_precision': {'buffer_dtype': 'fp32',
+[36m(main_task pid=3596212)[0m                                                           'param_dtype': 'fp16',
+[36m(main_task pid=3596212)[0m                                                           'reduce_dtype': 'fp32'},
+[36m(main_task pid=3596212)[0m                                       'optimizer_offload': True,
+[36m(main_task pid=3596212)[0m                                       'param_offload': True,
+[36m(main_task pid=3596212)[0m                                       'wrap_policy': {'min_num_params': 0}},
+[36m(main_task pid=3596212)[0m                       'override_config': {},
+[36m(main_task pid=3596212)[0m                       'path': 'meta-llama/Llama-3.2-3B',
+[36m(main_task pid=3596212)[0m                       'tokenizer_path': 'meta-llama/Llama-3.2-3B',
+[36m(main_task pid=3596212)[0m                       'use_remove_padding': False},
+[36m(main_task pid=3596212)[0m             'optim': {'lr': 1e-05,
+[36m(main_task pid=3596212)[0m                       'lr_warmup_steps_ratio': 0.015,
+[36m(main_task pid=3596212)[0m                       'min_lr_ratio': None,
+[36m(main_task pid=3596212)[0m                       'total_training_steps': -1,
+[36m(main_task pid=3596212)[0m                       'warmup_style': 'constant'},
+[36m(main_task pid=3596212)[0m             'ppo_epochs': 1,
+[36m(main_task pid=3596212)[0m             'ppo_max_token_len_per_gpu': 32768,
+[36m(main_task pid=3596212)[0m             'ppo_micro_batch_size': 8,
+[36m(main_task pid=3596212)[0m             'ppo_mini_batch_size': 256,
+[36m(main_task pid=3596212)[0m             'shuffle': False,
+[36m(main_task pid=3596212)[0m             'strategy': 'fsdp',
+[36m(main_task pid=3596212)[0m             'ulysses_sequence_parallel_size': 1,
+[36m(main_task pid=3596212)[0m             'use_dynamic_bsz': False},
+[36m(main_task pid=3596212)[0m  'data': {'max_obs_length': 500,
+[36m(main_task pid=3596212)[0m           'max_prompt_length': 4096,
+[36m(main_task pid=3596212)[0m           'max_response_length': 500,
+[36m(main_task pid=3596212)[0m           'max_start_length': 2048,
+[36m(main_task pid=3596212)[0m           'prompt_key': 'prompt',
+[36m(main_task pid=3596212)[0m           'return_raw_chat': False,
+[36m(main_task pid=3596212)[0m           'return_raw_input_ids': False,
+[36m(main_task pid=3596212)[0m           'shuffle_train_dataloader': True,
+[36m(main_task pid=3596212)[0m           'tokenizer': None,
+[36m(main_task pid=3596212)[0m           'train_batch_size': 512,
+[36m(main_task pid=3596212)[0m           'train_data_num': None,
+[36m(main_task pid=3596212)[0m           'train_files': 'data/nq_search/train.parquet',
+[36m(main_task pid=3596212)[0m           'val_batch_size': 256,
+[36m(main_task pid=3596212)[0m           'val_data_num': None,
+[36m(main_task pid=3596212)[0m           'val_files': 'data/nq_search/test.parquet'},
+[36m(main_task pid=3596212)[0m  'do_search': True,
+[36m(main_task pid=3596212)[0m  'max_turns': 2,
+[36m(main_task pid=3596212)[0m  'retriever': {'topk': 3, 'url': 'http://127.0.0.1:8000/retrieve'},
+[36m(main_task pid=3596212)[0m  'reward_model': {'enable': False,
+[36m(main_task pid=3596212)[0m                   'final_format_score': 0,
+[36m(main_task pid=3596212)[0m                   'forward_max_token_len_per_gpu': 32768,
+[36m(main_task pid=3596212)[0m                   'max_length': None,
+[36m(main_task pid=3596212)[0m                   'micro_batch_size': 64,
+[36m(main_task pid=3596212)[0m                   'model': {'external_lib': None,
+[36m(main_task pid=3596212)[0m                             'fsdp_config': {'min_num_params': 0,
+[36m(main_task pid=3596212)[0m                                             'param_offload': False},
+[36m(main_task pid=3596212)[0m                             'input_tokenizer': 'meta-llama/Llama-3.2-3B',
+[36m(main_task pid=3596212)[0m                             'path': '~/models/FsfairX-LLaMA3-RM-v0.1',
+[36m(main_task pid=3596212)[0m                             'use_remove_padding': False},
+[36m(main_task pid=3596212)[0m                   'retrieval_score': 0,
+[36m(main_task pid=3596212)[0m                   'strategy': 'fsdp',
+[36m(main_task pid=3596212)[0m                   'structure_format_score': 0,
+[36m(main_task pid=3596212)[0m                   'ulysses_sequence_parallel_size': 1,
+[36m(main_task pid=3596212)[0m                   'use_dynamic_bsz': False},
+[36m(main_task pid=3596212)[0m  'trainer': {'critic_warmup': 0,
+[36m(main_task pid=3596212)[0m              'default_hdfs_dir': None,
+[36m(main_task pid=3596212)[0m              'default_local_dir': 'verl_checkpoints/nq-search-r1-ppo-llama3.2-3b-em',
+[36m(main_task pid=3596212)[0m              'experiment_name': 'nq-search-r1-ppo-llama3.2-3b-em',
+[36m(main_task pid=3596212)[0m              'logger': ['wandb'],
+[36m(main_task pid=3596212)[0m              'n_gpus_per_node': 4,
+[36m(main_task pid=3596212)[0m              'nnodes': 1,
+[36m(main_task pid=3596212)[0m              'project_name': 'Search-R1',
+[36m(main_task pid=3596212)[0m              'save_freq': 100,
+[36m(main_task pid=3596212)[0m              'test_freq': 50,
+[36m(main_task pid=3596212)[0m              'total_epochs': 15,
+[36m(main_task pid=3596212)[0m              'total_training_steps': 1005,
+[36m(main_task pid=3596212)[0m              'val_before_train': True,
+[36m(main_task pid=3596212)[0m              'val_only': False}}
+[36m(main_task pid=3596212)[0m /home/s223540177/Search-R1/verl/utils/tokenizer.py:29: UserWarning: tokenizer.pad_token_id is None. Now set to 128001
+[36m(main_task pid=3596212)[0m   warnings.warn(f'tokenizer.pad_token_id is None. Now set to {tokenizer.eos_token_id}')
+[36m(main_task pid=3596212)[0m /home/s223540177/.conda/envs/searchr1/lib/python3.9/site-packages/vllm/connections.py:8: RuntimeWarning: Failed to read commit hash:
+[36m(main_task pid=3596212)[0m No module named 'vllm._version'
+[36m(main_task pid=3596212)[0m   from vllm.version import __version__ as VLLM_VERSION
+[36m(main_task pid=3596212)[0m original dataset len: 79168
+[36m(main_task pid=3596212)[0m filter dataset len: 79168
+[36m(main_task pid=3596212)[0m filtered training dataset size: 79168
+[36m(main_task pid=3596212)[0m original dataset len: 3610
+[36m(main_task pid=3596212)[0m filter dataset len: 3610
+[36m(main_task pid=3596212)[0m filtered validation dataset size: 3610
+[36m(main_task pid=3596212)[0m Size of train dataloader: 154
+[36m(main_task pid=3596212)[0m Size of val dataloader: 14
+[36m(main_task pid=3596212)[0m Total training steps: 1005
+[36m(main_task pid=3596212)[0m wandb: [wandb.login()] Loaded credentials for https://api.wandb.ai from /home/s223540177/.netrc.
+[36m(main_task pid=3596212)[0m wandb: Currently logged in as: daidv to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+[36m(main_task pid=3596212)[0m wandb: setting up run gws0dylg
+[36m(main_task pid=3596212)[0m wandb: Tracking run with wandb version 0.26.0
+[36m(main_task pid=3596212)[0m wandb: Run data is saved locally in /home/s223540177/Search-R1/wandb/run-20260417_233752-gws0dylg
+[36m(main_task pid=3596212)[0m wandb: Run `wandb offline` to turn off syncing.
+[36m(main_task pid=3596212)[0m wandb: Syncing run nq-search-r1-ppo-llama3.2-3b-em
+[36m(main_task pid=3596212)[0m wandb: ⭐️ View project at https://wandb.ai/daidv/Search-R1
+[36m(main_task pid=3596212)[0m wandb: 🚀 View run at https://wandb.ai/daidv/Search-R1/runs/gws0dylg
+[36m(main_task pid=3596212)[0m wandb: Detected [openai] in use.
+[36m(main_task pid=3596212)[0m wandb: Use W&B Weave for improved LLM call tracing. Install Weave with `pip install weave` then add `import weave` to the top of your script.
+[36m(main_task pid=3596212)[0m wandb: For more information, check out the docs at: https://weave-docs.wandb.ai
+[36m(pid=gcs_server)[0m [2026-04-17 23:37:57,334 E 3586231 3586231] (gcs_server) gcs_server.cc:302: Failed to establish connection to the event+metrics exporter agent. Events and metrics will not be exported. Exporter agent status: RpcError: Running out of retries to initialize the metrics agent. rpc_code: 14
+[33m(raylet)[0m [2026-04-17 23:37:59,773 E 3586568 3586568] (raylet) main.cc:975: Failed to establish connection to the metrics exporter agent. Metrics will not be exported. Exporter agent status: RpcError: Running out of retries to initialize the metrics agent. rpc_code: 14
+[36m(pid=3603152)[0m /home/s223540177/.conda/envs/searchr1/lib/python3.9/site-packages/vllm/connections.py:8: RuntimeWarning: Failed to read commit hash:
+[36m(pid=3603152)[0m No module named 'vllm._version'
+[36m(pid=3603152)[0m   from vllm.version import __version__ as VLLM_VERSION
+[36m(pid=3586681)[0m [2026-04-17 23:38:06,489 E 3586681 3588700] core_worker_process.cc:825: Failed to establish connection to the metrics exporter agent. Metrics will not be exported. Exporter agent status: RpcError: Running out of retries to initialize the metrics agent. rpc_code: 14
+[2026-04-17 23:38:08,790 E 3581429 3586675] core_worker_process.cc:825: Failed to establish connection to the metrics exporter agent. Metrics will not be exported. Exporter agent status: RpcError: Running out of retries to initialize the metrics agent. rpc_code: 14
+[36m(pid=3613731)[0m /home/s223540177/.conda/envs/searchr1/lib/python3.9/site-packages/vllm/connections.py:8: RuntimeWarning: Failed to read commit hash:
+[36m(pid=3613731)[0m No module named 'vllm._version'
+[36m(pid=3613731)[0m   from vllm.version import __version__ as VLLM_VERSION
+[36m(main_task pid=3596212)[0m [2026-04-17 23:38:10,293 E 3596212 3597647] core_worker_process.cc:825: Failed to establish connection to the metrics exporter agent. Metrics will not be exported. Exporter agent status: RpcError: Running out of retries to initialize the metrics agent. rpc_code: 14[32m [repeated 74x across cluster] (Ray deduplicates logs by default. Set RAY_DEDUP_LOGS=0 to disable log deduplication, or see https://docs.ray.io/en/master/ray-observability/user-guides/configure-logging.html#log-deduplication for more options.)[0m
+[36m(WorkerDict pid=3613731)[0m /home/s223540177/Search-R1/verl/utils/tokenizer.py:29: UserWarning: tokenizer.pad_token_id is None. Now set to 128001
+[36m(WorkerDict pid=3613731)[0m   warnings.warn(f'tokenizer.pad_token_id is None. Now set to {tokenizer.eos_token_id}')
+[36m(WorkerDict pid=3613731)[0m Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+[36m(WorkerDict pid=3603152)[0m Critic overriding config {'bos_token_id': 128000, 'eos_token_id': 128001, 'pad_token_id': 128001}
+[36m(WorkerDict pid=3613731)[0m Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  3.66it/s]
+[36m(WorkerDict pid=3613731)[0m Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  3.78it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  3.76it/s]
+[36m(WorkerDict pid=3613731)[0m Some weights of LlamaForTokenClassification were not initialized from the model checkpoint at meta-llama/Llama-3.2-3B and are newly initialized: ['score.bias']
+[36m(WorkerDict pid=3613731)[0m You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+[36m(pid=3613732)[0m /home/s223540177/.conda/envs/searchr1/lib/python3.9/site-packages/vllm/connections.py:8: RuntimeWarning: Failed to read commit hash:[32m [repeated 2x across cluster][0m
+[36m(pid=3613732)[0m No module named 'vllm._version'[32m [repeated 2x across cluster][0m
+[36m(pid=3613732)[0m   from vllm.version import __version__ as VLLM_VERSION[32m [repeated 2x across cluster][0m
+[36m(WorkerDict pid=3603152)[0m /home/s223540177/Search-R1/verl/utils/tokenizer.py:29: UserWarning: tokenizer.pad_token_id is None. Now set to 128001[32m [repeated 3x across cluster][0m
+[36m(WorkerDict pid=3603152)[0m   warnings.warn(f'tokenizer.pad_token_id is None. Now set to {tokenizer.eos_token_id}')[32m [repeated 3x across cluster][0m
+[36m(WorkerDict pid=3613732)[0m Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s][32m [repeated 3x across cluster][0m
+[36m(WorkerDict pid=3603152)[0m Loading checkpoint shards:  50%|█████     | 1/2 [00:06<00:06,  6.82s/it][32m [repeated 3x across cluster][0m
+[36m(WorkerDict pid=3613732)[0m Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  4.55it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  4.39it/s][32m [repeated 2x across cluster][0m
+[36m(WorkerDict pid=3613732)[0m Some weights of LlamaForTokenClassification were not initialized from the model checkpoint at meta-llama/Llama-3.2-3B and are newly initialized: ['score.bias'][32m [repeated 2x across cluster][0m
+[36m(WorkerDict pid=3613732)[0m You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.[32m [repeated 2x across cluster][0m
+[36m(WorkerDict pid=3603152)[0m Some weights of LlamaForTokenClassification were not initialized from the model checkpoint at meta-llama/Llama-3.2-3B and are newly initialized: ['score.bias', 'score.weight']
+[36m(WorkerDict pid=3603152)[0m LlamaForTokenClassification contains 3.21B parameters
+[36m(WorkerDict pid=3603152)[0m Before critic FSDP, memory allocated (GB): 0.0, memory reserved (GB): 0.0
+[36m(bundle_reservation_check_func pid=3602960)[0m [2026-04-17 23:38:25,552 E 3602960 3603104] core_worker_process.cc:825: Failed to establish connection to the metrics exporter agent. Metrics will not be exported. Exporter agent status: RpcError: Running out of retries to initialize the metrics agent. rpc_code: 14
+[36m(WorkerDict pid=3603152)[0m NCCL version 2.20.5+cuda12.4
+[36m(WorkerDict pid=3613731)[0m Total steps: 1005, num_warmup_steps: 15
+[36m(WorkerDict pid=3603152)[0m After critic FSDP, memory allocated (GB): 2.992123603820801, memory reserved (GB): 8.21875
+[36m(WorkerDict pid=3613731)[0m Critic use_remove_padding=False
+[36m(WorkerDict pid=3613731)[0m /home/s223540177/Search-R1/verl/utils/tokenizer.py:29: UserWarning: tokenizer.pad_token_id is None. Now set to 128001
+[36m(WorkerDict pid=3613731)[0m   warnings.warn(f'tokenizer.pad_token_id is None. Now set to {tokenizer.eos_token_id}')
+[36m(WorkerDict pid=3603152)[0m Loading checkpoint shards: 100%|██████████| 2/2 [00:08<00:00,  4.00s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:08<00:00,  4.42s/it]
+[36m(WorkerDict pid=3603152)[0m You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+[36m(WorkerDict pid=3603152)[0m [2026-04-17 23:38:27,305 E 3603152 3604317] core_worker_process.cc:825: Failed to establish connection to the metrics exporter agent. Metrics will not be exported. Exporter agent status: RpcError: Running out of retries to initialize the metrics agent. rpc_code: 14
+[36m(WorkerDict pid=3613733)[0m /home/s223540177/Search-R1/verl/utils/tokenizer.py:29: UserWarning: tokenizer.pad_token_id is None. Now set to 128001
+[36m(WorkerDict pid=3613733)[0m   warnings.warn(f'tokenizer.pad_token_id is None. Now set to {tokenizer.eos_token_id}')
+[36m(WorkerDict pid=3603152)[0m Model config after override: LlamaConfig {
+[36m(WorkerDict pid=3603152)[0m   "_name_or_path": "meta-llama/Llama-3.2-3B",
+[36m(WorkerDict pid=3603152)[0m   "architectures": [
+[36m(WorkerDict pid=3603152)[0m     "LlamaForCausalLM"
+[36m(WorkerDict pid=3603152)[0m   ],
+[36m(WorkerDict pid=3603152)[0m   "attention_bias": false,
+[36m(WorkerDict pid=3603152)[0m   "attention_dropout": 0.0,
+[36m(WorkerDict pid=3603152)[0m   "bos_token_id": 128000,
+[36m(WorkerDict pid=3603152)[0m   "eos_token_id": 128001,
+[36m(WorkerDict pid=3603152)[0m   "head_dim": 128,
+[36m(WorkerDict pid=3603152)[0m   "hidden_act": "silu",
+[36m(WorkerDict pid=3603152)[0m   "hidden_size": 3072,
+[36m(WorkerDict pid=3603152)[0m   "initializer_range": 0.02,
+[36m(WorkerDict pid=3603152)[0m   "intermediate_size": 8192,
+[36m(WorkerDict pid=3603152)[0m   "max_position_embeddings": 131072,
+[36m(WorkerDict pid=3603152)[0m   "mlp_bias": false,
+[36m(WorkerDict pid=3603152)[0m   "model_type": "llama",
+[36m(WorkerDict pid=3603152)[0m   "num_attention_heads": 24,
+[36m(WorkerDict pid=3603152)[0m   "num_hidden_layers": 28,
+[36m(WorkerDict pid=3603152)[0m   "num_key_value_heads": 8,
+[36m(WorkerDict pid=3603152)[0m   "pad_token_id": 128001,
+[36m(WorkerDict pid=3603152)[0m   "pretraining_tp": 1,
+[36m(WorkerDict pid=3603152)[0m   "rms_norm_eps": 1e-05,
+[36m(WorkerDict pid=3603152)[0m   "rope_scaling": {
+[36m(WorkerDict pid=3603152)[0m     "factor": 32.0,
+[36m(WorkerDict pid=3603152)[0m     "high_freq_factor": 4.0,
+[36m(WorkerDict pid=3603152)[0m     "low_freq_factor": 1.0,
+[36m(WorkerDict pid=3603152)[0m     "original_max_position_embeddings": 8192,
+[36m(WorkerDict pid=3603152)[0m     "rope_type": "llama3"
+[36m(WorkerDict pid=3603152)[0m   },
+[36m(WorkerDict pid=3603152)[0m   "rope_theta": 500000.0,
+[36m(WorkerDict pid=3603152)[0m   "tie_word_embeddings": true,
+[36m(WorkerDict pid=3603152)[0m   "torch_dtype": "bfloat16",
+[36m(WorkerDict pid=3603152)[0m   "transformers_version": "4.47.1",
+[36m(WorkerDict pid=3603152)[0m   "use_cache": true,
+[36m(WorkerDict pid=3603152)[0m   "vocab_size": 128256
+[36m(WorkerDict pid=3603152)[0m }
+[36m(WorkerDict pid=3603152)[0m 
+[36m(WorkerDict pid=3613733)[0m Total steps: 1005, num_warmup_steps: 15[32m [repeated 3x across cluster][0m
+[36m(WorkerGroupRegisterCenter pid=3612470)[0m [2026-04-17 23:38:35,349 E 3612470 3613686] core_worker_process.cc:825: Failed to establish connection to the metrics exporter agent. Metrics will not be exported. Exporter agent status: RpcError: Running out of retries to initialize the metrics agent. rpc_code: 14
+[36m(WorkerDict pid=3613731)[0m Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+[36m(WorkerDict pid=3613731)[0m Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  2.92it/s]
+[36m(WorkerDict pid=3613731)[0m Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  3.76it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  3.60it/s]
+[36m(WorkerDict pid=3603152)[0m LlamaForCausalLM contains 3.21B parameters
+[36m(WorkerDict pid=3603152)[0m wrap_policy: functools.partial(<function _or_policy at 0x7f359951baf0>, policies=[functools.partial(<function transformer_auto_wrap_policy at 0x7f359951b9d0>, transformer_layer_cls={<class 'transformers.models.llama.modeling_llama.LlamaDecoderLayer'>})])
+[36m(WorkerDict pid=3603152)[0m Actor use_remove_padding=False
+[36m(WorkerDict pid=3603152)[0m Critic use_remove_padding=False[32m [repeated 3x across cluster][0m
+[36m(WorkerDict pid=3613731)[0m /home/s223540177/Search-R1/verl/utils/tokenizer.py:29: UserWarning: tokenizer.pad_token_id is None. Now set to 128001[32m [repeated 3x across cluster][0m
+[36m(WorkerDict pid=3613731)[0m   warnings.warn(f'tokenizer.pad_token_id is None. Now set to {tokenizer.eos_token_id}')[32m [repeated 3x across cluster][0m
+[36m(WorkerDict pid=3613733)[0m [2026-04-17 23:38:37,267 E 3613733 3613902] core_worker_process.cc:825: Failed to establish connection to the metrics exporter agent. Metrics will not be exported. Exporter agent status: RpcError: Running out of retries to initialize the metrics agent. rpc_code: 14[32m [repeated 3x across cluster][0m
+[36m(WorkerDict pid=3613732)[0m Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s][32m [repeated 3x across cluster][0m
+[36m(WorkerDict pid=3613733)[0m Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  2.15it/s][32m [repeated 3x across cluster][0m
+[36m(WorkerDict pid=3613733)[0m Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  3.14it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  2.94it/s][32m [repeated 3x across cluster][0m
+[36m(WorkerDict pid=3603152)[0m Model config after override: LlamaConfig {
+[36m(WorkerDict pid=3603152)[0m   "_name_or_path": "meta-llama/Llama-3.2-3B",
+[36m(WorkerDict pid=3603152)[0m   "architectures": [
+[36m(WorkerDict pid=3603152)[0m     "LlamaForCausalLM"
+[36m(WorkerDict pid=3603152)[0m   ],
+[36m(WorkerDict pid=3603152)[0m   "attention_bias": false,
+[36m(WorkerDict pid=3603152)[0m   "attention_dropout": 0.0,
+[36m(WorkerDict pid=3603152)[0m   "bos_token_id": 128000,
+[36m(WorkerDict pid=3603152)[0m   "eos_token_id": 128001,
+[36m(WorkerDict pid=3603152)[0m   "head_dim": 128,
+[36m(WorkerDict pid=3603152)[0m   "hidden_act": "silu",
+[36m(WorkerDict pid=3603152)[0m   "hidden_size": 3072,
+[36m(WorkerDict pid=3603152)[0m   "initializer_range": 0.02,
+[36m(WorkerDict pid=3603152)[0m   "intermediate_size": 8192,
+[36m(WorkerDict pid=3603152)[0m   "max_position_embeddings": 131072,
+[36m(WorkerDict pid=3603152)[0m   "mlp_bias": false,
+[36m(WorkerDict pid=3603152)[0m   "model_type": "llama",
+[36m(WorkerDict pid=3603152)[0m   "num_attention_heads": 24,
+[36m(WorkerDict pid=3603152)[0m   "num_hidden_layers": 28,
+[36m(WorkerDict pid=3603152)[0m   "num_key_value_heads": 8,
+[36m(WorkerDict pid=3603152)[0m   "pad_token_id": 128001,
+[36m(WorkerDict pid=3603152)[0m   "pretraining_tp": 1,
+[36m(WorkerDict pid=3603152)[0m   "rms_norm_eps": 1e-05,
+[36m(WorkerDict pid=3603152)[0m   "rope_scaling": {
+[36m(WorkerDict pid=3603152)[0m     "factor": 32.0,
+[36m(WorkerDict pid=3603152)[0m     "high_freq_factor": 4.0,
+[36m(WorkerDict pid=3603152)[0m     "low_freq_factor": 1.0,
+[36m(WorkerDict pid=3603152)[0m     "original_max_position_embeddings": 8192,
+[36m(WorkerDict pid=3603152)[0m     "rope_type": "llama3"
+[36m(WorkerDict pid=3603152)[0m   },
+[36m(WorkerDict pid=3603152)[0m   "rope_theta": 500000.0,
+[36m(WorkerDict pid=3603152)[0m   "tie_word_embeddings": true,
+[36m(WorkerDict pid=3603152)[0m   "torch_dtype": "bfloat16",
+[36m(WorkerDict pid=3603152)[0m   "transformers_version": "4.47.1",
+[36m(WorkerDict pid=3603152)[0m   "use_cache": true,
+[36m(WorkerDict pid=3603152)[0m   "vocab_size": 128256
+[36m(WorkerDict pid=3603152)[0m }
+[36m(WorkerDict pid=3603152)[0m 
+[36m(WorkerDict pid=3613733)[0m wrap_policy: functools.partial(<function _or_policy at 0x7f7f9585baf0>, policies=[functools.partial(<function transformer_auto_wrap_policy at 0x7f7f9585b9d0>, transformer_layer_cls={<class 'transformers.models.llama.modeling_llama.LlamaDecoderLayer'>})])[32m [repeated 3x across cluster][0m
+[36m(WorkerDict pid=3613732)[0m /home/s223540177/Search-R1/verl/utils/tokenizer.py:29: UserWarning: tokenizer.pad_token_id is None. Now set to 128001[32m [repeated 3x across cluster][0m
+[36m(WorkerDict pid=3613732)[0m   warnings.warn(f'tokenizer.pad_token_id is None. Now set to {tokenizer.eos_token_id}')[32m [repeated 3x across cluster][0m
+[36m(WorkerDict pid=3613732)[0m Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s][32m [repeated 4x across cluster][0m
+[36m(WorkerDict pid=3613731)[0m Loading checkpoint shards:  50%|█████     | 1/2 [00:08<00:08,  8.01s/it]
+[36m(WorkerDict pid=3613733)[0m Loading checkpoint shards:  50%|█████     | 1/2 [00:07<00:07,  7.93s/it]
+[36m(WorkerDict pid=3613731)[0m Loading checkpoint shards: 100%|██████████| 2/2 [00:10<00:00,  4.77s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:10<00:00,  5.26s/it]
+[36m(WorkerDict pid=3603152)[0m LlamaForCausalLM contains 3.21B parameters
+[36m(WorkerDict pid=3613733)[0m Actor use_remove_padding=False[32m [repeated 3x across cluster][0m
+[36m(WorkerDict pid=3603152)[0m wrap_policy: functools.partial(<function _or_policy at 0x7f359951baf0>, policies=[functools.partial(<function transformer_auto_wrap_policy at 0x7f359951b9d0>, transformer_layer_cls={<class 'transformers.models.llama.modeling_llama.LlamaDecoderLayer'>})])
+[36m(WorkerDict pid=3613731)[0m wrap_policy: functools.partial(<function _or_policy at 0x7f1abb61baf0>, policies=[functools.partial(<function transformer_auto_wrap_policy at 0x7f1abb61b9d0>, transformer_layer_cls={<class 'transformers.models.llama.modeling_llama.LlamaDecoderLayer'>})])
+[36m(WorkerDict pid=3603152)[0m Total steps: 1005, num_warmup_steps: 286
+[36m(WorkerDict pid=3613733)[0m wrap_policy: functools.partial(<function _or_policy at 0x7f7f9585baf0>, policies=[functools.partial(<function transformer_auto_wrap_policy at 0x7f7f9585b9d0>, transformer_layer_cls={<class 'transformers.models.llama.modeling_llama.LlamaDecoderLayer'>})])[32m [repeated 2x across cluster][0m
+[36m(WorkerDict pid=3603152)[0m Actor use_remove_padding=False
+[36m(WorkerDict pid=3603152)[0m Before building vllm rollout, memory allocated (GB): 2.9921483993530273, memory reserved (GB): 3.05859375
+[36m(WorkerDict pid=3613732)[0m WARNING 04-17 23:39:06 config.py:1674] Casting torch.bfloat16 to torch.float16.
+[36m(WorkerDict pid=3603152)[0m WARNING 04-17 23:39:15 config.py:380] To see benefits of async output processing, enable CUDA graph. Since, enforce-eager is enabled, async output processor cannot be used
+[36m(WorkerDict pid=3613733)[0m Total steps: 1005, num_warmup_steps: 286[32m [repeated 3x across cluster][0m
+[36m(WorkerDict pid=3613733)[0m Actor use_remove_padding=False[32m [repeated 3x across cluster][0m
+[36m(WorkerDict pid=3613731)[0m WARNING 04-17 23:39:06 config.py:1674] Casting torch.bfloat16 to torch.float16.[32m [repeated 3x across cluster][0m
+[36m(WorkerDict pid=3603152)[0m local rank 0
+[36m(WorkerDict pid=3603152)[0m INFO 04-17 23:39:16 selector.py:115] Using XFormers backend.
+[36m(WorkerDict pid=3603152)[0m /home/s223540177/.conda/envs/searchr1/lib/python3.9/site-packages/xformers/ops/fmha/flash.py:211: FutureWarning: `torch.library.impl_abstract` was renamed to `torch.library.register_fake`. Please use that instead; we will remove `torch.library.impl_abstract` in a future version of PyTorch.
+[36m(WorkerDict pid=3603152)[0m   @torch.library.impl_abstract("xformers_flash::flash_fwd")
+[36m(WorkerDict pid=3613732)[0m Loading checkpoint shards:  50%|█████     | 1/2 [00:09<00:09,  9.95s/it][32m [repeated 2x across cluster][0m
+[36m(WorkerDict pid=3613732)[0m Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  5.43s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.11s/it][32m [repeated 3x across cluster][0m
+[36m(WorkerDict pid=3603152)[0m   @torch.library.impl_abstract("xformers_flash::flash_bwd")
+[36m(WorkerDict pid=3613731)[0m NCCL version 2.20.5+cuda12.4
+[36m(WorkerDict pid=3603152)[0m before init cache memory allocated: 9.680897024GB, reserved: 9.776922624GB
+[36m(WorkerDict pid=3613731)[0m kwargs: {'n': 1, 'logprobs': 1, 'max_tokens': 500, 'detokenize': False, 'temperature': 1, 'top_k': -1, 'top_p': 0.95, 'ignore_eos': False}
+[36m(WorkerDict pid=3613731)[0m WARNING 04-17 23:39:15 config.py:380] To see benefits of async output processing, enable CUDA graph. Since, enforce-eager is enabled, async output processor cannot be used[32m [repeated 3x across cluster][0m
+[36m(WorkerDict pid=3613731)[0m local rank 0[32m [repeated 3x across cluster][0m
+[36m(WorkerDict pid=3613733)[0m INFO 04-17 23:39:17 selector.py:115] Using XFormers backend.[32m [repeated 7x across cluster][0m
+[36m(WorkerDict pid=3613733)[0m NCCL version 2.20.5+cuda12.4[32m [repeated 2x across cluster][0m
+[36m(WorkerDict pid=3613731)[0m /home/s223540177/.conda/envs/searchr1/lib/python3.9/site-packages/torch/distributed/fsdp/fully_sharded_data_parallel.py:689: FutureWarning: FSDP.state_dict_type() and FSDP.set_state_dict_type() are being deprecated. Please use APIs, get_state_dict() and set_state_dict(), which can support different parallelisms, FSDP1, FSDP2, DDP. API doc: https://pytorch.org/docs/stable/distributed.checkpoint.html#torch.distributed.checkpoint.state_dict.get_state_dict .Tutorial: https://pytorch.org/tutorials/recipes/distributed_checkpoint_recipe.html .
+[36m(WorkerDict pid=3613731)[0m   warnings.warn(
+[36m(WorkerDict pid=3613733)[0m /home/s223540177/.conda/envs/searchr1/lib/python3.9/site-packages/xformers/ops/fmha/flash.py:344: FutureWarning: `torch.library.impl_abstract` was renamed to `torch.library.register_fake`. Please use that instead; we will remove `torch.library.impl_abstract` in a future version of PyTorch.[32m [repeated 7x across cluster][0m
+[36m(WorkerDict pid=3613733)[0m   @torch.library.impl_abstract("xformers_flash::flash_fwd")[32m [repeated 3x across cluster][0m
+[36m(WorkerDict pid=3613733)[0m   @torch.library.impl_abstract("xformers_flash::flash_bwd")[32m [repeated 3x across cluster][0m
+[36m(WorkerDict pid=3603152)[0m after init cache memory allocated: 22.540633088GB, reserved: 22.636658688GB
+[36m(WorkerDict pid=3603152)[0m After building vllm rollout, memory allocated (GB): 15.007899284362793, memory reserved (GB): 21.08203125
+[36m(WorkerDict pid=3603152)[0m After building sharding manager, memory allocated (GB): 15.007899284362793, memory reserved (GB): 21.08203125
+Error executing job with overrides: ['data.train_files=data/nq_search/train.parquet', 'data.val_files=data/nq_search/test.parquet', 'data.train_data_num=null', 'data.val_data_num=null', 'data.train_batch_size=512', 'data.val_batch_size=256', 'data.max_prompt_length=4096', 'data.max_response_length=500', 'data.max_start_length=2048', 'data.max_obs_length=500', 'data.shuffle_train_dataloader=True', 'algorithm.adv_estimator=gae', 'actor_rollout_ref.model.path=meta-llama/Llama-3.2-3B', 'actor_rollout_ref.actor.optim.lr=1e-6', 'actor_rollout_ref.model.enable_gradient_checkpointing=true', 'actor_rollout_ref.model.use_remove_padding=False', '+actor_rollout_ref.model.attn_implementation=sdpa', 'actor_rollout_ref.actor.optim.lr_warmup_steps_ratio=0.285', 'actor_rollout_ref.actor.ppo_mini_batch_size=256', 'actor_rollout_ref.actor.ppo_micro_batch_size=64', '+actor_rollout_ref.actor.autocast_dtype=fp16', 'actor_rollout_ref.actor.fsdp_config.param_offload=true', 'actor_rollout_ref.actor.fsdp_config.grad_offload=true', 'actor_rollout_ref.actor.fsdp_config.optimizer_offload=true', '+actor_rollout_ref.actor.fsdp_config.mixed_precision.param_dtype=fp16', '+actor_rollout_ref.actor.fsdp_config.mixed_precision.reduce_dtype=fp32', '+actor_rollout_ref.actor.fsdp_config.mixed_precision.buffer_dtype=fp32', 'actor_rollout_ref.rollout.log_prob_micro_batch_size=128', 'actor_rollout_ref.rollout.tensor_model_parallel_size=1', 'actor_rollout_ref.rollout.name=vllm', 'actor_rollout_ref.rollout.dtype=half', 'actor_rollout_ref.rollout.gpu_memory_utilization=0.6', 'actor_rollout_ref.ref.log_prob_micro_batch_size=128', 'actor_rollout_ref.ref.fsdp_config.param_offload=True', 'actor_rollout_ref.rollout.n_agent=1', 'actor_rollout_ref.rollout.temperature=1', 'actor_rollout_ref.actor.state_masking=true', 'critic.optim.lr=1e-5', 'critic.model.use_remove_padding=False', '+critic.model.attn_implementation=sdpa', '+critic.autocast_dtype=fp16', 'critic.optim.lr_warmup_steps_ratio=0.015', 'critic.model.path=meta-llama/Llama-3.2-3B', 'critic.model.enable_gradient_checkpointing=true', 'critic.ppo_micro_batch_size=8', 'critic.model.fsdp_config.param_offload=true', 'critic.model.fsdp_config.grad_offload=true', 'critic.model.fsdp_config.optimizer_offload=true', '+critic.model.fsdp_config.mixed_precision.param_dtype=fp16', '+critic.model.fsdp_config.mixed_precision.reduce_dtype=fp32', '+critic.model.fsdp_config.mixed_precision.buffer_dtype=fp32', 'algorithm.kl_ctrl.kl_coef=0.001', 'algorithm.no_think_rl=false', 'trainer.critic_warmup=0', 'trainer.logger=[wandb]', '+trainer.val_only=false', '+trainer.val_before_train=true', 'trainer.default_hdfs_dir=null', 'trainer.n_gpus_per_node=4', 'trainer.nnodes=1', 'trainer.save_freq=100', 'trainer.test_freq=50', 'trainer.project_name=Search-R1', 'trainer.experiment_name=nq-search-r1-ppo-llama3.2-3b-em', 'trainer.total_epochs=15', 'trainer.total_training_steps=1005', 'trainer.default_hdfs_dir=null', 'trainer.default_local_dir=verl_checkpoints/nq-search-r1-ppo-llama3.2-3b-em', 'max_turns=2', 'retriever.url=http://127.0.0.1:8000/retrieve', 'retriever.topk=3']
+[36m(main_task pid=3596212)[0m Unhandled error (suppress with 'RAY_IGNORE_UNHANDLED_ERRORS=1'): [36mray::WorkerDict.actor_rollout_generate_sequences()[39m (pid=3613732, ip=10.72.191.90, actor_id=23c031488d6a11e9645d148101000000, repr=<verl.single_controller.ray.base.WorkerDict object at 0x7fd0c8868a90>)
+[36m(main_task pid=3596212)[0m   File "/home/s223540177/Search-R1/verl/single_controller/ray/base.py", line 399, in func
+[36m(main_task pid=3596212)[0m     return getattr(self.worker_dict[key], name)(*args, **kwargs)
+[36m(main_task pid=3596212)[0m   File "/home/s223540177/Search-R1/verl/single_controller/base/decorator.py", line 404, in inner
+[36m(main_task pid=3596212)[0m     return func(*args, **kwargs)
+[36m(main_task pid=3596212)[0m   File "/home/s223540177/Search-R1/verl/workers/fsdp_workers.py", line 469, in generate_sequences
+[36m(main_task pid=3596212)[0m     old_log_probs = self.actor.compute_log_prob(data=output)
+[36m(main_task pid=3596212)[0m   File "/home/s223540177/Search-R1/verl/workers/actor/dp_actor.py", line 193, in compute_log_prob
+[36m(main_task pid=3596212)[0m     _, log_probs = self._forward_micro_batch(micro_batch, temperature=temperature)
+[36m(main_task pid=3596212)[0m   File "/home/s223540177/Search-R1/verl/workers/actor/dp_actor.py", line 141, in _forward_micro_batch
+[36m(main_task pid=3596212)[0m     entropy = verl_F.entropy_from_logits(logits)  # (bsz, response_length)
+[36m(main_task pid=3596212)[0m   File "/home/s223540177/Search-R1/verl/utils/torch_functional.py", line 98, in entropy_from_logits
+[36m(main_task pid=3596212)[0m     entropy = torch.logsumexp(logits, dim=-1) - torch.sum(pd * logits, dim=-1)
+[36m(main_task pid=3596212)[0m torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 7.65 GiB. GPU 0 has a total capacity of 31.73 GiB of which 6.75 GiB is free. Including non-PyTorch memory, this process has 24.95 GiB memory in use. Of the allocated memory 23.90 GiB is allocated by PyTorch, and 64.17 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+[36m(WorkerDict pid=3603152)[0m /home/s223540177/.conda/envs/searchr1/lib/python3.9/site-packages/torch/distributed/fsdp/fully_sharded_data_parallel.py:689: FutureWarning: FSDP.state_dict_type() and FSDP.set_state_dict_type() are being deprecated. Please use APIs, get_state_dict() and set_state_dict(), which can support different parallelisms, FSDP1, FSDP2, DDP. API doc: https://pytorch.org/docs/stable/distributed.checkpoint.html#torch.distributed.checkpoint.state_dict.get_state_dict .Tutorial: https://pytorch.org/tutorials/recipes/distributed_checkpoint_recipe.html .[32m [repeated 3x across cluster][0m
+[36m(WorkerDict pid=3603152)[0m   warnings.warn([32m [repeated 3x across cluster][0m
+Traceback (most recent call last):
+  File "/home/s223540177/Search-R1/verl/trainer/main_ppo.py", line 111, in main
+    ray.get(main_task.remote(config))
+  File "/home/s223540177/.conda/envs/searchr1/lib/python3.9/site-packages/ray/_private/auto_init_hook.py", line 22, in auto_init_wrapper
+    return fn(*args, **kwargs)
+  File "/home/s223540177/.conda/envs/searchr1/lib/python3.9/site-packages/ray/_private/client_mode_hook.py", line 104, in wrapper
+    return func(*args, **kwargs)
+  File "/home/s223540177/.conda/envs/searchr1/lib/python3.9/site-packages/ray/_private/worker.py", line 2961, in get
+    values, debugger_breakpoint = worker.get_objects(
+  File "/home/s223540177/.conda/envs/searchr1/lib/python3.9/site-packages/ray/_private/worker.py", line 1026, in get_objects
+    raise value.as_instanceof_cause()
+ray.exceptions.RayTaskError(OutOfMemoryError): [36mray::main_task()[39m (pid=3596212, ip=10.72.191.90)
+  File "/home/s223540177/Search-R1/verl/trainer/main_ppo.py", line 199, in main_task
+    trainer.fit()
+  File "/home/s223540177/Search-R1/verl/trainer/ppo/ray_trainer.py", line 666, in fit
+    val_metrics = self._validate()
+  File "/home/s223540177/Search-R1/verl/trainer/ppo/ray_trainer.py", line 515, in _validate
+    final_gen_batch_output = generation_manager.run_llm_loop(
+  File "/home/s223540177/Search-R1/search_r1/llm_agent/generation.py", line 246, in run_llm_loop
+    gen_output = self._generate_with_gpu_padding(rollings_active)
+  File "/home/s223540177/Search-R1/search_r1/llm_agent/generation.py", line 186, in _generate_with_gpu_padding
+    return self.actor_rollout_wg.generate_sequences(active_batch)
+  File "/home/s223540177/Search-R1/verl/single_controller/ray/base.py", line 42, in func
+    output = ray.get(output)
+ray.exceptions.RayTaskError(OutOfMemoryError): [36mray::WorkerDict.actor_rollout_generate_sequences()[39m (pid=3603152, ip=10.72.191.90, actor_id=80096a59fcaff2a489fa062101000000, repr=<verl.single_controller.ray.base.WorkerDict object at 0x7f35663849a0>)
+  File "/home/s223540177/Search-R1/verl/single_controller/ray/base.py", line 399, in func
+    return getattr(self.worker_dict[key], name)(*args, **kwargs)
+  File "/home/s223540177/Search-R1/verl/single_controller/base/decorator.py", line 404, in inner
+    return func(*args, **kwargs)
+  File "/home/s223540177/Search-R1/verl/workers/fsdp_workers.py", line 469, in generate_sequences
+    old_log_probs = self.actor.compute_log_prob(data=output)
+  File "/home/s223540177/Search-R1/verl/workers/actor/dp_actor.py", line 193, in compute_log_prob
+    _, log_probs = self._forward_micro_batch(micro_batch, temperature=temperature)
+  File "/home/s223540177/Search-R1/verl/workers/actor/dp_actor.py", line 141, in _forward_micro_batch
+    entropy = verl_F.entropy_from_logits(logits)  # (bsz, response_length)
+  File "/home/s223540177/Search-R1/verl/utils/torch_functional.py", line 98, in entropy_from_logits
+    entropy = torch.logsumexp(logits, dim=-1) - torch.sum(pd * logits, dim=-1)
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 7.65 GiB. GPU 0 has a total capacity of 31.73 GiB of which 6.77 GiB is free. Including non-PyTorch memory, this process has 24.93 GiB memory in use. Of the allocated memory 23.90 GiB is allocated by PyTorch, and 64.17 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.
+[36m(WorkerDict pid=3603152)[0m kwargs: {'n': 1, 'logprobs': 1, 'max_tokens': 500, 'detokenize': False, 'temperature': 1, 'top_k': -1, 'top_p': 0.95, 'ignore_eos': False}[32m [repeated 3x across cluster][0m

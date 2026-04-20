@@ -209,10 +209,22 @@ class DenseRetriever(BaseRetriever):
         super().__init__(config)
         self.index = faiss.read_index(self.index_path)
         if config.faiss_gpu:
-            co = faiss.GpuMultipleClonerOptions()
-            co.useFloat16 = True
-            co.shard = True
-            self.index = faiss.index_cpu_to_all_gpus(self.index, co=co)
+            try:
+                ngpu = faiss.get_num_gpus()
+                if ngpu > 1:
+                    co = faiss.GpuMultipleClonerOptions()
+                    co.useFloat16 = True
+                    co.shard = True
+                    self.index = faiss.index_cpu_to_all_gpus(self.index, co=co)
+                else:
+                    res = faiss.StandardGpuResources()
+                    co = faiss.GpuClonerOptions()
+                    co.useFloat16 = True
+                    self.index = faiss.index_cpu_to_gpu(res, 0, self.index, co)
+                print(f"Faiss index loaded on GPU(s).")
+            except RuntimeError as e:
+                print(f"Warning: GPU index load failed ({e}), falling back to CPU.")
+
 
         self.corpus = load_corpus(self.corpus_path)
         self.encoder = Encoder(
@@ -361,8 +373,8 @@ def retrieve_endpoint(request: QueryRequest):
 if __name__ == "__main__":
     
     parser = argparse.ArgumentParser(description="Launch the local faiss retriever.")
-    parser.add_argument("--index_path", type=str, default="/home/peterjin/mnt/index/wiki-18/e5_Flat.index", help="Corpus indexing file.")
-    parser.add_argument("--corpus_path", type=str, default="/home/peterjin/mnt/data/retrieval-corpus/wiki-18.jsonl", help="Local corpus file.")
+    parser.add_argument("--index_path", type=str, default="/scratch/s223540177/Search-R1/e5_Flat.index", help="Corpus indexing file.")
+    parser.add_argument("--corpus_path", type=str, default="/scratch/s223540177/Search-R1/wiki-18.jsonl", help="Local corpus file.")
     parser.add_argument("--topk", type=int, default=3, help="Number of retrieved passages for one query.")
     parser.add_argument("--retriever_name", type=str, default="e5", help="Name of the retriever model.")
     parser.add_argument("--retriever_model", type=str, default="intfloat/e5-base-v2", help="Path of the retriever model.")

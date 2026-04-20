@@ -1,0 +1,224 @@
+2026-04-17 23:28:55,078	INFO worker.py:2012 -- Started a local Ray instance.
+/home/s223540177/.conda/envs/searchr1/lib/python3.9/site-packages/ray/_private/worker.py:2051: FutureWarning: Tip: In future versions of Ray, Ray will no longer override accelerator visible devices env var if num_gpus=0 or num_gpus=None (default). To enable this behavior and turn off this error message, set RAY_ACCEL_ENV_VAR_OVERRIDE_ON_ZERO=0
+  warnings.warn(
+[36m(main_task pid=3987639)[0m {'actor_rollout_ref': {'actor': {'autocast_dtype': 'fp16',
+[36m(main_task pid=3987639)[0m                                  'clip_ratio': 0.2,
+[36m(main_task pid=3987639)[0m                                  'entropy_coeff': 0.001,
+[36m(main_task pid=3987639)[0m                                  'fsdp_config': {'fsdp_size': -1,
+[36m(main_task pid=3987639)[0m                                                  'grad_offload': True,
+[36m(main_task pid=3987639)[0m                                                  'mixed_precision': {'buffer_dtype': 'fp32',
+[36m(main_task pid=3987639)[0m                                                                      'param_dtype': 'fp16',
+[36m(main_task pid=3987639)[0m                                                                      'reduce_dtype': 'fp32'},
+[36m(main_task pid=3987639)[0m                                                  'optimizer_offload': True,
+[36m(main_task pid=3987639)[0m                                                  'param_offload': True,
+[36m(main_task pid=3987639)[0m                                                  'wrap_policy': {'min_num_params': 0}},
+[36m(main_task pid=3987639)[0m                                  'grad_clip': 1.0,
+[36m(main_task pid=3987639)[0m                                  'kl_loss_coef': 0.001,
+[36m(main_task pid=3987639)[0m                                  'kl_loss_type': 'low_var_kl',
+[36m(main_task pid=3987639)[0m                                  'optim': {'lr': 1e-06,
+[36m(main_task pid=3987639)[0m                                            'lr_warmup_steps_ratio': 0.285,
+[36m(main_task pid=3987639)[0m                                            'min_lr_ratio': None,
+[36m(main_task pid=3987639)[0m                                            'total_training_steps': -1,
+[36m(main_task pid=3987639)[0m                                            'warmup_style': 'constant'},
+[36m(main_task pid=3987639)[0m                                  'ppo_epochs': 1,
+[36m(main_task pid=3987639)[0m                                  'ppo_max_token_len_per_gpu': 16384,
+[36m(main_task pid=3987639)[0m                                  'ppo_micro_batch_size': 64,
+[36m(main_task pid=3987639)[0m                                  'ppo_mini_batch_size': 256,
+[36m(main_task pid=3987639)[0m                                  'shuffle': False,
+[36m(main_task pid=3987639)[0m                                  'state_masking': True,
+[36m(main_task pid=3987639)[0m                                  'strategy': 'fsdp',
+[36m(main_task pid=3987639)[0m                                  'ulysses_sequence_parallel_size': 1,
+[36m(main_task pid=3987639)[0m                                  'use_dynamic_bsz': False,
+[36m(main_task pid=3987639)[0m                                  'use_kl_loss': False},
+[36m(main_task pid=3987639)[0m                        'hybrid_engine': True,
+[36m(main_task pid=3987639)[0m                        'model': {'attn_implementation': 'sdpa',
+[36m(main_task pid=3987639)[0m                                  'enable_gradient_checkpointing': True,
+[36m(main_task pid=3987639)[0m                                  'external_lib': None,
+[36m(main_task pid=3987639)[0m                                  'override_config': {},
+[36m(main_task pid=3987639)[0m                                  'path': 'meta-llama/Llama-3.2-3B',
+[36m(main_task pid=3987639)[0m                                  'use_remove_padding': False},
+[36m(main_task pid=3987639)[0m                        'ref': {'fsdp_config': {'fsdp_size': -1,
+[36m(main_task pid=3987639)[0m                                                'param_offload': True,
+[36m(main_task pid=3987639)[0m                                                'wrap_policy': {'min_num_params': 0}},
+[36m(main_task pid=3987639)[0m                                'log_prob_max_token_len_per_gpu': 16384,
+[36m(main_task pid=3987639)[0m                                'log_prob_micro_batch_size': 128,
+[36m(main_task pid=3987639)[0m                                'log_prob_use_dynamic_bsz': False,
+[36m(main_task pid=3987639)[0m                                'ulysses_sequence_parallel_size': 1},
+[36m(main_task pid=3987639)[0m                        'rollout': {'do_sample': True,
+[36m(main_task pid=3987639)[0m                                    'dtype': 'half',
+[36m(main_task pid=3987639)[0m                                    'enforce_eager': True,
+[36m(main_task pid=3987639)[0m                                    'free_cache_engine': True,
+[36m(main_task pid=3987639)[0m                                    'gpu_memory_utilization': 0.6,
+[36m(main_task pid=3987639)[0m                                    'ignore_eos': False,
+[36m(main_task pid=3987639)[0m                                    'load_format': 'dummy_dtensor',
+[36m(main_task pid=3987639)[0m                                    'log_prob_max_token_len_per_gpu': 16384,
+[36m(main_task pid=3987639)[0m                                    'log_prob_micro_batch_size': 128,
+[36m(main_task pid=3987639)[0m                                    'log_prob_use_dynamic_bsz': False,
+[36m(main_task pid=3987639)[0m                                    'max_num_batched_tokens'
+[36m(main_task pid=3987639)[0m : 
+[36m(main_task pid=3987639)[0m 8192
+[36m(main_task pid=3987639)[0m ,
+[36m(main_task pid=3987639)[0m                                    'max_num_seqs'
+[36m(main_task pid=3987639)[0m : 
+[36m(main_task pid=3987639)[0m 1024
+[36m(main_task pid=3987639)[0m ,
+[36m(main_task pid=3987639)[0m                                    
+[36m(main_task pid=3987639)[0m 'n'
+[36m(main_task pid=3987639)[0m : 
+[36m(main_task pid=3987639)[0m 1
+[36m(main_task pid=3987639)[0m ,
+[36m(main_task pid=3987639)[0m                                    
+[36m(main_task pid=3987639)[0m 'n_agent': 
+[36m(main_task pid=3987639)[0m 1,
+[36m(main_task pid=3987639)[0m                                    'name': 'vllm',
+[36m(main_task pid=3987639)[0m                                    'prompt_length': 4096,
+[36m(main_task pid=3987639)[0m                                    'response_length': 500,
+[36m(main_task pid=3987639)[0m                                    'temperature': 1,
+[36m(main_task pid=3987639)[0m                                    'tensor_model_parallel_size': 1,
+[36m(main_task pid=3987639)[0m                                    'top_k': -1,
+[36m(main_task pid=3987639)[0m                                    'top_p': 0.95}},
+[36m(main_task pid=3987639)[0m  'algorithm': {'adv_estimator': 'gae',
+[36m(main_task pid=3987639)[0m                'gamma': 1.0,
+[36m(main_task pid=3987639)[0m                'kl_ctrl': {'kl_coef': 0.001, 'type': 'fixed'},
+[36m(main_task pid=3987639)[0m                'kl_penalty': 'kl',
+[36m(main_task pid=3987639)[0m                'lam': 1.0,
+[36m(main_task pid=3987639)[0m                'no_think_rl': False,
+[36m(main_task pid=3987639)[0m                'state_masking': {'end_state_marker': '</information>',
+[36m(main_task pid=3987639)[0m                                  'start_state_marker': '<information>'}},
+[36m(main_task pid=3987639)[0m  'critic': {'autocast_dtype': 'fp16',
+[36m(main_task pid=3987639)[0m             'cliprange_value': 0.5,
+[36m(main_task pid=3987639)[0m             'forward_max_token_len_per_gpu': 32768,
+[36m(main_task pid=3987639)[0m             'forward_micro_batch_size': 8,
+[36m(main_task pid=3987639)[0m             'grad_clip': 1.0,
+[36m(main_task pid=3987639)[0m             'model': {'attn_implementation': 'sdpa',
+[36m(main_task pid=3987639)[0m                       'enable_gradient_checkpointing': True,
+[36m(main_task pid=3987639)[0m                       'external_lib': None,
+[36m(main_task pid=3987639)[0m                       'fsdp_config': {'fsdp_size': -1,
+[36m(main_task pid=3987639)[0m                                       'grad_offload': True,
+[36m(main_task pid=3987639)[0m                                       'mixed_precision': {'buffer_dtype': 'fp32',
+[36m(main_task pid=3987639)[0m                                                           'param_dtype': 'fp16',
+[36m(main_task pid=3987639)[0m                                                           'reduce_dtype': 'fp32'},
+[36m(main_task pid=3987639)[0m                                       'optimizer_offload': True,
+[36m(main_task pid=3987639)[0m                                       'param_offload': True,
+[36m(main_task pid=3987639)[0m                                       'wrap_policy': {'min_num_params': 0}},
+[36m(main_task pid=3987639)[0m                       'override_config': {},
+[36m(main_task pid=3987639)[0m                       'path': 'meta-llama/Llama-3.2-3B',
+[36m(main_task pid=3987639)[0m                       'tokenizer_path': 'meta-llama/Llama-3.2-3B',
+[36m(main_task pid=3987639)[0m                       'use_remove_padding': False},
+[36m(main_task pid=3987639)[0m             'optim': {'lr': 1e-05,
+[36m(main_task pid=3987639)[0m                       'lr_warmup_steps_ratio': 0.015,
+[36m(main_task pid=3987639)[0m                       'min_lr_ratio': None,
+[36m(main_task pid=3987639)[0m                       'total_training_steps': -1,
+[36m(main_task pid=3987639)[0m                       'warmup_style': 'constant'},
+[36m(main_task pid=3987639)[0m             'ppo_epochs': 1,
+[36m(main_task pid=3987639)[0m             'ppo_max_token_len_per_gpu': 32768,
+[36m(main_task pid=3987639)[0m             'ppo_micro_batch_size': 8,
+[36m(main_task pid=3987639)[0m             'ppo_mini_batch_size': 256,
+[36m(main_task pid=3987639)[0m             'shuffle': False,
+[36m(main_task pid=3987639)[0m             'strategy': 'fsdp',
+[36m(main_task pid=3987639)[0m             'ulysses_sequence_parallel_size': 1,
+[36m(main_task pid=3987639)[0m             'use_dynamic_bsz': False},
+[36m(main_task pid=3987639)[0m  'data': {'max_obs_length': 500,
+[36m(main_task pid=3987639)[0m           'max_prompt_length': 4096,
+[36m(main_task pid=3987639)[0m           'max_response_length': 500,
+[36m(main_task pid=3987639)[0m           'max_start_length': 2048,
+[36m(main_task pid=3987639)[0m           'prompt_key': 'prompt',
+[36m(main_task pid=3987639)[0m           'return_raw_chat': False,
+[36m(main_task pid=3987639)[0m           'return_raw_input_ids': False,
+[36m(main_task pid=3987639)[0m           'shuffle_train_dataloader': True,
+[36m(main_task pid=3987639)[0m           'tokenizer': None,
+[36m(main_task pid=3987639)[0m           'train_batch_size': 512,
+[36m(main_task pid=3987639)[0m           'train_data_num': None,
+[36m(main_task pid=3987639)[0m           'train_files': 'data/nq_search/train.parquet',
+[36m(main_task pid=3987639)[0m           'val_batch_size': 256,
+[36m(main_task pid=3987639)[0m           'val_data_num': None,
+[36m(main_task pid=3987639)[0m           'val_files': 'data/nq_search/test.parquet'},
+[36m(main_task pid=3987639)[0m  'do_search': True,
+[36m(main_task pid=3987639)[0m  'max_turns': 2,
+[36m(main_task pid=3987639)[0m  'retriever': {'topk': 3, 'url': 'http://127.0.0.1:8000/retrieve'},
+[36m(main_task pid=3987639)[0m  'reward_model': {'enable': False,
+[36m(main_task pid=3987639)[0m                   'final_format_score': 0,
+[36m(main_task pid=3987639)[0m                   'forward_max_token_len_per_gpu': 32768,
+[36m(main_task pid=3987639)[0m                   'max_length': None,
+[36m(main_task pid=3987639)[0m                   'micro_batch_size': 64,
+[36m(main_task pid=3987639)[0m                   'model': {'external_lib': None,
+[36m(main_task pid=3987639)[0m                             'fsdp_config': {'min_num_params': 0,
+[36m(main_task pid=3987639)[0m                                             'param_offload': False},
+[36m(main_task pid=3987639)[0m                             'input_tokenizer': 'meta-llama/Llama-3.2-3B',
+[36m(main_task pid=3987639)[0m                             'path': '~/models/FsfairX-LLaMA3-RM-v0.1',
+[36m(main_task pid=3987639)[0m                             'use_remove_padding': False},
+[36m(main_task pid=3987639)[0m                   'retrieval_score': 0,
+[36m(main_task pid=3987639)[0m                   'strategy': 'fsdp',
+[36m(main_task pid=3987639)[0m                   'structure_format_score': 0,
+[36m(main_task pid=3987639)[0m                   'ulysses_sequence_parallel_size': 1,
+[36m(main_task pid=3987639)[0m                   'use_dynamic_bsz': False},
+[36m(main_task pid=3987639)[0m  'trainer': {'critic_warmup': 0,
+[36m(main_task pid=3987639)[0m              'default_hdfs_dir': None,
+[36m(main_task pid=3987639)[0m              'default_local_dir': 'verl_checkpoints/nq-search-r1-ppo-llama3.2-3b-em',
+[36m(main_task pid=3987639)[0m              'experiment_name': 'nq-search-r1-ppo-llama3.2-3b-em',
+[36m(main_task pid=3987639)[0m              'logger': ['wandb'],
+[36m(main_task pid=3987639)[0m              'n_gpus_per_node': 4,
+[36m(main_task pid=3987639)[0m              'nnodes': 1,
+[36m(main_task pid=3987639)[0m              'project_name': 'Search-R1',
+[36m(main_task pid=3987639)[0m              'save_freq': 100,
+[36m(main_task pid=3987639)[0m              'test_freq': 50,
+[36m(main_task pid=3987639)[0m              'total_epochs': 15,
+[36m(main_task pid=3987639)[0m              'total_training_steps': 1005,
+[36m(main_task pid=3987639)[0m              'val_before_train': True,
+[36m(main_task pid=3987639)[0m              'val_only': False}}
+[36m(main_task pid=3987639)[0m /home/s223540177/Search-R1/verl/utils/tokenizer.py:29: UserWarning: tokenizer.pad_token_id is None. Now set to 128001
+[36m(main_task pid=3987639)[0m   warnings.warn(f'tokenizer.pad_token_id is None. Now set to {tokenizer.eos_token_id}')
+[36m(main_task pid=3987639)[0m /home/s223540177/.conda/envs/searchr1/lib/python3.9/site-packages/vllm/connections.py:8: RuntimeWarning: Failed to read commit hash:
+[36m(main_task pid=3987639)[0m No module named 'vllm._version'
+[36m(main_task pid=3987639)[0m   from vllm.version import __version__ as VLLM_VERSION
+[36m(pid=gcs_server)[0m [2026-04-17 23:29:21,511 E 3980987 3980987] (gcs_server) gcs_server.cc:302: Failed to establish connection to the event+metrics exporter agent. Events and metrics will not be exported. Exporter agent status: RpcError: Running out of retries to initialize the metrics agent. rpc_code: 14
+[36m(main_task pid=3987639)[0m original dataset len: 79168
+[36m(main_task pid=3987639)[0m filter dataset len: 79168
+[36m(main_task pid=3987639)[0m filtered training dataset size: 79168
+[36m(main_task pid=3987639)[0m original dataset len: 3610
+[36m(main_task pid=3987639)[0m filter dataset len: 3610
+[36m(main_task pid=3987639)[0m filtered validation dataset size: 3610
+[36m(main_task pid=3987639)[0m Size of train dataloader: 154
+[36m(main_task pid=3987639)[0m Size of val dataloader: 14
+[36m(main_task pid=3987639)[0m Total training steps: 1005
+[33m(raylet)[0m [2026-04-17 23:29:26,430 E 3981917 3981917] (raylet) main.cc:975: Failed to establish connection to the metrics exporter agent. Metrics will not be exported. Exporter agent status: RpcError: Running out of retries to initialize the metrics agent. rpc_code: 14
+[36m(main_task pid=3987639)[0m wandb: [wandb.login()] Loaded credentials for https://api.wandb.ai from /home/s223540177/.netrc.
+[36m(main_task pid=3987639)[0m wandb: Currently logged in as: daidv to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+[36m(pid=3982109)[0m [2026-04-17 23:29:30,055 E 3982109 3982321] core_worker_process.cc:825: Failed to establish connection to the metrics exporter agent. Metrics will not be exported. Exporter agent status: RpcError: Running out of retries to initialize the metrics agent. rpc_code: 14
+[36m(main_task pid=3987639)[0m wandb: setting up run sx2pq0zs
+[36m(main_task pid=3987639)[0m wandb: Tracking run with wandb version 0.26.0
+[36m(main_task pid=3987639)[0m wandb: Run data is saved locally in /home/s223540177/Search-R1/wandb/run-20260417_232929-sx2pq0zs
+[36m(main_task pid=3987639)[0m wandb: Run `wandb offline` to turn off syncing.
+[36m(main_task pid=3987639)[0m wandb: Syncing run nq-search-r1-ppo-llama3.2-3b-em
+[36m(main_task pid=3987639)[0m wandb: ⭐️ View project at https://wandb.ai/daidv/Search-R1
+[36m(main_task pid=3987639)[0m wandb: 🚀 View run at https://wandb.ai/daidv/Search-R1/runs/sx2pq0zs
+[36m(main_task pid=3987639)[0m wandb: Detected [openai] in use.
+[36m(main_task pid=3987639)[0m wandb: Use W&B Weave for improved LLM call tracing. Install Weave with `pip install weave` then add `import weave` to the top of your script.
+[36m(main_task pid=3987639)[0m wandb: For more information, check out the docs at: https://weave-docs.wandb.ai
+[2026-04-17 23:29:34,911 E 3979353 3982099] core_worker_process.cc:825: Failed to establish connection to the metrics exporter agent. Metrics will not be exported. Exporter agent status: RpcError: Running out of retries to initialize the metrics agent. rpc_code: 14
+[36m(main_task pid=3987639)[0m [2026-04-17 23:29:37,421 E 3987639 3987781] core_worker_process.cc:825: Failed to establish connection to the metrics exporter agent. Metrics will not be exported. Exporter agent status: RpcError: Running out of retries to initialize the metrics agent. rpc_code: 14[32m [repeated 79x across cluster] (Ray deduplicates logs by default. Set RAY_DEDUP_LOGS=0 to disable log deduplication, or see https://docs.ray.io/en/master/ray-observability/user-guides/configure-logging.html#log-deduplication for more options.)[0m
+[36m(autoscaler +52s)[0m Tip: use `ray status` to view detailed cluster status. To disable these messages, set RAY_SCHEDULER_EVENTS=0.
+[33m(autoscaler +52s)[0m Error: No available node types can fulfill resource request defaultdict(<class 'float'>, {'CPU': 4.0, 'GPU': 4.0}). Add suitable node types to this cluster to resolve this issue.
+[33m(autoscaler +1m27s)[0m Error: No available node types can fulfill resource request defaultdict(<class 'float'>, {'CPU': 4.0, 'GPU': 4.0}). Add suitable node types to this cluster to resolve this issue.
+[33m(autoscaler +2m2s)[0m Error: No available node types can fulfill resource request defaultdict(<class 'float'>, {'CPU': 4.0, 'GPU': 4.0}). Add suitable node types to this cluster to resolve this issue.
+[33m(autoscaler +2m37s)[0m Error: No available node types can fulfill resource request defaultdict(<class 'float'>, {'CPU': 4.0, 'GPU': 4.0}). Add suitable node types to this cluster to resolve this issue.
+[33m(autoscaler +3m12s)[0m Error: No available node types can fulfill resource request defaultdict(<class 'float'>, {'CPU': 4.0, 'GPU': 4.0}). Add suitable node types to this cluster to resolve this issue.
+[33m(autoscaler +3m47s)[0m Error: No available node types can fulfill resource request defaultdict(<class 'float'>, {'CPU': 4.0, 'GPU': 4.0}). Add suitable node types to this cluster to resolve this issue.
+[33m(autoscaler +4m22s)[0m Error: No available node types can fulfill resource request defaultdict(<class 'float'>, {'CPU': 4.0, 'GPU': 4.0}). Add suitable node types to this cluster to resolve this issue.
+[33m(autoscaler +4m57s)[0m Error: No available node types can fulfill resource request defaultdict(<class 'float'>, {'CPU': 4.0, 'GPU': 4.0}). Add suitable node types to this cluster to resolve this issue.
+[33m(autoscaler +5m32s)[0m Error: No available node types can fulfill resource request defaultdict(<class 'float'>, {'CPU': 4.0, 'GPU': 4.0}). Add suitable node types to this cluster to resolve this issue.
+[33m(autoscaler +6m7s)[0m Error: No available node types can fulfill resource request defaultdict(<class 'float'>, {'CPU': 4.0, 'GPU': 4.0}). Add suitable node types to this cluster to resolve this issue.
+[33m(autoscaler +6m42s)[0m Error: No available node types can fulfill resource request defaultdict(<class 'float'>, {'CPU': 4.0, 'GPU': 4.0}). Add suitable node types to this cluster to resolve this issue.
+[33m(autoscaler +7m17s)[0m Error: No available node types can fulfill resource request defaultdict(<class 'float'>, {'CPU': 4.0, 'GPU': 4.0}). Add suitable node types to this cluster to resolve this issue.
+[33m(autoscaler +7m52s)[0m Error: No available node types can fulfill resource request defaultdict(<class 'float'>, {'CPU': 4.0, 'GPU': 4.0}). Add suitable node types to this cluster to resolve this issue.
+[33m(autoscaler +8m27s)[0m Error: No available node types can fulfill resource request defaultdict(<class 'float'>, {'CPU': 4.0, 'GPU': 4.0}). Add suitable node types to this cluster to resolve this issue.
+[33m(autoscaler +9m2s)[0m Error: No available node types can fulfill resource request defaultdict(<class 'float'>, {'CPU': 4.0, 'GPU': 4.0}). Add suitable node types to this cluster to resolve this issue.
+[33m(autoscaler +9m38s)[0m Error: No available node types can fulfill resource request defaultdict(<class 'float'>, {'CPU': 4.0, 'GPU': 4.0}). Add suitable node types to this cluster to resolve this issue.
+[33m(autoscaler +10m13s)[0m Error: No available node types can fulfill resource request defaultdict(<class 'float'>, {'CPU': 4.0, 'GPU': 4.0}). Add suitable node types to this cluster to resolve this issue.
+[33m(autoscaler +10m48s)[0m Error: No available node types can fulfill resource request defaultdict(<class 'float'>, {'CPU': 4.0, 'GPU': 4.0}). Add suitable node types to this cluster to resolve this issue.
+[33m(autoscaler +11m23s)[0m Error: No available node types can fulfill resource request defaultdict(<class 'float'>, {'CPU': 4.0, 'GPU': 4.0}). Add suitable node types to this cluster to resolve this issue.
+[33m(autoscaler +11m58s)[0m Error: No available node types can fulfill resource request defaultdict(<class 'float'>, {'CPU': 4.0, 'GPU': 4.0}). Add suitable node types to this cluster to resolve this issue.
+[33m(autoscaler +12m33s)[0m Error: No available node types can fulfill resource request defaultdict(<class 'float'>, {'CPU': 4.0, 'GPU': 4.0}). Add suitable node types to this cluster to resolve this issue.
+[33m(autoscaler +13m8s)[0m Error: No available node types can fulfill resource request defaultdict(<class 'float'>, {'CPU': 4.0, 'GPU': 4.0}). Add suitable node types to this cluster to resolve this issue.
+[33m(autoscaler +13m43s)[0m Error: No available node types can fulfill resource request defaultdict(<class 'float'>, {'CPU': 4.0, 'GPU': 4.0}). Add suitable node types to this cluster to resolve this issue.
+[33m(autoscaler +14m18s)[0m Error: No available node types can fulfill resource request defaultdict(<class 'float'>, {'CPU': 4.0, 'GPU': 4.0}). Add suitable node types to this cluster to resolve this issue.

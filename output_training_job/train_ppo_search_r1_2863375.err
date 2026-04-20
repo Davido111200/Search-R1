@@ -1,0 +1,115 @@
+Traceback (most recent call last):
+  File "/home/s223540177/.conda/envs/searchr1_new/bin/ray", line 6, in <module>
+    sys.exit(main())
+  File "/home/s223540177/.conda/envs/searchr1_new/lib/python3.10/site-packages/ray/scripts/scripts.py", line 2892, in main
+    return cli()
+  File "/home/s223540177/.conda/envs/searchr1_new/lib/python3.10/site-packages/click/core.py", line 1485, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/s223540177/.conda/envs/searchr1_new/lib/python3.10/site-packages/click/core.py", line 1406, in main
+    rv = self.invoke(ctx)
+  File "/home/s223540177/.conda/envs/searchr1_new/lib/python3.10/site-packages/click/core.py", line 1873, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/s223540177/.conda/envs/searchr1_new/lib/python3.10/site-packages/click/core.py", line 1269, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/s223540177/.conda/envs/searchr1_new/lib/python3.10/site-packages/click/core.py", line 824, in invoke
+    return callback(*args, **kwargs)
+  File "/home/s223540177/.conda/envs/searchr1_new/lib/python3.10/site-packages/ray/autoscaler/_private/cli_logger.py", line 823, in wrapper
+    return f(*args, **kwargs)
+  File "/home/s223540177/.conda/envs/searchr1_new/lib/python3.10/site-packages/ray/scripts/scripts.py", line 969, in start
+    node = ray._private.node.Node(
+  File "/home/s223540177/.conda/envs/searchr1_new/lib/python3.10/site-packages/ray/_private/node.py", line 403, in __init__
+    self.start_ray_processes()
+  File "/home/s223540177/.conda/envs/searchr1_new/lib/python3.10/site-packages/ray/_private/node.py", line 1429, in start_ray_processes
+    resource_and_label_spec = self.get_resource_and_label_spec()
+  File "/home/s223540177/.conda/envs/searchr1_new/lib/python3.10/site-packages/ray/_private/node.py", line 585, in get_resource_and_label_spec
+    self._resource_and_label_spec = ResourceAndLabelSpec(
+  File "/home/s223540177/.conda/envs/searchr1_new/lib/python3.10/site-packages/ray/_private/resource_and_label_spec.py", line 150, in resolve
+    self._resolve_accelerator_resources(accelerator_manager, num_accelerators)
+  File "/home/s223540177/.conda/envs/searchr1_new/lib/python3.10/site-packages/ray/_private/resource_and_label_spec.py", line 353, in _resolve_accelerator_resources
+    raise ValueError(
+ValueError: Attempting to start raylet with 2 GPU, but CUDA_VISIBLE_DEVICES contains ['0'].
+srun: error: l40s-f-02: task 0: Exited with exit code 1
+[2026-04-18 01:55:17,736 W 3031977 3031977] rpc_client.h:153: Failed to connect to GCS at address 10.72.191.172:6379 within 5 seconds.
+[2026-04-18 01:55:18,021 W 2409065 2409065] rpc_client.h:153: Failed to connect to GCS at address 10.72.191.172:6379 within 5 seconds.
+[2026-04-18 01:55:18,030 W 3643464 3643464] rpc_client.h:153: Failed to connect to GCS at address 10.72.191.172:6379 within 5 seconds.
+2026-04-18 01:55:31,411	INFO worker.py:1814 -- Connecting to existing Ray cluster at address: 10.72.191.172:6379...
+[2026-04-18 01:55:36,418 W 3292207 3292207] rpc_client.h:153: Failed to connect to GCS at address 10.72.191.172:6379 within 5 seconds.
+[2026-04-18 01:55:47,736 W 3031977 3031977] gcs_client.cc:205: Failed to get cluster ID from GCS server: TimedOut: Timed out while waiting for GCS to become available.
+[2026-04-18 01:55:48,025 W 2409065 2409065] gcs_client.cc:205: Failed to get cluster ID from GCS server: TimedOut: Timed out while waiting for GCS to become available.
+[2026-04-18 01:55:48,031 W 3643464 3643464] gcs_client.cc:205: Failed to get cluster ID from GCS server: TimedOut: Timed out while waiting for GCS to become available.
+[2026-04-18 01:55:53,742 W 3031977 3031977] rpc_client.h:153: Failed to connect to GCS at address 10.72.191.172:6379 within 5 seconds.
+[2026-04-18 01:55:54,032 W 2409065 2409065] rpc_client.h:153: Failed to connect to GCS at address 10.72.191.172:6379 within 5 seconds.
+[2026-04-18 01:55:54,037 W 3643464 3643464] rpc_client.h:153: Failed to connect to GCS at address 10.72.191.172:6379 within 5 seconds.
+[2026-04-18 01:56:06,419 W 3292207 3292207] gcs_client.cc:205: Failed to get cluster ID from GCS server: TimedOut: Timed out while waiting for GCS to become available.
+[2026-04-18 01:56:12,425 W 3292207 3292207] rpc_client.h:153: Failed to connect to GCS at address 10.72.191.172:6379 within 5 seconds.
+[2026-04-18 01:56:23,742 W 3031977 3031977] gcs_client.cc:205: Failed to get cluster ID from GCS server: TimedOut: Timed out while waiting for GCS to become available.
+[2026-04-18 01:56:24,034 W 2409065 2409065] gcs_client.cc:205: Failed to get cluster ID from GCS server: TimedOut: Timed out while waiting for GCS to become available.
+[2026-04-18 01:56:24,037 W 3643464 3643464] gcs_client.cc:205: Failed to get cluster ID from GCS server: TimedOut: Timed out while waiting for GCS to become available.
+[2026-04-18 01:56:29,749 W 3031977 3031977] rpc_client.h:153: Failed to connect to GCS at address 10.72.191.172:6379 within 5 seconds.
+[2026-04-18 01:56:30,043 W 2409065 2409065] rpc_client.h:153: Failed to connect to GCS at address 10.72.191.172:6379 within 5 seconds.
+[2026-04-18 01:56:30,048 W 3643464 3643464] rpc_client.h:153: Failed to connect to GCS at address 10.72.191.172:6379 within 5 seconds.
+[2026-04-18 01:56:42,426 W 3292207 3292207] gcs_client.cc:205: Failed to get cluster ID from GCS server: TimedOut: Timed out while waiting for GCS to become available.
+[2026-04-18 01:56:48,432 W 3292207 3292207] rpc_client.h:153: Failed to connect to GCS at address 10.72.191.172:6379 within 5 seconds.
+[2026-04-18 01:56:59,750 W 3031977 3031977] gcs_client.cc:205: Failed to get cluster ID from GCS server: TimedOut: Timed out while waiting for GCS to become available.
+[2026-04-18 01:57:00,046 W 2409065 2409065] gcs_client.cc:205: Failed to get cluster ID from GCS server: TimedOut: Timed out while waiting for GCS to become available.
+[2026-04-18 01:57:00,049 W 3643464 3643464] gcs_client.cc:205: Failed to get cluster ID from GCS server: TimedOut: Timed out while waiting for GCS to become available.
+[2026-04-18 01:57:05,755 W 3031977 3031977] rpc_client.h:153: Failed to connect to GCS at address 10.72.191.172:6379 within 5 seconds.
+[2026-04-18 01:57:06,051 W 2409065 2409065] rpc_client.h:153: Failed to connect to GCS at address 10.72.191.172:6379 within 5 seconds.
+[2026-04-18 01:57:06,054 W 3643464 3643464] rpc_client.h:153: Failed to connect to GCS at address 10.72.191.172:6379 within 5 seconds.
+[2026-04-18 01:57:18,432 W 3292207 3292207] gcs_client.cc:205: Failed to get cluster ID from GCS server: TimedOut: Timed out while waiting for GCS to become available.
+[2026-04-18 01:57:24,439 W 3292207 3292207] rpc_client.h:153: Failed to connect to GCS at address 10.72.191.172:6379 within 5 seconds.
+[2026-04-18 01:57:35,755 W 3031977 3031977] gcs_client.cc:205: Failed to get cluster ID from GCS server: TimedOut: Timed out while waiting for GCS to become available.
+[2026-04-18 01:57:36,052 W 2409065 2409065] gcs_client.cc:205: Failed to get cluster ID from GCS server: TimedOut: Timed out while waiting for GCS to become available.
+[2026-04-18 01:57:36,054 W 3643464 3643464] gcs_client.cc:205: Failed to get cluster ID from GCS server: TimedOut: Timed out while waiting for GCS to become available.
+[2026-04-18 01:57:41,765 W 3031977 3031977] rpc_client.h:153: Failed to connect to GCS at address 10.72.191.172:6379 within 5 seconds.
+[2026-04-18 01:57:42,062 W 2409065 2409065] rpc_client.h:153: Failed to connect to GCS at address 10.72.191.172:6379 within 5 seconds.
+[2026-04-18 01:57:42,064 W 3643464 3643464] rpc_client.h:153: Failed to connect to GCS at address 10.72.191.172:6379 within 5 seconds.
+[2026-04-18 01:57:54,439 W 3292207 3292207] gcs_client.cc:205: Failed to get cluster ID from GCS server: TimedOut: Timed out while waiting for GCS to become available.
+[2026-04-18 01:58:00,445 W 3292207 3292207] rpc_client.h:153: Failed to connect to GCS at address 10.72.191.172:6379 within 5 seconds.
+[2026-04-18 01:58:11,766 W 3031977 3031977] gcs_client.cc:205: Failed to get cluster ID from GCS server: TimedOut: Timed out while waiting for GCS to become available.
+[2026-04-18 01:58:12,064 W 3643464 3643464] gcs_client.cc:205: Failed to get cluster ID from GCS server: TimedOut: Timed out while waiting for GCS to become available.
+[2026-04-18 01:58:12,064 W 2409065 2409065] gcs_client.cc:205: Failed to get cluster ID from GCS server: TimedOut: Timed out while waiting for GCS to become available.
+[2026-04-18 01:58:17,770 W 3031977 3031977] rpc_client.h:153: Failed to connect to GCS at address 10.72.191.172:6379 within 5 seconds.
+[2026-04-18 01:58:18,069 W 3643464 3643464] rpc_client.h:153: Failed to connect to GCS at address 10.72.191.172:6379 within 5 seconds.
+[2026-04-18 01:58:18,070 W 2409065 2409065] rpc_client.h:153: Failed to connect to GCS at address 10.72.191.172:6379 within 5 seconds.
+[2026-04-18 01:58:30,446 W 3292207 3292207] gcs_client.cc:205: Failed to get cluster ID from GCS server: TimedOut: Timed out while waiting for GCS to become available.
+[2026-04-18 01:58:36,455 W 3292207 3292207] rpc_client.h:153: Failed to connect to GCS at address 10.72.191.172:6379 within 5 seconds.
+[2026-04-18 01:58:47,770 W 3031977 3031977] gcs_client.cc:205: Failed to get cluster ID from GCS server: TimedOut: Timed out while waiting for GCS to become available.
+[2026-04-18 01:58:48,070 W 3643464 3643464] gcs_client.cc:205: Failed to get cluster ID from GCS server: TimedOut: Timed out while waiting for GCS to become available.
+[2026-04-18 01:58:48,071 W 2409065 2409065] gcs_client.cc:205: Failed to get cluster ID from GCS server: TimedOut: Timed out while waiting for GCS to become available.
+[2026-04-18 01:58:53,777 W 3031977 3031977] rpc_client.h:153: Failed to connect to GCS at address 10.72.191.172:6379 within 5 seconds.
+[2026-04-18 01:58:54,080 W 3643464 3643464] rpc_client.h:153: Failed to connect to GCS at address 10.72.191.172:6379 within 5 seconds.
+[2026-04-18 01:58:54,082 W 2409065 2409065] rpc_client.h:153: Failed to connect to GCS at address 10.72.191.172:6379 within 5 seconds.
+[2026-04-18 01:59:06,455 W 3292207 3292207] gcs_client.cc:205: Failed to get cluster ID from GCS server: TimedOut: Timed out while waiting for GCS to become available.
+[2026-04-18 01:59:12,460 W 3292207 3292207] rpc_client.h:153: Failed to connect to GCS at address 10.72.191.172:6379 within 5 seconds.
+[2026-04-18 01:59:23,778 W 3031977 3031977] gcs_client.cc:205: Failed to get cluster ID from GCS server: TimedOut: Timed out while waiting for GCS to become available.
+[2026-04-18 01:59:24,080 W 3643464 3643464] gcs_client.cc:205: Failed to get cluster ID from GCS server: TimedOut: Timed out while waiting for GCS to become available.
+[2026-04-18 01:59:24,084 W 2409065 2409065] gcs_client.cc:205: Failed to get cluster ID from GCS server: TimedOut: Timed out while waiting for GCS to become available.
+[2026-04-18 01:59:29,783 W 3031977 3031977] rpc_client.h:153: Failed to connect to GCS at address 10.72.191.172:6379 within 5 seconds.
+[2026-04-18 01:59:30,085 W 3643464 3643464] rpc_client.h:153: Failed to connect to GCS at address 10.72.191.172:6379 within 5 seconds.
+[2026-04-18 01:59:30,089 W 2409065 2409065] rpc_client.h:153: Failed to connect to GCS at address 10.72.191.172:6379 within 5 seconds.
+[2026-04-18 01:59:42,461 W 3292207 3292207] gcs_client.cc:205: Failed to get cluster ID from GCS server: TimedOut: Timed out while waiting for GCS to become available.
+[2026-04-18 01:59:48,467 W 3292207 3292207] rpc_client.h:153: Failed to connect to GCS at address 10.72.191.172:6379 within 5 seconds.
+[2026-04-18 01:59:59,783 W 3031977 3031977] gcs_client.cc:205: Failed to get cluster ID from GCS server: TimedOut: Timed out while waiting for GCS to become available.
+[2026-04-18 02:00:00,086 W 3643464 3643464] gcs_client.cc:205: Failed to get cluster ID from GCS server: TimedOut: Timed out while waiting for GCS to become available.
+[2026-04-18 02:00:00,091 W 2409065 2409065] gcs_client.cc:205: Failed to get cluster ID from GCS server: TimedOut: Timed out while waiting for GCS to become available.
+[2026-04-18 02:00:05,792 W 3031977 3031977] rpc_client.h:153: Failed to connect to GCS at address 10.72.191.172:6379 within 5 seconds.
+[2026-04-18 02:00:06,099 W 3643464 3643464] rpc_client.h:153: Failed to connect to GCS at address 10.72.191.172:6379 within 5 seconds.
+[2026-04-18 02:00:06,101 W 2409065 2409065] rpc_client.h:153: Failed to connect to GCS at address 10.72.191.172:6379 within 5 seconds.
+[2026-04-18 02:00:18,468 W 3292207 3292207] gcs_client.cc:205: Failed to get cluster ID from GCS server: TimedOut: Timed out while waiting for GCS to become available.
+[2026-04-18 02:00:24,474 W 3292207 3292207] rpc_client.h:153: Failed to connect to GCS at address 10.72.191.172:6379 within 5 seconds.
+[2026-04-18 02:00:35,793 W 3031977 3031977] gcs_client.cc:205: Failed to get cluster ID from GCS server: TimedOut: Timed out while waiting for GCS to become available.
+[2026-04-18 02:00:36,100 W 3643464 3643464] gcs_client.cc:205: Failed to get cluster ID from GCS server: TimedOut: Timed out while waiting for GCS to become available.
+[2026-04-18 02:00:36,102 W 2409065 2409065] gcs_client.cc:205: Failed to get cluster ID from GCS server: TimedOut: Timed out while waiting for GCS to become available.
+[2026-04-18 02:00:41,797 W 3031977 3031977] rpc_client.h:153: Failed to connect to GCS at address 10.72.191.172:6379 within 5 seconds.
+[2026-04-18 02:00:42,107 W 3643464 3643464] rpc_client.h:153: Failed to connect to GCS at address 10.72.191.172:6379 within 5 seconds.
+[2026-04-18 02:00:42,107 W 2409065 2409065] rpc_client.h:153: Failed to connect to GCS at address 10.72.191.172:6379 within 5 seconds.
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** JOB 2863375 ON l40s-f-02 CANCELLED AT 2026-04-18T02:00:53 ***
+slurmstepd: error: *** STEP 2863375.4 ON l40s-f-03 CANCELLED AT 2026-04-18T02:00:53 ***
+slurmstepd: error: *** STEP 2863375.3 ON rtxp6000l-f-01 CANCELLED AT 2026-04-18T02:00:53 ***
+slurmstepd: error: *** STEP 2863375.5 ON v100-f-11 CANCELLED AT 2026-04-18T02:00:53 ***
+srun: error: Slurm job 2863375 has expired
+srun: Check SLURM_JOB_ID environment variable. Expired or invalid job 2863375

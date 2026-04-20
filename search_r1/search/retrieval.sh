@@ -1,13 +1,13 @@
 
 DATA_NAME=nq
 
-DATASET_PATH="/home/peterjin/mnt/data/$DATA_NAME"
+DATASET_PATH="/home/s223540177/Search-R1/data/$DATA_NAME"
 
 SPLIT='test'
 TOPK=3
 
-INDEX_PATH=/home/peterjin/mnt/index/wiki-18
-CORPUS_PATH=/home/peterjin/mnt/data/retrieval-corpus/wiki-18.jsonl
+INDEX_PATH=/scratch/s223540177/Search-R1/index/wiki-18
+CORPUS_PATH=/scratch/s223540177/Search-R1/wiki-18.jsonl
 SAVE_NAME=e5_${TOPK}_wiki18.json
 
 # INDEX_PATH=/home/peterjin/rm_retrieval_corpus/index/wiki-21

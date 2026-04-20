@@ -1,0 +1,24 @@
+2026-04-17 23:55:40,813	INFO worker.py:1832 -- Connecting to existing Ray cluster at address: 10.72.191.173:6379...
+2026-04-17 23:55:40,823	INFO worker.py:2012 -- Connected to Ray cluster.
+/home/s223540177/.conda/envs/searchr1/lib/python3.9/site-packages/ray/_private/worker.py:2051: FutureWarning: Tip: In future versions of Ray, Ray will no longer override accelerator visible devices env var if num_gpus=0 or num_gpus=None (default). To enable this behavior and turn off this error message, set RAY_ACCEL_ENV_VAR_OVERRIDE_ON_ZERO=0
+  warnings.warn(
+srun: Job 2863283 step creation temporarily disabled, retrying (Requested nodes are busy)
+srun: Job 2863283 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+srun: error: Unable to create step for job 2863283: Job/step already completing or completed
+slurmstepd: error: *** JOB 2863283 ON l40s-f-03 CANCELLED AT 2026-04-18T00:02:19 ***
+slurmstepd: error: *** STEP 2863283.9 ON v100-f-03 CANCELLED AT 2026-04-18T00:02:19 ***
+slurmstepd: error: *** STEP 2863283.5 ON v100-f-14 CANCELLED AT 2026-04-18T00:02:19 ***
+slurmstepd: error: *** STEP 2863283.6 ON v100-f-16 CANCELLED AT 2026-04-18T00:02:19 ***
+slurmstepd: error: *** STEP 2863283.3 ON v100-f-02 CANCELLED AT 2026-04-18T00:02:19 ***
+slurmstepd: error: *** STEP 2863283.7 ON v100l-f-01 CANCELLED AT 2026-04-18T00:02:19 ***
+slurmstepd: error: *** STEP 2863283.4 ON v100-f-07 CANCELLED AT 2026-04-18T00:02:19 ***
+slurmstepd: error: *** STEP 2863283.2 ON l40s-f-03 CANCELLED AT 2026-04-18T00:02:19 ***
+slurmstepd: error: *** STEP 2863283.8 ON v100-f-15 CANCELLED AT 2026-04-18T00:02:19 ***

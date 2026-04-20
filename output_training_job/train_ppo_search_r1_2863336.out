@@ -1,0 +1,8 @@
+Slurm nodes: rtxp6000l-f-01 v100-f-02 v100-f-03 v100-f-08
+Head node: rtxp6000l-f-01
+GPUs per node: 1
+CPUs per node: 8
+CUDA_VISIBLE_DEVICES=0
+GPU 0: NVIDIA RTX PRO 6000 Blackwell Server Edition (UUID: GPU-7b3ba680-c453-6596-096e-63d3ebed6b68)
+Stopping Ray cluster
+Stopping Ray cluster

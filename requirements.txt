@@ -2,7 +2,7 @@ accelerate
 codetiming
 datasets
 dill
-flash-attn
+# flash-attn is optional and is not used by the V100/SDPA launcher path.
 hydra-core
 numpy
 pandas

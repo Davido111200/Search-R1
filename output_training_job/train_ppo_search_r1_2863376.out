@@ -1,0 +1,296 @@
+Using verl from: /home/s223540177/Search-R1/.ray_verl_import_2863376/verl/__init__.py
+Using torch: 2.4.0+cu121
+Slurm nodes: v100-f-07 v100-f-13 v100-f-14 v100l-f-01
+Head node: v100-f-07
+GPUs per node: 1
+CPUs per node: 8
+CUDA_VISIBLE_DEVICES=0
+GPU 0: Tesla V100-SXM2-32GB (UUID: GPU-cf653dc5-e70d-637d-3092-e64b1e9925e7)
+Stopping Ray cluster
+Starting Ray head at 10.72.191.67:6379
+Ray head CUDA_VISIBLE_DEVICES=0 RAY_NODE_GPUS=1
+Starting Ray worker on v100-f-13
+Starting Ray worker on v100-f-14
+Starting Ray worker on v100l-f-01
+Ray worker CUDA_VISIBLE_DEVICES=0 RAY_NODE_GPUS=1
+Ray worker CUDA_VISIBLE_DEVICES=0 RAY_NODE_GPUS=1
+Ray worker CUDA_VISIBLE_DEVICES=0 RAY_NODE_GPUS=1
+2026-04-18 02:01:38,307	INFO usage_lib.py:474 -- Usage stats collection is enabled by default without user confirmation because this terminal is detected to be non-interactive. To disable this, add `--disable-usage-stats` to the command that starts the cluster, or run the following command: `ray disable-usage-stats` before starting the cluster. See https://docs.ray.io/en/master/cluster/usage-stats.html for more details.
+2026-04-18 02:01:38,326	INFO scripts.py:940 -- [37mLocal node IP[39m: [1m10.72.191.67[22m
+2026-04-18 02:01:47,848	SUCC scripts.py:979 -- [32m--------------------[39m
+2026-04-18 02:01:47,849	SUCC scripts.py:980 -- [32mRay runtime started.[39m
+2026-04-18 02:01:47,849	SUCC scripts.py:981 -- [32m--------------------[39m
+2026-04-18 02:01:47,849	INFO scripts.py:983 -- [36mNext steps[39m
+2026-04-18 02:01:47,849	INFO scripts.py:986 -- To add another node to this Ray cluster, run
+2026-04-18 02:01:47,849	INFO scripts.py:989 -- [1m  ray start --address='10.72.191.67:6379'[22m
+2026-04-18 02:01:47,849	INFO scripts.py:1000 -- To connect to this Ray cluster:
+2026-04-18 02:01:47,850	INFO scripts.py:1002 -- [35mimport[39m[26m ray
+2026-04-18 02:01:47,850	INFO scripts.py:1003 -- ray[35m.[39m[26minit(_node_ip_address[35m=[39m[26m[33m'10.72.191.67'[39m[26m)
+2026-04-18 02:01:47,850	INFO scripts.py:1017 -- To submit a Ray job using the Ray Jobs CLI:
+2026-04-18 02:01:47,850	INFO scripts.py:1018 -- [1m  RAY_API_SERVER_ADDRESS='http://10.72.191.67:8265' ray job submit --working-dir . -- python my_script.py[22m
+2026-04-18 02:01:47,850	INFO scripts.py:1027 -- See https://docs.ray.io/en/latest/cluster/running-applications/job-submission/index.html 
+2026-04-18 02:01:47,850	INFO scripts.py:1031 -- for more information on submitting Ray jobs to the Ray cluster.
+2026-04-18 02:01:47,850	INFO scripts.py:1036 -- To terminate the Ray runtime, run
+2026-04-18 02:01:47,850	INFO scripts.py:1037 -- [1m  ray stop[22m
+2026-04-18 02:01:47,850	INFO scripts.py:1040 -- To view the status of the cluster, use
+2026-04-18 02:01:47,850	INFO scripts.py:1041 --   [1mray status[22m[26m
+2026-04-18 02:01:47,850	INFO scripts.py:1045 -- To monitor and debug Ray, view the dashboard at 
+2026-04-18 02:01:47,851	INFO scripts.py:1046 --   [1m10.72.191.67:8265[22m[26m
+2026-04-18 02:01:47,851	INFO scripts.py:1053 -- [4mIf connection to the dashboard fails, check your firewall settings and network configuration.[24m
+2026-04-18 02:01:47,852	INFO scripts.py:1159 -- [36m[1m--block[22m[39m
+2026-04-18 02:01:47,852	INFO scripts.py:1160 -- This command will now block forever until terminated by a signal.
+2026-04-18 02:01:47,852	INFO scripts.py:1163 -- Running subprocesses are monitored and a message will be printed if any of them terminate unexpectedly. Subprocesses exit with SIGTERM will be treated as graceful, thus NOT reported.
+2026-04-18 02:01:47,852	INFO scripts.py:1168 -- Process exit logs will be saved to: [1m/tmp/ray/session_2026-04-18_02-01-38_327247_2763221/logs/ray_process_exit.log[22m[26m
+2026-04-18 02:01:45,594	INFO scripts.py:1128 -- [37mLocal node IP[39m: [1m10.72.191.73[22m
+2026-04-18 02:01:49,890	SUCC scripts.py:1144 -- [32m--------------------[39m
+2026-04-18 02:01:49,890	SUCC scripts.py:1145 -- [32mRay runtime started.[39m
+2026-04-18 02:01:49,890	SUCC scripts.py:1146 -- [32m--------------------[39m
+2026-04-18 02:01:49,890	INFO scripts.py:1148 -- To terminate the Ray runtime, run
+2026-04-18 02:01:49,890	INFO scripts.py:1149 -- [1m  ray stop[22m
+2026-04-18 02:01:49,891	INFO scripts.py:1159 -- [36m[1m--block[22m[39m
+2026-04-18 02:01:49,891	INFO scripts.py:1160 -- This command will now block forever until terminated by a signal.
+2026-04-18 02:01:49,891	INFO scripts.py:1163 -- Running subprocesses are monitored and a message will be printed if any of them terminate unexpectedly. Subprocesses exit with SIGTERM will be treated as graceful, thus NOT reported.
+2026-04-18 02:01:49,891	INFO scripts.py:1168 -- Process exit logs will be saved to: [1m/tmp/ray/session_2026-04-18_02-01-38_327247_2763221/logs/ray_process_exit.log[22m[26m
+2026-04-18 02:01:46,378	INFO scripts.py:1128 -- [37mLocal node IP[39m: [1m10.72.191.74[22m
+2026-04-18 02:01:50,718	SUCC scripts.py:1144 -- [32m--------------------[39m
+2026-04-18 02:01:50,719	SUCC scripts.py:1145 -- [32mRay runtime started.[39m
+2026-04-18 02:01:50,719	SUCC scripts.py:1146 -- [32m--------------------[39m
+2026-04-18 02:01:50,719	INFO scripts.py:1148 -- To terminate the Ray runtime, run
+2026-04-18 02:01:50,719	INFO scripts.py:1149 -- [1m  ray stop[22m
+2026-04-18 02:01:50,720	INFO scripts.py:1159 -- [36m[1m--block[22m[39m
+2026-04-18 02:01:50,720	INFO scripts.py:1160 -- This command will now block forever until terminated by a signal.
+2026-04-18 02:01:50,720	INFO scripts.py:1163 -- Running subprocesses are monitored and a message will be printed if any of them terminate unexpectedly. Subprocesses exit with SIGTERM will be treated as graceful, thus NOT reported.
+2026-04-18 02:01:50,720	INFO scripts.py:1168 -- Process exit logs will be saved to: [1m/tmp/ray/session_2026-04-18_02-01-38_327247_2763221/logs/ray_process_exit.log[22m[26m
+2026-04-18 02:01:46,935	INFO scripts.py:1128 -- [37mLocal node IP[39m: [1m10.72.191.86[22m
+2026-04-18 02:01:52,531	SUCC scripts.py:1144 -- [32m--------------------[39m
+2026-04-18 02:01:52,531	SUCC scripts.py:1145 -- [32mRay runtime started.[39m
+2026-04-18 02:01:52,531	SUCC scripts.py:1146 -- [32m--------------------[39m
+2026-04-18 02:01:52,531	INFO scripts.py:1148 -- To terminate the Ray runtime, run
+2026-04-18 02:01:52,531	INFO scripts.py:1149 -- [1m  ray stop[22m
+2026-04-18 02:01:52,531	INFO scripts.py:1159 -- [36m[1m--block[22m[39m
+2026-04-18 02:01:52,532	INFO scripts.py:1160 -- This command will now block forever until terminated by a signal.
+2026-04-18 02:01:52,532	INFO scripts.py:1163 -- Running subprocesses are monitored and a message will be printed if any of them terminate unexpectedly. Subprocesses exit with SIGTERM will be treated as graceful, thus NOT reported.
+2026-04-18 02:01:52,532	INFO scripts.py:1168 -- Process exit logs will be saved to: [1m/tmp/ray/session_2026-04-18_02-01-38_327247_2763221/logs/ray_process_exit.log[22m[26m
+Ray cluster resources: {'node:__internal_head__': 1.0, 'memory': 1172178876827.0, 'GPU': 4.0, 'object_store_memory': 502362375781.0, 'CPU': 32.0, 'accelerator_type:V100': 4.0, 'node:10.72.191.67': 1.0, 'node:10.72.191.74': 1.0, 'node:10.72.191.73': 1.0, 'node:10.72.191.86': 1.0}
+Ray available resources: {'node:__internal_head__': 1.0, 'memory': 1172178876827.0, 'GPU': 4.0, 'object_store_memory': 502362375781.0, 'CPU': 32.0, 'accelerator_type:V100': 4.0, 'node:10.72.191.67': 1.0, 'node:10.72.191.74': 1.0, 'node:10.72.191.73': 1.0, 'node:10.72.191.86': 1.0}
+2026-04-18 02:02:28,331	INFO worker.py:1814 -- Connecting to existing Ray cluster at address: 10.72.191.67:6379...
+2026-04-18 02:02:28,379	INFO worker.py:2003 -- Connected to Ray cluster. View the dashboard at [1m[32m10.72.191.67:8265 [39m[22m
+/home/s223540177/.conda/envs/searchr1_new/lib/python3.10/site-packages/ray/_private/worker.py:2051: FutureWarning: Tip: In future versions of Ray, Ray will no longer override accelerator visible devices env var if num_gpus=0 or num_gpus=None (default). To enable this behavior and turn off this error message, set RAY_ACCEL_ENV_VAR_OVERRIDE_ON_ZERO=0
+  warnings.warn(
+[36m(main_task pid=2764939)[0m {'actor_rollout_ref': {'actor': {'autocast_dtype': 'fp16',
+[36m(main_task pid=2764939)[0m                                  'clip_ratio': 0.2,
+[36m(main_task pid=2764939)[0m                                  'entropy_coeff': 0.001,
+[36m(main_task pid=2764939)[0m                                  'fsdp_config': {'fsdp_size': -1,
+[36m(main_task pid=2764939)[0m                                                  'grad_offload': True,
+[36m(main_task pid=2764939)[0m                                                  'mixed_precision': {'buffer_dtype': 'fp32',
+[36m(main_task pid=2764939)[0m                                                                      'param_dtype': 'fp16',
+[36m(main_task pid=2764939)[0m                                                                      'reduce_dtype': 'fp32'},
+[36m(main_task pid=2764939)[0m                                                  'optimizer_offload': True,
+[36m(main_task pid=2764939)[0m                                                  'param_offload': True,
+[36m(main_task pid=2764939)[0m                                                  'wrap_policy': {'min_num_params': 0}},
+[36m(main_task pid=2764939)[0m                                  'grad_clip': 1.0,
+[36m(main_task pid=2764939)[0m                                  'kl_loss_coef': 0.001,
+[36m(main_task pid=2764939)[0m                                  'kl_loss_type': 'low_var_kl',
+[36m(main_task pid=2764939)[0m                                  'optim': {'lr': 1e-06,
+[36m(main_task pid=2764939)[0m                                            'lr_warmup_steps_ratio': 0.285,
+[36m(main_task pid=2764939)[0m                                            'min_lr_ratio': None,
+[36m(main_task pid=2764939)[0m                                            'total_training_steps': -1,
+[36m(main_task pid=2764939)[0m                                            'warmup_style': 'constant'},
+[36m(main_task pid=2764939)[0m                                  'ppo_epochs': 1,
+[36m(main_task pid=2764939)[0m                                  'ppo_max_token_len_per_gpu': 16384,
+[36m(main_task pid=2764939)[0m                                  'ppo_micro_batch_size': 64,
+[36m(main_task pid=2764939)[0m                                  'ppo_mini_batch_size': 256,
+[36m(main_task pid=2764939)[0m                                  'shuffle': False,
+[36m(main_task pid=2764939)[0m                                  'state_masking': True,
+[36m(main_task pid=2764939)[0m                                  'strategy': 'fsdp',
+[36m(main_task pid=2764939)[0m                                  'ulysses_sequence_parallel_size': 1,
+[36m(main_task pid=2764939)[0m                                  'use_dynamic_bsz': False,
+[36m(main_task pid=2764939)[0m                                  'use_kl_loss': False},
+[36m(main_task pid=2764939)[0m                        'hybrid_engine': True,
+[36m(main_task pid=2764939)[0m                        'model': {'attn_implementation': 'sdpa',
+[36m(main_task pid=2764939)[0m                                  'enable_gradient_checkpointing': True,
+[36m(main_task pid=2764939)[0m                                  'external_lib': None,
+[36m(main_task pid=2764939)[0m                                  'override_config': {},
+[36m(main_task pid=2764939)[0m                                  'path': 'Qwen/Qwen3-1.7B-Base',
+[36m(main_task pid=2764939)[0m                                  'use_remove_padding': False},
+[36m(main_task pid=2764939)[0m                        'ref': {'fsdp_config': {'fsdp_size': -1,
+[36m(main_task pid=2764939)[0m                                                'param_offload': True,
+[36m(main_task pid=2764939)[0m                                                'wrap_policy': {'min_num_params': 0}},
+[36m(main_task pid=2764939)[0m                                'log_prob_max_token_len_per_gpu': 16384,
+[36m(main_task pid=2764939)[0m                                'log_prob_micro_batch_size': 128,
+[36m(main_task pid=2764939)[0m                                'log_prob_use_dynamic_bsz': False,
+[36m(main_task pid=2764939)[0m                                'ulysses_sequence_parallel_size': 1},
+[36m(main_task pid=2764939)[0m                        'rollout': {'do_sample': True,
+[36m(main_task pid=2764939)[0m                                    'dtype': 'half',
+[36m(main_task pid=2764939)[0m                                    'enforce_eager': True,
+[36m(main_task pid=2764939)[0m                                    'free_cache_engine': True,
+[36m(main_task pid=2764939)[0m                                    'gpu_memory_utilization': 0.6,
+[36m(main_task pid=2764939)[0m                                    'ignore_eos': False,
+[36m(main_task pid=2764939)[0m                                    'load_format': 'dummy_dtensor',
+[36m(main_task pid=2764939)[0m                                    'log_prob_max_token_len_per_gpu': 16384,
+[36m(main_task pid=2764939)[0m                                    'log_prob_micro_batch_size': 128,
+[36m(main_task pid=2764939)[0m                                    'log_prob_use_dynamic_bsz': False,
+[36m(main_task pid=2764939)[0m                                    'max_num_batched_tokens': 8192,
+[36m(main_task pid=2764939)[0m                                    'max_num_seqs': 1024,
+[36m(main_task pid=2764939)[0m                                    'n': 1,
+[36m(main_task pid=2764939)[0m                                    'n_agent': 1,
+[36m(main_task pid=2764939)[0m                                    'name': 'vllm',
+[36m(main_task pid=2764939)[0m                                    'prompt_length': 4096,
+[36m(main_task pid=2764939)[0m                                    'response_length': 500,
+[36m(main_task pid=2764939)[0m                                    'temperature': 1,
+[36m(main_task pid=2764939)[0m                                    'tensor_model_parallel_size': 1,
+[36m(main_task pid=2764939)[0m                                    'top_k': -1,
+[36m(main_task pid=2764939)[0m                                    'top_p': 0.95}},
+[36m(main_task pid=2764939)[0m  'algorithm': {'adv_estimator': 'gae',
+[36m(main_task pid=2764939)[0m                'gamma': 1.0,
+[36m(main_task pid=2764939)[0m                'kl_ctrl': {'kl_coef': 0.001, 'type': 'fixed'},
+[36m(main_task pid=2764939)[0m                'kl_penalty': 'kl',
+[36m(main_task pid=2764939)[0m                'lam': 1.0,
+[36m(main_task pid=2764939)[0m                'no_think_rl': False,
+[36m(main_task pid=2764939)[0m                'state_masking': {'end_state_marker': '</information>',
+[36m(main_task pid=2764939)[0m                                  'start_state_marker': '<information>'}},
+[36m(main_task pid=2764939)[0m  'critic': {'autocast_dtype': 'fp16',
+[36m(main_task pid=2764939)[0m             'cliprange_value': 0.5,
+[36m(main_task pid=2764939)[0m             'forward_max_token_len_per_gpu': 32768,
+[36m(main_task pid=2764939)[0m             'forward_micro_batch_size': 8,
+[36m(main_task pid=2764939)[0m             'grad_clip': 1.0,
+[36m(main_task pid=2764939)[0m             'model': {'attn_implementation': 'sdpa',
+[36m(main_task pid=2764939)[0m                       'enable_gradient_checkpointing': True,
+[36m(main_task pid=2764939)[0m                       'external_lib': None,
+[36m(main_task pid=2764939)[0m                       'fsdp_config': {'fsdp_size': -1,
+[36m(main_task pid=2764939)[0m                                       'grad_offload': True,
+[36m(main_task pid=2764939)[0m                                       'mixed_precision': {'buffer_dtype': 'fp32',
+[36m(main_task pid=2764939)[0m                                                           'param_dtype': 'fp16',
+[36m(main_task pid=2764939)[0m                                                           'reduce_dtype': 'fp32'},
+[36m(main_task pid=2764939)[0m                                       'optimizer_offload': True,
+[36m(main_task pid=2764939)[0m                                       'param_offload': True,
+[36m(main_task pid=2764939)[0m                                       'wrap_policy': {'min_num_params': 0}},
+[36m(main_task pid=2764939)[0m                       'override_config': {},
+[36m(main_task pid=2764939)[0m                       'path': 'Qwen/Qwen3-1.7B-Base',
+[36m(main_task pid=2764939)[0m                       'tokenizer_path': 'Qwen/Qwen3-1.7B-Base',
+[36m(main_task pid=2764939)[0m                       'use_remove_padding': False},
+[36m(main_task pid=2764939)[0m             'optim': {'lr': 1e-05,
+[36m(main_task pid=2764939)[0m                       'lr_warmup_steps_ratio': 0.015,
+[36m(main_task pid=2764939)[0m                       'min_lr_ratio': None,
+[36m(main_task pid=2764939)[0m                       'total_training_steps': -1,
+[36m(main_task pid=2764939)[0m                       'warmup_style': 'constant'},
+[36m(main_task pid=2764939)[0m             'ppo_epochs': 1,
+[36m(main_task pid=2764939)[0m             'ppo_max_token_len_per_gpu': 32768,
+[36m(main_task pid=2764939)[0m             'ppo_micro_batch_size': 8,
+[36m(main_task pid=2764939)[0m             'ppo_mini_batch_size': 256,
+[36m(main_task pid=2764939)[0m             'shuffle': False,
+[36m(main_task pid=2764939)[0m             'strategy': 'fsdp',
+[36m(main_task pid=2764939)[0m             'ulysses_sequence_parallel_size': 1,
+[36m(main_task pid=2764939)[0m             'use_dynamic_bsz': False},
+[36m(main_task pid=2764939)[0m  'data': {'max_obs_length': 500,
+[36m(main_task pid=2764939)[0m           'max_prompt_length': 4096,
+[36m(main_task pid=2764939)[0m           'max_response_length': 500,
+[36m(main_task pid=2764939)[0m           'max_start_length': 2048,
+[36m(main_task pid=2764939)[0m           'prompt_key': 'prompt',
+[36m(main_task pid=2764939)[0m           'return_raw_chat': False,
+[36m(main_task pid=2764939)[0m           'return_raw_input_ids': False,
+[36m(main_task pid=2764939)[0m           'shuffle_train_dataloader': True,
+[36m(main_task pid=2764939)[0m           'tokenizer': None,
+[36m(main_task pid=2764939)[0m           'train_batch_size': 512,
+[36m(main_task pid=2764939)[0m           'train_data_num': None,
+[36m(main_task pid=2764939)[0m           'train_files': 'data/nq_search/train.parquet',
+[36m(main_task pid=2764939)[0m           'val_batch_size': 256,
+[36m(main_task pid=2764939)[0m           'val_data_num': None,
+[36m(main_task pid=2764939)[0m           'val_files': 'data/nq_search/test.parquet'},
+[36m(main_task pid=2764939)[0m  'do_search': True,
+[36m(main_task pid=2764939)[0m  'max_turns': 2,
+[36m(main_task pid=2764939)[0m  'retriever': {'topk': 3, 'url': 'http://127.0.0.1:8000/retrieve'},
+[36m(main_task pid=2764939)[0m  'reward_model': {'enable': False,
+[36m(main_task pid=2764939)[0m                   'final_format_score': 0,
+[36m(main_task pid=2764939)[0m                   'forward_max_token_len_per_gpu': 32768,
+[36m(main_task pid=2764939)[0m                   'max_length': None,
+[36m(main_task pid=2764939)[0m                   'micro_batch_size': 64,
+[36m(main_task pid=2764939)[0m                   'model': {'external_lib': None,
+[36m(main_task pid=2764939)[0m                             'fsdp_config': {'min_num_params': 0,
+[36m(main_task pid=2764939)[0m                                             'param_offload': False},
+[36m(main_task pid=2764939)[0m                             'input_tokenizer': 'Qwen/Qwen3-1.7B-Base',
+[36m(main_task pid=2764939)[0m                             'path': '~/models/FsfairX-LLaMA3-RM-v0.1',
+[36m(main_task pid=2764939)[0m                             'use_remove_padding': False},
+[36m(main_task pid=2764939)[0m                   'retrieval_score': 0,
+[36m(main_task pid=2764939)[0m                   'strategy': 'fsdp',
+[36m(main_task pid=2764939)[0m                   'structure_format_score': 0,
+[36m(main_task pid=2764939)[0m                   'ulysses_sequence_parallel_size': 1,
+[36m(main_task pid=2764939)[0m                   'use_dynamic_bsz': False},
+[36m(main_task pid=2764939)[0m  'trainer': {'critic_warmup': 0,
+[36m(main_task pid=2764939)[0m              'default_hdfs_dir': None,
+[36m(main_task pid=2764939)[0m              'default_local_dir': 'verl_checkpoints/nq-search-r1-ppo-qwen3-1.7b-em',
+[36m(main_task pid=2764939)[0m              'experiment_name': 'nq-search-r1-ppo-qwen3-1.7b-em',
+[36m(main_task pid=2764939)[0m              'logger': ['wandb'],
+[36m(main_task pid=2764939)[0m              'n_gpus_per_node': 1,
+[36m(main_task pid=2764939)[0m              'nnodes': 4,
+[36m(main_task pid=2764939)[0m              'project_name': 'Search-R1',
+[36m(main_task pid=2764939)[0m              'save_freq': 100,
+[36m(main_task pid=2764939)[0m              'test_freq': 50,
+[36m(main_task pid=2764939)[0m              'total_epochs': 15,
+[36m(main_task pid=2764939)[0m              'total_training_steps': 1005,
+[36m(main_task pid=2764939)[0m              'val_before_train': True,
+[36m(main_task pid=2764939)[0m              'val_only': False}}
+[36m(main_task pid=2764939)[0m /home/s223540177/.conda/envs/searchr1_new/lib/python3.10/site-packages/vllm/connections.py:8: RuntimeWarning: Failed to read commit hash:
+[36m(main_task pid=2764939)[0m No module named 'vllm._version'
+[36m(main_task pid=2764939)[0m   from vllm.version import __version__ as VLLM_VERSION
+[36m(main_task pid=2764939)[0m original dataset len: 79168
+[36m(main_task pid=2764939)[0m filter dataset len: 79168
+[36m(main_task pid=2764939)[0m filtered training dataset size: 79168
+[36m(main_task pid=2764939)[0m original dataset len: 3610
+[36m(main_task pid=2764939)[0m filter dataset len: 3610
+[36m(main_task pid=2764939)[0m filtered validation dataset size: 3610
+[36m(main_task pid=2764939)[0m Size of train dataloader: 154
+[36m(main_task pid=2764939)[0m Size of val dataloader: 14
+[36m(main_task pid=2764939)[0m Total training steps: 1005
+[36m(main_task pid=2764939)[0m wandb: [wandb.login()] Loaded credentials for https://api.wandb.ai from /home/s223540177/.netrc.
+[36m(main_task pid=2764939)[0m wandb: Currently logged in as: daidv to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+[36m(main_task pid=2764939)[0m wandb: setting up run 4f45tpja
+[36m(main_task pid=2764939)[0m wandb: Tracking run with wandb version 0.26.0
+[36m(main_task pid=2764939)[0m wandb: Run data is saved locally in /home/s223540177/Search-R1/wandb/run-20260418_020305-4f45tpja
+[36m(main_task pid=2764939)[0m wandb: Run `wandb offline` to turn off syncing.
+[36m(main_task pid=2764939)[0m wandb: Syncing run nq-search-r1-ppo-qwen3-1.7b-em
+[36m(main_task pid=2764939)[0m wandb: ⭐️ View project at https://wandb.ai/daidv/Search-R1
+[36m(main_task pid=2764939)[0m wandb: 🚀 View run at https://wandb.ai/daidv/Search-R1/runs/4f45tpja
+[36m(main_task pid=2764939)[0m wandb: Detected [openai] in use.
+[36m(main_task pid=2764939)[0m wandb: Use W&B Weave for improved LLM call tracing. Install Weave with `pip install weave` then add `import weave` to the top of your script.
+[36m(main_task pid=2764939)[0m wandb: For more information, check out the docs at: https://weave-docs.wandb.ai
+[36m(pid=894436, ip=10.72.191.74)[0m /home/s223540177/.conda/envs/searchr1_new/lib/python3.10/site-packages/vllm/connections.py:8: RuntimeWarning: Failed to read commit hash:
+[36m(pid=894436, ip=10.72.191.74)[0m No module named 'vllm._version'
+[36m(pid=894436, ip=10.72.191.74)[0m   from vllm.version import __version__ as VLLM_VERSION
+[36m(pid=2765360)[0m /home/s223540177/.conda/envs/searchr1_new/lib/python3.10/site-packages/vllm/connections.py:8: RuntimeWarning: Failed to read commit hash:
+[36m(pid=2765360)[0m No module named 'vllm._version'
+[36m(pid=2765360)[0m   from vllm.version import __version__ as VLLM_VERSION
+Error executing job with overrides: ['data.train_files=data/nq_search/train.parquet', 'data.val_files=data/nq_search/test.parquet', 'data.train_data_num=null', 'data.val_data_num=null', 'data.train_batch_size=512', 'data.val_batch_size=256', 'data.max_prompt_length=4096', 'data.max_response_length=500', 'data.max_start_length=2048', 'data.max_obs_length=500', 'data.shuffle_train_dataloader=True', 'algorithm.adv_estimator=gae', 'actor_rollout_ref.model.path=Qwen/Qwen3-1.7B-Base', 'actor_rollout_ref.actor.optim.lr=1e-6', 'actor_rollout_ref.model.enable_gradient_checkpointing=true', 'actor_rollout_ref.model.use_remove_padding=False', '+actor_rollout_ref.model.attn_implementation=sdpa', 'actor_rollout_ref.actor.optim.lr_warmup_steps_ratio=0.285', 'actor_rollout_ref.actor.ppo_mini_batch_size=256', 'actor_rollout_ref.actor.ppo_micro_batch_size=64', '+actor_rollout_ref.actor.autocast_dtype=fp16', 'actor_rollout_ref.actor.fsdp_config.param_offload=true', 'actor_rollout_ref.actor.fsdp_config.grad_offload=true', 'actor_rollout_ref.actor.fsdp_config.optimizer_offload=true', '+actor_rollout_ref.actor.fsdp_config.mixed_precision.param_dtype=fp16', '+actor_rollout_ref.actor.fsdp_config.mixed_precision.reduce_dtype=fp32', '+actor_rollout_ref.actor.fsdp_config.mixed_precision.buffer_dtype=fp32', 'actor_rollout_ref.rollout.log_prob_micro_batch_size=128', 'actor_rollout_ref.rollout.tensor_model_parallel_size=1', 'actor_rollout_ref.rollout.name=vllm', 'actor_rollout_ref.rollout.dtype=half', 'actor_rollout_ref.rollout.gpu_memory_utilization=0.6', 'actor_rollout_ref.ref.log_prob_micro_batch_size=128', 'actor_rollout_ref.ref.fsdp_config.param_offload=True', 'actor_rollout_ref.rollout.n_agent=1', 'actor_rollout_ref.rollout.temperature=1', 'actor_rollout_ref.actor.state_masking=true', 'critic.optim.lr=1e-5', 'critic.model.use_remove_padding=False', '+critic.model.attn_implementation=sdpa', '+critic.autocast_dtype=fp16', 'critic.optim.lr_warmup_steps_ratio=0.015', 'critic.model.path=Qwen/Qwen3-1.7B-Base', 'critic.model.enable_gradient_checkpointing=true', 'critic.ppo_micro_batch_size=8', 'critic.model.fsdp_config.param_offload=true', 'critic.model.fsdp_config.grad_offload=true', 'critic.model.fsdp_config.optimizer_offload=true', '+critic.model.fsdp_config.mixed_precision.param_dtype=fp16', '+critic.model.fsdp_config.mixed_precision.reduce_dtype=fp32', '+critic.model.fsdp_config.mixed_precision.buffer_dtype=fp32', 'algorithm.kl_ctrl.kl_coef=0.001', 'algorithm.no_think_rl=false', 'trainer.critic_warmup=0', 'trainer.logger=[wandb]', '+trainer.val_only=false', '+trainer.val_before_train=true', 'trainer.default_hdfs_dir=null', 'trainer.n_gpus_per_node=1', 'trainer.nnodes=4', 'trainer.save_freq=100', 'trainer.test_freq=50', 'trainer.project_name=Search-R1', 'trainer.experiment_name=nq-search-r1-ppo-qwen3-1.7b-em', 'trainer.total_epochs=15', 'trainer.total_training_steps=1005', 'trainer.default_hdfs_dir=null', 'trainer.default_local_dir=verl_checkpoints/nq-search-r1-ppo-qwen3-1.7b-em', 'max_turns=2', 'retriever.url=http://127.0.0.1:8000/retrieve', 'retriever.topk=3']
+Traceback (most recent call last):
+  File "/home/s223540177/Search-R1/.ray_verl_import_2863376/verl/trainer/main_ppo.py", line 120, in main
+    ray.get(main_task.remote(config))
+  File "/home/s223540177/.conda/envs/searchr1_new/lib/python3.10/site-packages/ray/_private/auto_init_hook.py", line 22, in auto_init_wrapper
+    return fn(*args, **kwargs)
+  File "/home/s223540177/.conda/envs/searchr1_new/lib/python3.10/site-packages/ray/_private/client_mode_hook.py", line 107, in wrapper
+    return func(*args, **kwargs)
+  File "/home/s223540177/.conda/envs/searchr1_new/lib/python3.10/site-packages/ray/_private/worker.py", line 2980, in get
+    values, debugger_breakpoint = worker.get_objects(
+  File "/home/s223540177/.conda/envs/searchr1_new/lib/python3.10/site-packages/ray/_private/worker.py", line 1023, in get_objects
+    raise value.as_instanceof_cause()
+ray.exceptions.RayTaskError(ModuleNotFoundError): [36mray::main_task()[39m (pid=2764939, ip=10.72.191.67)
+  File "/home/s223540177/Search-R1/.ray_verl_import_2863376/verl/trainer/main_ppo.py", line 207, in main_task
+    trainer.init_workers()
+  File "/home/s223540177/Search-R1/.ray_verl_import_2863376/verl/trainer/ppo/ray_trainer.py", line 609, in init_workers
+    self.critic_wg.init_model()
+  File "/home/s223540177/Search-R1/.ray_verl_import_2863376/verl/single_controller/ray/base.py", line 43, in func
+    output = ray.get(output)
+ray.exceptions.RayTaskError(ModuleNotFoundError): [36mray::WorkerDict.critic_init_model()[39m (pid=2765360, ip=10.72.191.67, actor_id=d27ad06f90588e1ffd2869ce02000000, repr=<verl.single_controller.ray.base.WorkerDict object at 0x7f2a4d94d840>)
+  File "/home/s223540177/Search-R1/.ray_verl_import_2863376/verl/single_controller/ray/base.py", line 402, in func
+    return getattr(self.worker_dict[key], name)(*args, **kwargs)
+  File "/home/s223540177/Search-R1/.ray_verl_import_2863376/verl/single_controller/base/decorator.py", line 404, in inner
+    return func(*args, **kwargs)
+  File "/home/s223540177/Search-R1/.ray_verl_import_2863376/verl/workers/fsdp_workers.py", line 692, in init_model
+    from verl.workers.critic import DataParallelPPOCritic
+  File "/home/s223540177/Search-R1/.ray_verl_import_2863376/verl/workers/critic/__init__.py", line 16, in <module>
+    from .dp_critic import DataParallelPPOCritic
+  File "/home/s223540177/Search-R1/.ray_verl_import_2863376/verl/workers/critic/dp_critic.py", line 34, in <module>
+    from flash_attn.bert_padding import pad_input, unpad_input, rearrange, index_first_axis
+ModuleNotFoundError: No module named 'flash_attn'
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.
+Stopping Ray cluster

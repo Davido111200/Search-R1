@@ -1,0 +1,90 @@
+Slurm nodes: l40s-f-03 rtxp6000l-f-01 v100-f-13 v100-f-14
+Head node: l40s-f-03
+GPUs per node: 1
+CPUs per node: 8
+CUDA_VISIBLE_DEVICES=0
+GPU 0: NVIDIA L40S (UUID: GPU-c719200e-e704-3735-0ab8-7491933a4c6d)
+Stopping Ray cluster
+Starting Ray head at 10.72.191.173:6379
+2026-04-18 01:12:19,132	INFO usage_lib.py:474 -- Usage stats collection is enabled by default without user confirmation because this terminal is detected to be non-interactive. To disable this, add `--disable-usage-stats` to the command that starts the cluster, or run the following command: `ray disable-usage-stats` before starting the cluster. See https://docs.ray.io/en/master/cluster/usage-stats.html for more details.
+2026-04-18 01:12:19,139	INFO scripts.py:940 -- [37mLocal node IP[39m: [1m10.72.191.173[22m
+2026-04-18 01:12:25,258	SUCC scripts.py:979 -- [32m--------------------[39m
+2026-04-18 01:12:25,258	SUCC scripts.py:980 -- [32mRay runtime started.[39m
+2026-04-18 01:12:25,258	SUCC scripts.py:981 -- [32m--------------------[39m
+2026-04-18 01:12:25,258	INFO scripts.py:983 -- [36mNext steps[39m
+2026-04-18 01:12:25,258	INFO scripts.py:986 -- To add another node to this Ray cluster, run
+2026-04-18 01:12:25,258	INFO scripts.py:989 -- [1m  ray start --address='10.72.191.173:6379'[22m
+2026-04-18 01:12:25,258	INFO scripts.py:1000 -- To connect to this Ray cluster:
+2026-04-18 01:12:25,258	INFO scripts.py:1002 -- [35mimport[39m[26m ray
+2026-04-18 01:12:25,259	INFO scripts.py:1003 -- ray[35m.[39m[26minit(_node_ip_address[35m=[39m[26m[33m'10.72.191.173'[39m[26m)
+2026-04-18 01:12:25,259	INFO scripts.py:1017 -- To submit a Ray job using the Ray Jobs CLI:
+2026-04-18 01:12:25,259	INFO scripts.py:1018 -- [1m  RAY_API_SERVER_ADDRESS='http://10.72.191.173:8265' ray job submit --working-dir . -- python my_script.py[22m
+2026-04-18 01:12:25,259	INFO scripts.py:1027 -- See https://docs.ray.io/en/latest/cluster/running-applications/job-submission/index.html 
+2026-04-18 01:12:25,259	INFO scripts.py:1031 -- for more information on submitting Ray jobs to the Ray cluster.
+2026-04-18 01:12:25,259	INFO scripts.py:1036 -- To terminate the Ray runtime, run
+2026-04-18 01:12:25,259	INFO scripts.py:1037 -- [1m  ray stop[22m
+2026-04-18 01:12:25,259	INFO scripts.py:1040 -- To view the status of the cluster, use
+2026-04-18 01:12:25,259	INFO scripts.py:1041 --   [1mray status[22m[26m
+2026-04-18 01:12:25,259	INFO scripts.py:1045 -- To monitor and debug Ray, view the dashboard at 
+2026-04-18 01:12:25,259	INFO scripts.py:1046 --   [1m10.72.191.173:8265[22m[26m
+2026-04-18 01:12:25,259	INFO scripts.py:1053 -- [4mIf connection to the dashboard fails, check your firewall settings and network configuration.[24m
+2026-04-18 01:12:25,259	INFO scripts.py:1159 -- [36m[1m--block[22m[39m
+2026-04-18 01:12:25,259	INFO scripts.py:1160 -- This command will now block forever until terminated by a signal.
+2026-04-18 01:12:25,259	INFO scripts.py:1163 -- Running subprocesses are monitored and a message will be printed if any of them terminate unexpectedly. Subprocesses exit with SIGTERM will be treated as graceful, thus NOT reported.
+2026-04-18 01:12:25,259	INFO scripts.py:1168 -- Process exit logs will be saved to: [1m/tmp/ray/session_2026-04-18_01-12-19_139820_3025796/logs/ray_process_exit.log[22m[26m
+Starting Ray worker on rtxp6000l-f-01
+Starting Ray worker on v100-f-13
+Starting Ray worker on v100-f-14
+2026-04-18 01:12:29,630	INFO scripts.py:1128 -- [37mLocal node IP[39m: [1m10.72.191.73[22m
+2026-04-18 01:12:33,065	SUCC scripts.py:1144 -- [32m--------------------[39m
+2026-04-18 01:12:33,066	SUCC scripts.py:1145 -- [32mRay runtime started.[39m
+2026-04-18 01:12:33,066	SUCC scripts.py:1146 -- [32m--------------------[39m
+2026-04-18 01:12:33,066	INFO scripts.py:1148 -- To terminate the Ray runtime, run
+2026-04-18 01:12:33,066	INFO scripts.py:1149 -- [1m  ray stop[22m
+2026-04-18 01:12:33,067	INFO scripts.py:1159 -- [36m[1m--block[22m[39m
+2026-04-18 01:12:33,067	INFO scripts.py:1160 -- This command will now block forever until terminated by a signal.
+2026-04-18 01:12:33,067	INFO scripts.py:1163 -- Running subprocesses are monitored and a message will be printed if any of them terminate unexpectedly. Subprocesses exit with SIGTERM will be treated as graceful, thus NOT reported.
+2026-04-18 01:12:33,067	INFO scripts.py:1168 -- Process exit logs will be saved to: [1m/tmp/ray/session_2026-04-18_01-12-19_139820_3025796/logs/ray_process_exit.log[22m[26m
+2026-04-18 01:12:29,674	INFO scripts.py:1128 -- [37mLocal node IP[39m: [1m10.72.191.74[22m
+2026-04-18 01:12:33,189	SUCC scripts.py:1144 -- [32m--------------------[39m
+2026-04-18 01:12:33,189	SUCC scripts.py:1145 -- [32mRay runtime started.[39m
+2026-04-18 01:12:33,189	SUCC scripts.py:1146 -- [32m--------------------[39m
+2026-04-18 01:12:33,189	INFO scripts.py:1148 -- To terminate the Ray runtime, run
+2026-04-18 01:12:33,189	INFO scripts.py:1149 -- [1m  ray stop[22m
+2026-04-18 01:12:33,190	INFO scripts.py:1159 -- [36m[1m--block[22m[39m
+2026-04-18 01:12:33,190	INFO scripts.py:1160 -- This command will now block forever until terminated by a signal.
+2026-04-18 01:12:33,190	INFO scripts.py:1163 -- Running subprocesses are monitored and a message will be printed if any of them terminate unexpectedly. Subprocesses exit with SIGTERM will be treated as graceful, thus NOT reported.
+2026-04-18 01:12:33,190	INFO scripts.py:1168 -- Process exit logs will be saved to: [1m/tmp/ray/session_2026-04-18_01-12-19_139820_3025796/logs/ray_process_exit.log[22m[26m
+2026-04-18 01:12:30,552	INFO scripts.py:1128 -- [37mLocal node IP[39m: [1m10.72.191.181[22m
+2026-04-18 01:12:34,130	SUCC scripts.py:1144 -- [32m--------------------[39m
+2026-04-18 01:12:34,130	SUCC scripts.py:1145 -- [32mRay runtime started.[39m
+2026-04-18 01:12:34,130	SUCC scripts.py:1146 -- [32m--------------------[39m
+2026-04-18 01:12:34,130	INFO scripts.py:1148 -- To terminate the Ray runtime, run
+2026-04-18 01:12:34,130	INFO scripts.py:1149 -- [1m  ray stop[22m
+2026-04-18 01:12:34,131	INFO scripts.py:1159 -- [36m[1m--block[22m[39m
+2026-04-18 01:12:34,131	INFO scripts.py:1160 -- This command will now block forever until terminated by a signal.
+2026-04-18 01:12:34,131	INFO scripts.py:1163 -- Running subprocesses are monitored and a message will be printed if any of them terminate unexpectedly. Subprocesses exit with SIGTERM will be treated as graceful, thus NOT reported.
+2026-04-18 01:12:34,131	INFO scripts.py:1168 -- Process exit logs will be saved to: [1m/tmp/ray/session_2026-04-18_01-12-19_139820_3025796/logs/ray_process_exit.log[22m[26m
+Ray cluster resources: {'accelerator_type:V100': 2.0, 'object_store_memory': 633023474483.0, 'node:10.72.191.74': 1.0, 'CPU': 32.0, 'GPU': 4.0, 'memory': 2236044612813.0, 'accelerator_type:RTX': 1.0, 'node:10.72.191.181': 1.0, 'node:__internal_head__': 1.0, 'accelerator_type:L40S': 1.0, 'node:10.72.191.173': 1.0, 'node:10.72.191.73': 1.0}
+Ray available resources: {'accelerator_type:V100': 2.0, 'node:10.72.191.74': 1.0, 'object_store_memory': 633023474483.0, 'CPU': 32.0, 'GPU': 4.0, 'memory': 2236044612813.0, 'accelerator_type:RTX': 1.0, 'node:10.72.191.181': 1.0, 'node:10.72.191.173': 1.0, 'node:__internal_head__': 1.0, 'accelerator_type:L40S': 1.0, 'node:10.72.191.73': 1.0}
+Traceback (most recent call last):
+  File "/home/s223540177/.conda/envs/searchr1_new/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/s223540177/.conda/envs/searchr1_new/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/s223540177/.conda/envs/searchr1_new/lib/python3.10/site-packages/verl/trainer/main_ppo.py", line 29, in <module>
+    from verl.trainer.ppo.ray_trainer import RayPPOTrainer
+  File "/home/s223540177/.conda/envs/searchr1_new/lib/python3.10/site-packages/verl/trainer/ppo/ray_trainer.py", line 62, in <module>
+    from verl.utils.checkpoint.checkpoint_manager import find_latest_ckpt_path, should_save_ckpt_esi
+  File "/home/s223540177/.conda/envs/searchr1_new/lib/python3.10/site-packages/verl/utils/checkpoint/__init__.py", line 15, in <module>
+    from .checkpoint_handler import CheckpointHandler, OrchestrationMode
+  File "/home/s223540177/.conda/envs/searchr1_new/lib/python3.10/site-packages/verl/utils/checkpoint/checkpoint_handler.py", line 30, in <module>
+    from verl.workers.engine import BaseEngine
+  File "/home/s223540177/.conda/envs/searchr1_new/lib/python3.10/site-packages/verl/workers/engine/__init__.py", line 15, in <module>
+    from .fsdp import DiffusersFSDPEngine, FSDPEngine, FSDPEngineWithLMHead
+  File "/home/s223540177/.conda/envs/searchr1_new/lib/python3.10/site-packages/verl/workers/engine/fsdp/__init__.py", line 14, in <module>
+    from .transformer_impl import FSDPEngine, FSDPEngineWithLMHead
+  File "/home/s223540177/.conda/envs/searchr1_new/lib/python3.10/site-packages/verl/workers/engine/fsdp/transformer_impl.py", line 31, in <module>
+    from torch.distributed.tensor import DTensor
+ImportError: cannot import name 'DTensor' from 'torch.distributed.tensor' (/home/s223540177/.conda/envs/searchr1_new/lib/python3.10/site-packages/torch/distributed/tensor/__init__.py)
+Stopping Ray cluster

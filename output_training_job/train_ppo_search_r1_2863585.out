@@ -1,0 +1,628 @@
+Using verl from: /home/s223540177/Search-R1/.ray_verl_import_2863585/verl/__init__.py
+Using torch: 2.4.0+cu121
+Slurm nodes: l40s-f-01 l40s-f-03 v100-f-04 v100-f-10 v100-f-13 v100-f-17 v100l-f-05 v100l-f-06
+Head node: l40s-f-01
+GPUs per node: 4
+CPUs per node: 8
+CUDA_VISIBLE_DEVICES=0,1,2,3
+GPU 0: NVIDIA L40S (UUID: GPU-73561b96-ccdd-6ae4-595a-fb92d03ee5aa)
+GPU 1: NVIDIA L40S (UUID: GPU-81fb4bed-3981-425f-bb50-446009dc8f8c)
+GPU 2: NVIDIA L40S (UUID: GPU-b55b31e0-9a64-0ddb-54ff-30e4f6d13527)
+GPU 3: NVIDIA L40S (UUID: GPU-77baea71-2368-d2b4-43f0-fecc3091cd50)
+Stopping Ray cluster
+Starting Ray head at 10.72.191.171:6379
+Ray head CUDA_VISIBLE_DEVICES=0 RAY_NODE_GPUS=1
+2026-04-19 21:48:26,068	INFO usage_lib.py:474 -- Usage stats collection is enabled by default without user confirmation because this terminal is detected to be non-interactive. To disable this, add `--disable-usage-stats` to the command that starts the cluster, or run the following command: `ray disable-usage-stats` before starting the cluster. See https://docs.ray.io/en/master/cluster/usage-stats.html for more details.
+2026-04-19 21:48:26,068	INFO scripts.py:940 -- [37mLocal node IP[39m: [1m10.72.191.171[22m
+2026-04-19 21:48:32,554	SUCC scripts.py:979 -- [32m--------------------[39m
+2026-04-19 21:48:32,554	SUCC scripts.py:980 -- [32mRay runtime started.[39m
+2026-04-19 21:48:32,554	SUCC scripts.py:981 -- [32m--------------------[39m
+2026-04-19 21:48:32,554	INFO scripts.py:983 -- [36mNext steps[39m
+2026-04-19 21:48:32,554	INFO scripts.py:986 -- To add another node to this Ray cluster, run
+2026-04-19 21:48:32,554	INFO scripts.py:989 -- [1m  ray start --address='10.72.191.171:6379'[22m
+2026-04-19 21:48:32,554	INFO scripts.py:1000 -- To connect to this Ray cluster:
+2026-04-19 21:48:32,554	INFO scripts.py:1002 -- [35mimport[39m[26m ray
+2026-04-19 21:48:32,554	INFO scripts.py:1003 -- ray[35m.[39m[26minit(_node_ip_address[35m=[39m[26m[33m'10.72.191.171'[39m[26m)
+2026-04-19 21:48:32,554	INFO scripts.py:1017 -- To submit a Ray job using the Ray Jobs CLI:
+2026-04-19 21:48:32,554	INFO scripts.py:1018 -- [1m  RAY_API_SERVER_ADDRESS='http://10.72.191.171:8265' ray job submit --working-dir . -- python my_script.py[22m
+2026-04-19 21:48:32,554	INFO scripts.py:1027 -- See https://docs.ray.io/en/latest/cluster/running-applications/job-submission/index.html 
+2026-04-19 21:48:32,554	INFO scripts.py:1031 -- for more information on submitting Ray jobs to the Ray cluster.
+2026-04-19 21:48:32,554	INFO scripts.py:1036 -- To terminate the Ray runtime, run
+2026-04-19 21:48:32,554	INFO scripts.py:1037 -- [1m  ray stop[22m
+2026-04-19 21:48:32,554	INFO scripts.py:1040 -- To view the status of the cluster, use
+2026-04-19 21:48:32,554	INFO scripts.py:1041 --   [1mray status[22m[26m
+2026-04-19 21:48:32,554	INFO scripts.py:1045 -- To monitor and debug Ray, view the dashboard at 
+2026-04-19 21:48:32,554	INFO scripts.py:1046 --   [1m10.72.191.171:8265[22m[26m
+2026-04-19 21:48:32,554	INFO scripts.py:1053 -- [4mIf connection to the dashboard fails, check your firewall settings and network configuration.[24m
+2026-04-19 21:48:32,554	INFO scripts.py:1159 -- [36m[1m--block[22m[39m
+2026-04-19 21:48:32,554	INFO scripts.py:1160 -- This command will now block forever until terminated by a signal.
+2026-04-19 21:48:32,554	INFO scripts.py:1163 -- Running subprocesses are monitored and a message will be printed if any of them terminate unexpectedly. Subprocesses exit with SIGTERM will be treated as graceful, thus NOT reported.
+2026-04-19 21:48:32,554	INFO scripts.py:1168 -- Process exit logs will be saved to: [1m/tmp/ray/session_2026-04-19_21-48-26_069189_219696/logs/ray_process_exit.log[22m[26m
+Starting Ray worker on l40s-f-03
+Starting Ray worker on v100-f-04
+Starting Ray worker on v100-f-10
+Starting Ray worker on v100-f-13
+Starting Ray worker on v100-f-17
+Starting Ray worker on v100l-f-05
+Starting Ray worker on v100l-f-06
+Ray worker CUDA_VISIBLE_DEVICES=0 RAY_NODE_GPUS=1
+Ray worker CUDA_VISIBLE_DEVICES=0 RAY_NODE_GPUS=1
+Ray worker CUDA_VISIBLE_DEVICES=0 RAY_NODE_GPUS=1
+Ray worker CUDA_VISIBLE_DEVICES=0 RAY_NODE_GPUS=1
+Ray worker CUDA_VISIBLE_DEVICES=0 RAY_NODE_GPUS=1
+Ray worker CUDA_VISIBLE_DEVICES=0 RAY_NODE_GPUS=1
+Ray worker CUDA_VISIBLE_DEVICES=0 RAY_NODE_GPUS=1
+2026-04-19 21:48:35,186	INFO scripts.py:1128 -- [37mLocal node IP[39m: [1m10.72.191.173[22m
+2026-04-19 21:48:37,435	SUCC scripts.py:1144 -- [32m--------------------[39m
+2026-04-19 21:48:37,435	SUCC scripts.py:1145 -- [32mRay runtime started.[39m
+2026-04-19 21:48:37,436	SUCC scripts.py:1146 -- [32m--------------------[39m
+2026-04-19 21:48:37,436	INFO scripts.py:1148 -- To terminate the Ray runtime, run
+2026-04-19 21:48:37,436	INFO scripts.py:1149 -- [1m  ray stop[22m
+2026-04-19 21:48:37,436	INFO scripts.py:1159 -- [36m[1m--block[22m[39m
+2026-04-19 21:48:37,436	INFO scripts.py:1160 -- This command will now block forever until terminated by a signal.
+2026-04-19 21:48:37,436	INFO scripts.py:1163 -- Running subprocesses are monitored and a message will be printed if any of them terminate unexpectedly. Subprocesses exit with SIGTERM will be treated as graceful, thus NOT reported.
+2026-04-19 21:48:37,436	INFO scripts.py:1168 -- Process exit logs will be saved to: [1m/tmp/ray/session_2026-04-19_21-48-26_069189_219696/logs/ray_process_exit.log[22m[26m
+2026-04-19 21:48:35,665	INFO scripts.py:1128 -- [37mLocal node IP[39m: [1m10.72.191.73[22m
+2026-04-19 21:48:37,934	SUCC scripts.py:1144 -- [32m--------------------[39m
+2026-04-19 21:48:37,934	SUCC scripts.py:1145 -- [32mRay runtime started.[39m
+2026-04-19 21:48:37,934	SUCC scripts.py:1146 -- [32m--------------------[39m
+2026-04-19 21:48:37,934	INFO scripts.py:1148 -- To terminate the Ray runtime, run
+2026-04-19 21:48:37,934	INFO scripts.py:1149 -- [1m  ray stop[22m
+2026-04-19 21:48:37,935	INFO scripts.py:1159 -- [36m[1m--block[22m[39m
+2026-04-19 21:48:37,935	INFO scripts.py:1160 -- This command will now block forever until terminated by a signal.
+2026-04-19 21:48:37,935	INFO scripts.py:1163 -- Running subprocesses are monitored and a message will be printed if any of them terminate unexpectedly. Subprocesses exit with SIGTERM will be treated as graceful, thus NOT reported.
+2026-04-19 21:48:37,935	INFO scripts.py:1168 -- Process exit logs will be saved to: [1m/tmp/ray/session_2026-04-19_21-48-26_069189_219696/logs/ray_process_exit.log[22m[26m
+2026-04-19 21:48:35,727	INFO scripts.py:1128 -- [37mLocal node IP[39m: [1m10.72.191.64[22m
+2026-04-19 21:48:38,012	SUCC scripts.py:1144 -- [32m--------------------[39m
+2026-04-19 21:48:38,012	SUCC scripts.py:1145 -- [32mRay runtime started.[39m
+2026-04-19 21:48:38,012	SUCC scripts.py:1146 -- [32m--------------------[39m
+2026-04-19 21:48:38,013	INFO scripts.py:1148 -- To terminate the Ray runtime, run
+2026-04-19 21:48:38,013	INFO scripts.py:1149 -- [1m  ray stop[22m
+2026-04-19 21:48:38,013	INFO scripts.py:1159 -- [36m[1m--block[22m[39m
+2026-04-19 21:48:38,013	INFO scripts.py:1160 -- This command will now block forever until terminated by a signal.
+2026-04-19 21:48:38,013	INFO scripts.py:1163 -- Running subprocesses are monitored and a message will be printed if any of them terminate unexpectedly. Subprocesses exit with SIGTERM will be treated as graceful, thus NOT reported.
+2026-04-19 21:48:38,014	INFO scripts.py:1168 -- Process exit logs will be saved to: [1m/tmp/ray/session_2026-04-19_21-48-26_069189_219696/logs/ray_process_exit.log[22m[26m
+2026-04-19 21:48:36,004	INFO scripts.py:1128 -- [37mLocal node IP[39m: [1m10.72.191.77[22m
+2026-04-19 21:48:38,242	SUCC scripts.py:1144 -- [32m--------------------[39m
+2026-04-19 21:48:38,243	SUCC scripts.py:1145 -- [32mRay runtime started.[39m
+2026-04-19 21:48:38,243	SUCC scripts.py:1146 -- [32m--------------------[39m
+2026-04-19 21:48:38,243	INFO scripts.py:1148 -- To terminate the Ray runtime, run
+2026-04-19 21:48:38,243	INFO scripts.py:1149 -- [1m  ray stop[22m
+2026-04-19 21:48:38,244	INFO scripts.py:1159 -- [36m[1m--block[22m[39m
+2026-04-19 21:48:38,244	INFO scripts.py:1160 -- This command will now block forever until terminated by a signal.
+2026-04-19 21:48:38,244	INFO scripts.py:1163 -- Running subprocesses are monitored and a message will be printed if any of them terminate unexpectedly. Subprocesses exit with SIGTERM will be treated as graceful, thus NOT reported.
+2026-04-19 21:48:38,244	INFO scripts.py:1168 -- Process exit logs will be saved to: [1m/tmp/ray/session_2026-04-19_21-48-26_069189_219696/logs/ray_process_exit.log[22m[26m
+2026-04-19 21:48:36,644	INFO scripts.py:1128 -- [37mLocal node IP[39m: [1m10.72.191.90[22m
+2026-04-19 21:48:38,930	SUCC scripts.py:1144 -- [32m--------------------[39m
+2026-04-19 21:48:38,930	SUCC scripts.py:1145 -- [32mRay runtime started.[39m
+2026-04-19 21:48:38,930	SUCC scripts.py:1146 -- [32m--------------------[39m
+2026-04-19 21:48:38,931	INFO scripts.py:1148 -- To terminate the Ray runtime, run
+2026-04-19 21:48:38,931	INFO scripts.py:1149 -- [1m  ray stop[22m
+2026-04-19 21:48:38,931	INFO scripts.py:1159 -- [36m[1m--block[22m[39m
+2026-04-19 21:48:38,931	INFO scripts.py:1160 -- This command will now block forever until terminated by a signal.
+2026-04-19 21:48:38,931	INFO scripts.py:1163 -- Running subprocesses are monitored and a message will be printed if any of them terminate unexpectedly. Subprocesses exit with SIGTERM will be treated as graceful, thus NOT reported.
+2026-04-19 21:48:38,931	INFO scripts.py:1168 -- Process exit logs will be saved to: [1m/tmp/ray/session_2026-04-19_21-48-26_069189_219696/logs/ray_process_exit.log[22m[26m
+2026-04-19 21:48:36,737	INFO scripts.py:1128 -- [37mLocal node IP[39m: [1m10.72.191.70[22m
+2026-04-19 21:48:40,282	SUCC scripts.py:1144 -- [32m--------------------[39m
+2026-04-19 21:48:40,283	SUCC scripts.py:1145 -- [32mRay runtime started.[39m
+2026-04-19 21:48:40,283	SUCC scripts.py:1146 -- [32m--------------------[39m
+2026-04-19 21:48:40,283	INFO scripts.py:1148 -- To terminate the Ray runtime, run
+2026-04-19 21:48:40,283	INFO scripts.py:1149 -- [1m  ray stop[22m
+2026-04-19 21:48:40,283	INFO scripts.py:1159 -- [36m[1m--block[22m[39m
+2026-04-19 21:48:40,284	INFO scripts.py:1160 -- This command will now block forever until terminated by a signal.
+2026-04-19 21:48:40,284	INFO scripts.py:1163 -- Running subprocesses are monitored and a message will be printed if any of them terminate unexpectedly. Subprocesses exit with SIGTERM will be treated as graceful, thus NOT reported.
+2026-04-19 21:48:40,284	INFO scripts.py:1168 -- Process exit logs will be saved to: [1m/tmp/ray/session_2026-04-19_21-48-26_069189_219696/logs/ray_process_exit.log[22m[26m
+2026-04-19 21:48:36,919	INFO scripts.py:1128 -- [37mLocal node IP[39m: [1m10.72.191.91[22m
+2026-04-19 21:48:40,504	SUCC scripts.py:1144 -- [32m--------------------[39m
+2026-04-19 21:48:40,504	SUCC scripts.py:1145 -- [32mRay runtime started.[39m
+2026-04-19 21:48:40,504	SUCC scripts.py:1146 -- [32m--------------------[39m
+2026-04-19 21:48:40,504	INFO scripts.py:1148 -- To terminate the Ray runtime, run
+2026-04-19 21:48:40,504	INFO scripts.py:1149 -- [1m  ray stop[22m
+2026-04-19 21:48:40,505	INFO scripts.py:1159 -- [36m[1m--block[22m[39m
+2026-04-19 21:48:40,505	INFO scripts.py:1160 -- This command will now block forever until terminated by a signal.
+2026-04-19 21:48:40,505	INFO scripts.py:1163 -- Running subprocesses are monitored and a message will be printed if any of them terminate unexpectedly. Subprocesses exit with SIGTERM will be treated as graceful, thus NOT reported.
+2026-04-19 21:48:40,505	INFO scripts.py:1168 -- Process exit logs will be saved to: [1m/tmp/ray/session_2026-04-19_21-48-26_069189_219696/logs/ray_process_exit.log[22m[26m
+Ray cluster resources: {'object_store_memory': 1179691864881.0, 'node:10.72.191.90': 1.0, 'CPU': 64.0, 'memory': 3542178860239.0, 'GPU': 8.0, 'accelerator_type:V100': 6.0, 'node:__internal_head__': 1.0, 'node:10.72.191.171': 1.0, 'accelerator_type:L40S': 2.0, 'node:10.72.191.73': 1.0, 'node:10.72.191.77': 1.0, 'node:10.72.191.70': 1.0, 'node:10.72.191.91': 1.0, 'node:10.72.191.64': 1.0, 'node:10.72.191.173': 1.0}
+Ray available resources: {'object_store_memory': 1179691864881.0, 'CPU': 64.0, 'node:10.72.191.90': 1.0, 'memory': 3542178860239.0, 'GPU': 8.0, 'accelerator_type:V100': 6.0, 'node:__internal_head__': 1.0, 'node:10.72.191.171': 1.0, 'accelerator_type:L40S': 2.0, 'node:10.72.191.73': 1.0, 'node:10.72.191.77': 1.0, 'node:10.72.191.70': 1.0, 'node:10.72.191.91': 1.0, 'node:10.72.191.64': 1.0, 'node:10.72.191.173': 1.0}
+2026-04-19 21:49:02,836	INFO worker.py:1814 -- Connecting to existing Ray cluster at address: 10.72.191.171:6379...
+2026-04-19 21:49:02,882	INFO worker.py:2003 -- Connected to Ray cluster. View the dashboard at [1m[32m10.72.191.171:8265 [39m[22m
+/home/s223540177/.conda/envs/searchr1_new/lib/python3.10/site-packages/ray/_private/worker.py:2051: FutureWarning: Tip: In future versions of Ray, Ray will no longer override accelerator visible devices env var if num_gpus=0 or num_gpus=None (default). To enable this behavior and turn off this error message, set RAY_ACCEL_ENV_VAR_OVERRIDE_ON_ZERO=0
+  warnings.warn(
+[36m(main_task pid=221330)[0m {'actor_rollout_ref': {'actor': {'autocast_dtype': 'fp16',
+[36m(main_task pid=221330)[0m                                  'clip_ratio': 0.2,
+[36m(main_task pid=221330)[0m                                  'entropy_coeff': 0.001,
+[36m(main_task pid=221330)[0m                                  'fsdp_config': {'fsdp_size': -1,
+[36m(main_task pid=221330)[0m                                                  'grad_offload': True,
+[36m(main_task pid=221330)[0m                                                  'mixed_precision': {'buffer_dtype': 'fp32',
+[36m(main_task pid=221330)[0m                                                                      'param_dtype': 'fp16',
+[36m(main_task pid=221330)[0m                                                                      'reduce_dtype': 'fp32'},
+[36m(main_task pid=221330)[0m                                                  'optimizer_offload': True,
+[36m(main_task pid=221330)[0m                                                  'param_offload': True,
+[36m(main_task pid=221330)[0m                                                  'wrap_policy': {'min_num_params': 0}},
+[36m(main_task pid=221330)[0m                                  'grad_clip': 1.0,
+[36m(main_task pid=221330)[0m                                  'kl_loss_coef': 0.001,
+[36m(main_task pid=221330)[0m                                  'kl_loss_type': 'low_var_kl',
+[36m(main_task pid=221330)[0m                                  'optim': {'lr': 1e-06,
+[36m(main_task pid=221330)[0m                                            'lr_warmup_steps_ratio': 0.285,
+[36m(main_task pid=221330)[0m                                            'min_lr_ratio': None,
+[36m(main_task pid=221330)[0m                                            'total_training_steps': -1,
+[36m(main_task pid=221330)[0m                                            'warmup_style': 'constant'},
+[36m(main_task pid=221330)[0m                                  'ppo_epochs': 1,
+[36m(main_task pid=221330)[0m                                  'ppo_max_token_len_per_gpu': 16384,
+[36m(main_task pid=221330)[0m                                  'ppo_micro_batch_size': 64,
+[36m(main_task pid=221330)[0m                                  'ppo_mini_batch_size': 256,
+[36m(main_task pid=221330)[0m                                  'shuffle': False,
+[36m(main_task pid=221330)[0m                                  'state_masking': True,
+[36m(main_task pid=221330)[0m                                  'strategy': 'fsdp',
+[36m(main_task pid=221330)[0m                                  'ulysses_sequence_parallel_size': 1,
+[36m(main_task pid=221330)[0m                                  'use_dynamic_bsz': False,
+[36m(main_task pid=221330)[0m                                  'use_kl_loss': False},
+[36m(main_task pid=221330)[0m                        'hybrid_engine': True,
+[36m(main_task pid=221330)[0m                        'model': {'attn_implementation': 'sdpa',
+[36m(main_task pid=221330)[0m                                  'enable_gradient_checkpointing': True,
+[36m(main_task pid=221330)[0m                                  'external_lib': None,
+[36m(main_task pid=221330)[0m                                  'override_config': {},
+[36m(main_task pid=221330)[0m                                  'path': 'Qwen/Qwen3-1.7B-Base',
+[36m(main_task pid=221330)[0m                                  'use_remove_padding': False},
+[36m(main_task pid=221330)[0m                        'ref': {'fsdp_config': {'fsdp_size': -1,
+[36m(main_task pid=221330)[0m                                                'param_offload': True,
+[36m(main_task pid=221330)[0m                                                'wrap_policy': {'min_num_params': 0}},
+[36m(main_task pid=221330)[0m                                'log_prob_max_token_len_per_gpu': 16384,
+[36m(main_task pid=221330)[0m                                'log_prob_micro_batch_size': 128,
+[36m(main_task pid=221330)[0m                                'log_prob_use_dynamic_bsz': False,
+[36m(main_task pid=221330)[0m                                'ulysses_sequence_parallel_size': 1},
+[36m(main_task pid=221330)[0m                        'rollout': {'do_sample': True,
+[36m(main_task pid=221330)[0m                                    'dtype': 'half',
+[36m(main_task pid=221330)[0m                                    'enforce_eager': True,
+[36m(main_task pid=221330)[0m                                    'free_cache_engine': True,
+[36m(main_task pid=221330)[0m                                    'gpu_memory_utilization': 0.6,
+[36m(main_task pid=221330)[0m                                    'ignore_eos': False,
+[36m(main_task pid=221330)[0m                                    'load_format': 'dummy_dtensor',
+[36m(main_task pid=221330)[0m                                    'log_prob_max_token_len_per_gpu': 16384,
+[36m(main_task pid=221330)[0m                                    'log_prob_micro_batch_size': 128,
+[36m(main_task pid=221330)[0m                                    'log_prob_use_dynamic_bsz': False,
+[36m(main_task pid=221330)[0m                                    'max_num_batched_tokens': 8192,
+[36m(main_task pid=221330)[0m                                    'max_num_seqs': 1024,
+[36m(main_task pid=221330)[0m                                    'n': 1,
+[36m(main_task pid=221330)[0m                                    'n_agent': 1,
+[36m(main_task pid=221330)[0m                                    'name': 'vllm',
+[36m(main_task pid=221330)[0m                                    'prompt_length': 4096,
+[36m(main_task pid=221330)[0m                                    'response_length': 500,
+[36m(main_task pid=221330)[0m                                    'temperature': 1,
+[36m(main_task pid=221330)[0m                                    'tensor_model_parallel_size': 1,
+[36m(main_task pid=221330)[0m                                    'top_k': -1,
+[36m(main_task pid=221330)[0m                                    'top_p': 0.95}},
+[36m(main_task pid=221330)[0m  'algorithm': {'adv_estimator': 'gae',
+[36m(main_task pid=221330)[0m                'gamma': 1.0,
+[36m(main_task pid=221330)[0m                'kl_ctrl': {'kl_coef': 0.001, 'type': 'fixed'},
+[36m(main_task pid=221330)[0m                'kl_penalty': 'kl',
+[36m(main_task pid=221330)[0m                'lam': 1.0,
+[36m(main_task pid=221330)[0m                'no_think_rl': False,
+[36m(main_task pid=221330)[0m                'state_masking': {'end_state_marker': '</information>',
+[36m(main_task pid=221330)[0m                                  'start_state_marker': '<information>'}},
+[36m(main_task pid=221330)[0m  'critic': {'autocast_dtype': 'fp16',
+[36m(main_task pid=221330)[0m             'cliprange_value': 0.5,
+[36m(main_task pid=221330)[0m             'forward_max_token_len_per_gpu': 32768,
+[36m(main_task pid=221330)[0m             'forward_micro_batch_size': 8,
+[36m(main_task pid=221330)[0m             'grad_clip': 1.0,
+[36m(main_task pid=221330)[0m             'model': {'attn_implementation': 'sdpa',
+[36m(main_task pid=221330)[0m                       'enable_gradient_checkpointing': True,
+[36m(main_task pid=221330)[0m                       'external_lib': None,
+[36m(main_task pid=221330)[0m                       'fsdp_config': {'fsdp_size': -1,
+[36m(main_task pid=221330)[0m                                       'grad_offload': True,
+[36m(main_task pid=221330)[0m                                       'mixed_precision': {'buffer_dtype': 'fp32',
+[36m(main_task pid=221330)[0m                                                           'param_dtype': 'fp16',
+[36m(main_task pid=221330)[0m                                                           'reduce_dtype': 'fp32'},
+[36m(main_task pid=221330)[0m                                       'optimizer_offload': True,
+[36m(main_task pid=221330)[0m                                       'param_offload': True,
+[36m(main_task pid=221330)[0m                                       'wrap_policy': {'min_num_params': 0}},
+[36m(main_task pid=221330)[0m                       'override_config': {},
+[36m(main_task pid=221330)[0m                       'path': 'Qwen/Qwen3-1.7B-Base',
+[36m(main_task pid=221330)[0m                       'tokenizer_path': 'Qwen/Qwen3-1.7B-Base',
+[36m(main_task pid=221330)[0m                       'use_remove_padding': False},
+[36m(main_task pid=221330)[0m             'optim': {'lr': 1e-05,
+[36m(main_task pid=221330)[0m                       'lr_warmup_steps_ratio': 0.015,
+[36m(main_task pid=221330)[0m                       'min_lr_ratio': None,
+[36m(main_task pid=221330)[0m                       'total_training_steps': -1,
+[36m(main_task pid=221330)[0m                       'warmup_style': 'constant'},
+[36m(main_task pid=221330)[0m             'ppo_epochs': 1,
+[36m(main_task pid=221330)[0m             'ppo_max_token_len_per_gpu': 32768,
+[36m(main_task pid=221330)[0m             'ppo_micro_batch_size': 8,
+[36m(main_task pid=221330)[0m             'ppo_mini_batch_size': 256,
+[36m(main_task pid=221330)[0m             'shuffle': False,
+[36m(main_task pid=221330)[0m             'strategy': 'fsdp',
+[36m(main_task pid=221330)[0m             'ulysses_sequence_parallel_size': 1,
+[36m(main_task pid=221330)[0m             'use_dynamic_bsz': False},
+[36m(main_task pid=221330)[0m  'data': {'max_obs_length': 500,
+[36m(main_task pid=221330)[0m           'max_prompt_length': 4096,
+[36m(main_task pid=221330)[0m           'max_response_length': 500,
+[36m(main_task pid=221330)[0m           'max_start_length': 2048,
+[36m(main_task pid=221330)[0m           'prompt_key': 'prompt',
+[36m(main_task pid=221330)[0m           'return_raw_chat': False,
+[36m(main_task pid=221330)[0m           'return_raw_input_ids': False,
+[36m(main_task pid=221330)[0m           'shuffle_train_dataloader': True,
+[36m(main_task pid=221330)[0m           'tokenizer': None,
+[36m(main_task pid=221330)[0m           'train_batch_size': 512,
+[36m(main_task pid=221330)[0m           'train_data_num': None,
+[36m(main_task pid=221330)[0m           'train_files': 'data/nq_search/train.parquet',
+[36m(main_task pid=221330)[0m           'val_batch_size': 256,
+[36m(main_task pid=221330)[0m           'val_data_num': None,
+[36m(main_task pid=221330)[0m           'val_files': 'data/nq_search/test.parquet'},
+[36m(main_task pid=221330)[0m  'do_search': True,
+[36m(main_task pid=221330)[0m  'max_turns': 2,
+[36m(main_task pid=221330)[0m  'retriever': {'topk': 3, 'url': 'http://10.72.191.62:8000/retrieve'},
+[36m(main_task pid=221330)[0m  'reward_model': {'enable': False,
+[36m(main_task pid=221330)[0m                   'final_format_score': 0,
+[36m(main_task pid=221330)[0m                   'forward_max_token_len_per_gpu': 32768,
+[36m(main_task pid=221330)[0m                   'max_length': None,
+[36m(main_task pid=221330)[0m                   'micro_batch_size': 64,
+[36m(main_task pid=221330)[0m                   'model': {'external_lib': None,
+[36m(main_task pid=221330)[0m                             'fsdp_config': {'min_num_params': 0,
+[36m(main_task pid=221330)[0m                                             'param_offload': False},
+[36m(main_task pid=221330)[0m                             'input_tokenizer': 'Qwen/Qwen3-1.7B-Base',
+[36m(main_task pid=221330)[0m                             'path': '~/models/FsfairX-LLaMA3-RM-v0.1',
+[36m(main_task pid=221330)[0m                             'use_remove_padding': False},
+[36m(main_task pid=221330)[0m                   'retrieval_score': 0,
+[36m(main_task pid=221330)[0m                   'strategy': 'fsdp',
+[36m(main_task pid=221330)[0m                   'structure_format_score': 0,
+[36m(main_task pid=221330)[0m                   'ulysses_sequence_parallel_size': 1,
+[36m(main_task pid=221330)[0m                   'use_dynamic_bsz': False},
+[36m(main_task pid=221330)[0m  'trainer': {'critic_warmup': 0,
+[36m(main_task pid=221330)[0m              'default_hdfs_dir': None,
+[36m(main_task pid=221330)[0m              'default_local_dir': 'verl_checkpoints/nq-search-r1-ppo-qwen3-1.7b-em',
+[36m(main_task pid=221330)[0m              'experiment_name': 'nq-search-r1-ppo-qwen3-1.7b-em',
+[36m(main_task pid=221330)[0m              'logger': ['wandb'],
+[36m(main_task pid=221330)[0m              'n_gpus_per_node': 1,
+[36m(main_task pid=221330)[0m              'nnodes': 8,
+[36m(main_task pid=221330)[0m              'project_name': 'Search-R1',
+[36m(main_task pid=221330)[0m              'save_freq': 100,
+[36m(main_task pid=221330)[0m              'test_freq': 50,
+[36m(main_task pid=221330)[0m              'total_epochs': 15,
+[36m(main_task pid=221330)[0m              'total_training_steps': 1005,
+[36m(main_task pid=221330)[0m              'val_before_train': True,
+[36m(main_task pid=221330)[0m              'val_only': False}}
+[36m(main_task pid=221330)[0m /home/s223540177/.conda/envs/searchr1_new/lib/python3.10/site-packages/vllm/connections.py:8: RuntimeWarning: Failed to read commit hash:
+[36m(main_task pid=221330)[0m No module named 'vllm._version'
+[36m(main_task pid=221330)[0m   from vllm.version import __version__ as VLLM_VERSION
+[36m(main_task pid=221330)[0m original dataset len: 79168
+[36m(main_task pid=221330)[0m filter dataset len: 79168
+[36m(main_task pid=221330)[0m filtered training dataset size: 79168
+[36m(main_task pid=221330)[0m original dataset len: 3610
+[36m(main_task pid=221330)[0m filter dataset len: 3610
+[36m(main_task pid=221330)[0m filtered validation dataset size: 3610
+[36m(main_task pid=221330)[0m Size of train dataloader: 154
+[36m(main_task pid=221330)[0m Size of val dataloader: 14
+[36m(main_task pid=221330)[0m Total training steps: 1005
+[36m(main_task pid=221330)[0m wandb: [wandb.login()] Loaded credentials for https://api.wandb.ai from /home/s223540177/.netrc.
+[36m(main_task pid=221330)[0m wandb: Currently logged in as: daidv to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+[36m(main_task pid=221330)[0m wandb: setting up run kehcz6qe
+[36m(main_task pid=221330)[0m wandb: Tracking run with wandb version 0.26.0
+[36m(main_task pid=221330)[0m wandb: Run data is saved locally in /home/s223540177/Search-R1/wandb/run-20260419_214920-kehcz6qe
+[36m(main_task pid=221330)[0m wandb: Run `wandb offline` to turn off syncing.
+[36m(main_task pid=221330)[0m wandb: Syncing run nq-search-r1-ppo-qwen3-1.7b-em
+[36m(main_task pid=221330)[0m wandb: ⭐️ View project at https://wandb.ai/daidv/Search-R1
+[36m(main_task pid=221330)[0m wandb: 🚀 View run at https://wandb.ai/daidv/Search-R1/runs/kehcz6qe
+[36m(main_task pid=221330)[0m wandb: Detected [openai] in use.
+[36m(main_task pid=221330)[0m wandb: Use W&B Weave for improved LLM call tracing. Install Weave with `pip install weave` then add `import weave` to the top of your script.
+[36m(main_task pid=221330)[0m wandb: For more information, check out the docs at: https://weave-docs.wandb.ai
+[36m(pid=120742, ip=10.72.191.73)[0m /home/s223540177/.conda/envs/searchr1_new/lib/python3.10/site-packages/vllm/connections.py:8: RuntimeWarning: Failed to read commit hash:
+[36m(pid=120742, ip=10.72.191.73)[0m No module named 'vllm._version'
+[36m(pid=120742, ip=10.72.191.73)[0m   from vllm.version import __version__ as VLLM_VERSION
+[36m(pid=3659303, ip=10.72.191.173)[0m /home/s223540177/.conda/envs/searchr1_new/lib/python3.10/site-packages/vllm/connections.py:8: RuntimeWarning: Failed to read commit hash:
+[36m(pid=3659303, ip=10.72.191.173)[0m No module named 'vllm._version'
+[36m(pid=3659303, ip=10.72.191.173)[0m   from vllm.version import __version__ as VLLM_VERSION
+[36m(pid=3400283, ip=10.72.191.64)[0m /home/s223540177/.conda/envs/searchr1_new/lib/python3.10/site-packages/vllm/connections.py:8: RuntimeWarning: Failed to read commit hash:
+[36m(pid=3400283, ip=10.72.191.64)[0m No module named 'vllm._version'
+[36m(pid=3400283, ip=10.72.191.64)[0m   from vllm.version import __version__ as VLLM_VERSION
+[36m(WorkerDict pid=3659303, ip=10.72.191.173)[0m Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+[36m(WorkerDict pid=3659303, ip=10.72.191.173)[0m Loading weights:   0%|          | 1/310 [00:00<02:19,  2.22it/s]
+[36m(WorkerDict pid=3659303, ip=10.72.191.173)[0m Loading weights:  23%|██▎       | 72/310 [00:00<00:01, 172.29it/s]
+[36m(WorkerDict pid=3659303, ip=10.72.191.173)[0m Loading weights:  73%|███████▎  | 226/310 [00:00<00:00, 520.88it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 437.07it/s]
+[36m(WorkerDict pid=3659303, ip=10.72.191.173)[0m [1mQwen3ForTokenClassification LOAD REPORT[0m from: Qwen/Qwen3-1.7B-Base
+[36m(WorkerDict pid=3659303, ip=10.72.191.173)[0m Key          | Status  | 
+[36m(WorkerDict pid=3659303, ip=10.72.191.173)[0m -------------+---------+-
+[36m(WorkerDict pid=3659303, ip=10.72.191.173)[0m score.weight | MISSING | 
+[36m(WorkerDict pid=3659303, ip=10.72.191.173)[0m score.bias   | MISSING | 
+[36m(WorkerDict pid=3659303, ip=10.72.191.173)[0m 
+[36m(WorkerDict pid=3659303, ip=10.72.191.173)[0m Notes:
+[36m(WorkerDict pid=3659303, ip=10.72.191.173)[0m - MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+[36m(WorkerDict pid=3400283, ip=10.72.191.64)[0m Loading weights:  97%|█████████▋| 301/310 [00:01<00:00, 505.08it/s]Loading weights: 100%|██████████| 310/310 [00:01<00:00, 301.77it/s]
+[36m(WorkerDict pid=3400283, ip=10.72.191.64)[0m 
+[36m(pid=221492)[0m /home/s223540177/.conda/envs/searchr1_new/lib/python3.10/site-packages/vllm/connections.py:8: RuntimeWarning: Failed to read commit hash:[32m [repeated 2x across cluster] (Ray deduplicates logs by default. Set RAY_DEDUP_LOGS=0 to disable log deduplication, or see https://docs.ray.io/en/master/ray-observability/user-guides/configure-logging.html#log-deduplication for more options.)[0m
+[36m(pid=221492)[0m No module named 'vllm._version'[32m [repeated 2x across cluster][0m
+[36m(pid=221492)[0m   from vllm.version import __version__ as VLLM_VERSION[32m [repeated 2x across cluster][0m
+[36m(WorkerDict pid=2103463, ip=10.72.191.77)[0m Loading weights:   0%|          | 0/310 [00:00<?, ?it/s][32m [repeated 2x across cluster][0m
+[36m(WorkerDict pid=3400283, ip=10.72.191.64)[0m Loading weights:  73%|███████▎  | 225/310 [00:00<00:00, 426.77it/s][32m [repeated 4x across cluster][0m
+[36m(WorkerDict pid=3400283, ip=10.72.191.64)[0m [1mQwen3ForTokenClassification LOAD REPORT[0m from: Qwen/Qwen3-1.7B-Base
+[36m(WorkerDict pid=3400283, ip=10.72.191.64)[0m Key          | Status  | 
+[36m(WorkerDict pid=3400283, ip=10.72.191.64)[0m -------------+---------+-
+[36m(WorkerDict pid=3400283, ip=10.72.191.64)[0m score.weight | MISSING | 
+[36m(WorkerDict pid=3400283, ip=10.72.191.64)[0m score.bias   | MISSING | 
+[36m(WorkerDict pid=3400283, ip=10.72.191.64)[0m Notes:
+[36m(WorkerDict pid=3400283, ip=10.72.191.64)[0m - MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+[36m(WorkerDict pid=2103463, ip=10.72.191.77)[0m Loading weights: 100%|██████████| 310/310 [00:01<00:00, 254.99it/s]
+[36m(WorkerDict pid=2103463, ip=10.72.191.77)[0m [1mQwen3ForTokenClassification LOAD REPORT[0m from: Qwen/Qwen3-1.7B-Base
+[36m(WorkerDict pid=2103463, ip=10.72.191.77)[0m Key          | Status  | 
+[36m(WorkerDict pid=2103463, ip=10.72.191.77)[0m -------------+---------+-
+[36m(WorkerDict pid=2103463, ip=10.72.191.77)[0m score.weight | MISSING | 
+[36m(WorkerDict pid=2103463, ip=10.72.191.77)[0m score.bias   | MISSING | 
+[36m(WorkerDict pid=2103463, ip=10.72.191.77)[0m 
+[36m(WorkerDict pid=2103463, ip=10.72.191.77)[0m Notes:
+[36m(WorkerDict pid=2103463, ip=10.72.191.77)[0m - MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+[36m(WorkerDict pid=221492)[0m Loading weights:  90%|█████████ | 279/310 [00:00<00:00, 551.73it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 372.10it/s]
+[36m(WorkerDict pid=221492)[0m 
+[36m(pid=2673641, ip=10.72.191.90)[0m /home/s223540177/.conda/envs/searchr1_new/lib/python3.10/site-packages/vllm/connections.py:8: RuntimeWarning: Failed to read commit hash:
+[36m(pid=2673641, ip=10.72.191.90)[0m No module named 'vllm._version'
+[36m(pid=2673641, ip=10.72.191.90)[0m   from vllm.version import __version__ as VLLM_VERSION
+[36m(WorkerDict pid=221492)[0m Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+[36m(WorkerDict pid=221492)[0m Loading weights:  59%|█████▊    | 182/310 [00:00<00:00, 412.23it/s][32m [repeated 8x across cluster][0m
+[36m(WorkerDict pid=221492)[0m [1mQwen3ForTokenClassification LOAD REPORT[0m from: Qwen/Qwen3-1.7B-Base
+[36m(WorkerDict pid=221492)[0m Key          | Status  | 
+[36m(WorkerDict pid=221492)[0m -------------+---------+-
+[36m(WorkerDict pid=221492)[0m score.weight | MISSING | 
+[36m(WorkerDict pid=221492)[0m score.bias   | MISSING | 
+[36m(WorkerDict pid=221492)[0m Notes:
+[36m(WorkerDict pid=221492)[0m - MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+[36m(pid=1231225, ip=10.72.191.70)[0m /home/s223540177/.conda/envs/searchr1_new/lib/python3.10/site-packages/vllm/connections.py:8: RuntimeWarning: Failed to read commit hash:
+[36m(pid=1231225, ip=10.72.191.70)[0m No module named 'vllm._version'
+[36m(pid=1231225, ip=10.72.191.70)[0m   from vllm.version import __version__ as VLLM_VERSION
+[36m(WorkerDict pid=2673641, ip=10.72.191.90)[0m Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+[36m(WorkerDict pid=2673641, ip=10.72.191.90)[0m Loading weights:   0%|          | 1/310 [00:01<07:35,  1.48s/it]
+[36m(WorkerDict pid=2673641, ip=10.72.191.90)[0m Loading weights:   2%|▏         | 6/310 [00:01<01:00,  5.02it/s]
+[36m(WorkerDict pid=2673641, ip=10.72.191.90)[0m Loading weights:  26%|██▋       | 82/310 [00:01<00:02, 89.12it/s]
+[36m(WorkerDict pid=2673641, ip=10.72.191.90)[0m Loading weights:  50%|█████     | 155/310 [00:01<00:00, 176.71it/s]
+[36m(WorkerDict pid=120742, ip=10.72.191.73)[0m Critic overriding config {'bos_token_id': None, 'eos_token_id': 151643, 'pad_token_id': 151643}
+[36m(WorkerDict pid=2673641, ip=10.72.191.90)[0m Loading weights:  66%|██████▌   | 205/310 [00:02<00:00, 156.13it/s]
+[36m(WorkerDict pid=2673641, ip=10.72.191.90)[0m Loading weights:  78%|███████▊  | 242/310 [00:02<00:00, 152.60it/s]
+[36m(WorkerDict pid=2673641, ip=10.72.191.90)[0m Loading weights:  87%|████████▋ | 271/310 [00:02<00:00, 136.88it/s]
+[36m(WorkerDict pid=2673641, ip=10.72.191.90)[0m Loading weights:  95%|█████████▍| 294/310 [00:02<00:00, 125.27it/s]
+[36m(WorkerDict pid=2673641, ip=10.72.191.90)[0m Loading weights: 100%|██████████| 310/310 [00:03<00:00, 101.20it/s]
+[36m(WorkerDict pid=2673641, ip=10.72.191.90)[0m [1mQwen3ForTokenClassification LOAD REPORT[0m from: Qwen/Qwen3-1.7B-Base
+[36m(WorkerDict pid=2673641, ip=10.72.191.90)[0m Key          | Status  | 
+[36m(WorkerDict pid=2673641, ip=10.72.191.90)[0m -------------+---------+-
+[36m(WorkerDict pid=2673641, ip=10.72.191.90)[0m score.bias   | MISSING | 
+[36m(WorkerDict pid=2673641, ip=10.72.191.90)[0m score.weight | MISSING | 
+[36m(WorkerDict pid=2673641, ip=10.72.191.90)[0m 
+[36m(WorkerDict pid=2673641, ip=10.72.191.90)[0m Notes:
+[36m(WorkerDict pid=2673641, ip=10.72.191.90)[0m - MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+[36m(pid=1647800, ip=10.72.191.91)[0m /home/s223540177/.conda/envs/searchr1_new/lib/python3.10/site-packages/vllm/connections.py:8: RuntimeWarning: Failed to read commit hash:
+[36m(pid=1647800, ip=10.72.191.91)[0m No module named 'vllm._version'
+[36m(pid=1647800, ip=10.72.191.91)[0m   from vllm.version import __version__ as VLLM_VERSION
+[36m(WorkerDict pid=120742, ip=10.72.191.73)[0m 
+[36m(WorkerDict pid=120742, ip=10.72.191.73)[0m Qwen3ForTokenClassification contains 1.72B parameters
+[36m(WorkerDict pid=120742, ip=10.72.191.73)[0m Before critic FSDP, memory allocated (GB): 0.0, memory reserved (GB): 0.0
+[36m(WorkerDict pid=120742, ip=10.72.191.73)[0m NCCL version 2.20.5+cuda12.4
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m Loading weights:   0%|          | 0/310 [00:00<?, ?it/s][32m [repeated 3x across cluster][0m
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m Loading weights:  98%|█████████▊| 304/310 [00:02<00:00, 141.86it/s]Loading weights: 100%|██████████| 310/310 [00:02<00:00, 112.33it/s]
+[36m(WorkerDict pid=1647800, ip=10.72.191.91)[0m 
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m 
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m [rank6]:[E419 21:50:31.838175394 ProcessGroupNCCL.cpp:1664] [PG 0 (default_pg) Rank 6] Exception (either an error or timeout) detected by watchdog at work: 1, last enqueued NCCL work: 1, last completed NCCL work: -1.
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m [rank6]:[E419 21:50:31.838238837 ProcessGroupNCCL.cpp:621] [Rank 6] Some NCCL operations have failed or timed out. Due to the asynchronous nature of CUDA kernels, subsequent GPU operations might run on corrupted/incomplete data.
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m [rank6]:[E419 21:50:31.838252991 ProcessGroupNCCL.cpp:627] [Rank 6] To avoid data inconsistency, we are taking the entire process down.
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m [rank6]:[E419 21:50:31.838315784 ProcessGroupNCCL.cpp:1515] [PG 0 (default_pg) Rank 6] Process group watchdog thread terminated with exception: NCCL error: remote process exited or there was a network error, NCCL version 2.20.5
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m ncclRemoteError: A call failed possibly due to a network error or a remote process exiting prematurely.
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m Last error:
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m NET/IB : Got completion from peer 10.72.191.90<47804> with status=5 opcode=1 len=0 vendor err 249 (Recv) localGid fe80::ba59:9fff:fecf:b152 remoteGidsfe80::9a03:9bff:fe92:617e
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m Exception raised from checkForNCCLErrorsInternal at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1892 (most recent call first):
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m frame #0: c10::Error::Error(c10::SourceLocation, std::string) + 0x96 (0x7f70481cbf86 in /home/s223540177/.conda/envs/searchr1_new/lib/python3.10/site-packages/torch/lib/libc10.so)
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m frame #1: c10d::ProcessGroupNCCL::checkForNCCLErrorsInternal(std::shared_ptr<c10d::NCCLComm>&) + 0x220 (0x7f53e9cfc1c0 in /home/s223540177/.conda/envs/searchr1_new/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so)
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m frame #2: c10d::ProcessGroupNCCL::WorkNCCL::checkAndSetException() + 0x7c (0x7f53e9cfc40c in /home/s223540177/.conda/envs/searchr1_new/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so)
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m frame #3: c10d::ProcessGroupNCCL::watchdogHandler() + 0x213 (0x7f53e9d032f3 in /home/s223540177/.conda/envs/searchr1_new/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so)
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m frame #4: c10d::ProcessGroupNCCL::ncclCommWatchdog() + 0x10c (0x7f53e9d056fc in /home/s223540177/.conda/envs/searchr1_new/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so)
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m frame #5: <unknown function> + 0xdf0e6 (0x7f70a0e730e6 in /vast/s223540177/.conda/envs/searchr1_new/bin/../lib/libstdc++.so.6)
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m frame #6: <unknown function> + 0x94ac3 (0x7f70a360eac3 in /lib/x86_64-linux-gnu/libc.so.6)
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m frame #7: <unknown function> + 0x1268d0 (0x7f70a36a08d0 in /lib/x86_64-linux-gnu/libc.so.6)
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m 
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m Loading weights:  84%|████████▍ | 261/310 [00:02<00:00, 156.54it/s][32m [repeated 16x across cluster][0m
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m Loading weights:  92%|█████████▏| 284/310 [00:02<00:00, 149.76it/s][32m [repeated 3x across cluster][0m
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m [1mQwen3ForTokenClassification LOAD REPORT[0m from: Qwen/Qwen3-1.7B-Base[32m [repeated 3x across cluster][0m
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m Key          | Status  | [32m [repeated 3x across cluster][0m
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m -------------+---------+-[32m [repeated 3x across cluster][0m
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m score.bias   | MISSING | [32m [repeated 3x across cluster][0m
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m score.weight | MISSING | [32m [repeated 3x across cluster][0m
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m Notes:[32m [repeated 3x across cluster][0m
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m - MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.[32m [repeated 3x across cluster][0m
+[36m(WorkerDict pid=1647800, ip=10.72.191.91)[0m Loading weights:  98%|█████████▊| 305/310 [00:03<00:00, 133.01it/s]Loading weights: 100%|██████████| 310/310 [00:03<00:00, 101.70it/s]
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m 
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m v100-f-10:1231225:1231346 [0] transport/net_ib.cc:1698 NCCL WARN NET/IB : Got completion from peer 10.72.191.90<47804> with status=12 opcode=1 len=0 vendor err 129 (Recv) localGid fe80::ba59:9fff:fecf:b152 remoteGidsfe80::9a03:9bff:fe92:617e
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m 
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m v100-f-10:1231225:1231346 [0] transport/net_ib.cc:1698 NCCL WARN NET/IB : Got completion from peer 10.72.191.90<47804> with status=5 opcode=1 len=0 vendor err 249 (Recv) localGid fe80::ba59:9fff:fecf:b152 remoteGidsfe80::9a03:9bff:fe92:617e
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m 
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m v100-f-10:1231225:1231346 [0] transport/net_ib.cc:1698 NCCL WARN NET/IB : Got completion from peer 10.72.191.90<47804> with status=5 opcode=1 len=0 vendor err 249 (Recv) localGid fe80::ba59:9fff:fecf:b152 remoteGidsfe80::9a03:9bff:fe92:617e
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m 
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m v100-f-10:1231225:1231346 [0] transport/net_ib.cc:1698 NCCL WARN NET/IB : Got completion from peer 10.72.191.90<47804> with status=5 opcode=1 len=0 vendor err 249 (Recv) localGid fe80::ba59:9fff:fecf:b152 remoteGidsfe80::9a03:9bff:fe92:617e
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m 
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m v100-f-10:1231225:1231346 [0] transport/net_ib.cc:1698 NCCL WARN NET/IB : Got completion from peer 10.72.191.90<47804> with status=5 opcode=1 len=0 vendor err 249 (Recv) localGid fe80::ba59:9fff:fecf:b152 remoteGidsfe80::9a03:9bff:fe92:617e
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m 
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m v100-f-10:1231225:1231346 [0] transport/net_ib.cc:1698 NCCL WARN NET/IB : Got completion from peer 10.72.191.90<47804> with status=5 opcode=1 len=0 vendor err 249 (Recv) localGid fe80::ba59:9fff:fecf:b152 remoteGidsfe80::9a03:9bff:fe92:617e
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m 
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m v100-f-10:1231225:1231346 [0] transport/net_ib.cc:1698 NCCL WARN NET/IB : Got completion from peer 10.72.191.90<47804> with status=5 opcode=1 len=0 vendor err 249 (Recv) localGid fe80::ba59:9fff:fecf:b152 remoteGidsfe80::9a03:9bff:fe92:617e
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m 
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m v100-f-10:1231225:1231346 [0] transport/net_ib.cc:1698 NCCL WARN NET/IB : Got completion from peer 10.72.191.90<47804> with status=5 opcode=1 len=0 vendor err 249 (Recv) localGid fe80::ba59:9fff:fecf:b152 remoteGidsfe80::9a03:9bff:fe92:617e
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m 
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m v100-f-10:1231225:1231346 [0] transport/net_ib.cc:1698 NCCL WARN NET/IB : Got completion from peer 10.72.191.90<47804> with status=5 opcode=1 len=0 vendor err 244 (Recv) localGid fe80::ba59:9fff:fecf:b152 remoteGidsfe80::9a03:9bff:fe92:617e
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m 
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m v100-f-10:1231225:1231346 [0] transport/net_ib.cc:1698 NCCL WARN NET/IB : Got completion from peer 10.72.191.90<47804> with status=5 opcode=1 len=0 vendor err 249 (Recv) localGid fe80::ba59:9fff:fecf:b152 remoteGidsfe80::9a03:9bff:fe92:617e
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m 
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m v100-f-10:1231225:1231346 [0] transport/net_ib.cc:1698 NCCL WARN NET/IB : Got completion from peer 10.72.191.90<47804> with status=5 opcode=1 len=0 vendor err 249 (Recv) localGid fe80::ba59:9fff:fecf:b152 remoteGidsfe80::9a03:9bff:fe92:617e
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m [2026-04-19 21:50:31,229 E 1231225 1231319] logging.cc:118: Unhandled exception: N3c1016DistBackendErrorE. what(): [PG 0 (default_pg) Rank 6] Process group watchdog thread terminated with exception: NCCL error: remote process exited or there was a network error, NCCL version 2.20.5
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m ncclRemoteError: A call failed possibly due to a network error or a remote process exiting prematurely.
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m Last error:
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m NET/IB : Got completion from peer 10.72.191.90<47804> with status=5 opcode=1 len=0 vendor err 249 (Recv) localGid fe80::ba59:9fff:fecf:b152 remoteGidsfe80::9a03:9bff:fe92:617e
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m Exception raised from checkForNCCLErrorsInternal at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1892 (most recent call first):
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m frame #0: c10::Error::Error(c10::SourceLocation, std::string) + 0x96 (0x7f70481cbf86 in /home/s223540177/.conda/envs/searchr1_new/lib/python3.10/site-packages/torch/lib/libc10.so)
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m frame #1: c10d::ProcessGroupNCCL::checkForNCCLErrorsInternal(std::shared_ptr<c10d::NCCLComm>&) + 0x220 (0x7f53e9cfc1c0 in /home/s223540177/.conda/envs/searchr1_new/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so)
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m frame #2: c10d::ProcessGroupNCCL::WorkNCCL::checkAndSetException() + 0x7c (0x7f53e9cfc40c in /home/s223540177/.conda/envs/searchr1_new/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so)
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m frame #3: c10d::ProcessGroupNCCL::watchdogHandler() + 0x213 (0x7f53e9d032f3 in /home/s223540177/.conda/envs/searchr1_new/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so)
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m frame #4: c10d::ProcessGroupNCCL::ncclCommWatchdog() + 0x10c (0x7f53e9d056fc in /home/s223540177/.conda/envs/searchr1_new/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so)
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m frame #5: <unknown function> + 0xdf0e6 (0x7f70a0e730e6 in /vast/s223540177/.conda/envs/searchr1_new/bin/../lib/libstdc++.so.6)
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m frame #6: <unknown function> + 0x94ac3 (0x7f70a360eac3 in /lib/x86_64-linux-gnu/libc.so.6)
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m frame #7: <unknown function> + 0x1268d0 (0x7f70a36a08d0 in /lib/x86_64-linux-gnu/libc.so.6)
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m 
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m Exception raised from ncclCommWatchdog at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1521 (most recent call first):
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m frame #0: c10::Error::Error(c10::SourceLocation, std::string) + 0x96 (0x7f70481cbf86 in /home/s223540177/.conda/envs/searchr1_new/lib/python3.10/site-packages/torch/lib/libc10.so)
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m frame #1: <unknown function> + 0xe5aa84 (0x7f53e998ea84 in /home/s223540177/.conda/envs/searchr1_new/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so)
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m frame #2: <unknown function> + 0xdf0e6 (0x7f70a0e730e6 in /vast/s223540177/.conda/envs/searchr1_new/bin/../lib/libstdc++.so.6)
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m frame #3: <unknown function> + 0x94ac3 (0x7f70a360eac3 in /lib/x86_64-linux-gnu/libc.so.6)
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m frame #4: <unknown function> + 0x1268d0 (0x7f70a36a08d0 in /lib/x86_64-linux-gnu/libc.so.6)
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m  /home/s223540177/.conda/envs/searchr1_new/lib/python3.10/site-packages/ray/_raylet.so(+0x178074a) [0x7f70a272574a] ray::operator<<()
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m /home/s223540177/.conda/envs/searchr1_new/lib/python3.10/site-packages/ray/_raylet.so(+0x17811fc) [0x7f70a27261fc] ray::RayLog::operator<< <>()
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m /home/s223540177/.conda/envs/searchr1_new/lib/python3.10/site-packages/ray/_raylet.so(+0x8bee23) [0x7f70a1863e23] ray::TerminateHandler()
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m /vast/s223540177/.conda/envs/searchr1_new/bin/../lib/libstdc++.so.6(+0xc2519) [0x7f70a0e56519] __cxxabiv1::__terminate()
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m /vast/s223540177/.conda/envs/searchr1_new/bin/../lib/libstdc++.so.6(_ZSt10unexpectedv+0) [0x7f70a0e50063] std::unexpected()
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m /vast/s223540177/.conda/envs/searchr1_new/bin/../lib/libstdc++.so.6(+0xc2512) [0x7f70a0e56512] __cxxabiv1::__terminate()
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m /home/s223540177/.conda/envs/searchr1_new/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so(+0xe5ab35) [0x7f53e998eb35] c10d::ProcessGroupNCCL::ncclCommWatchdog()
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m /vast/s223540177/.conda/envs/searchr1_new/bin/../lib/libstdc++.so.6(+0xdf0e6) [0x7f70a0e730e6] execute_native_thread_routine
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m /lib/x86_64-linux-gnu/libc.so.6(+0x94ac3) [0x7f70a360eac3]
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m /lib/x86_64-linux-gnu/libc.so.6(+0x1268d0) [0x7f70a36a08d0]
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m 
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m [2026-04-19 21:50:31,234 E 1231225 1231319] logging.cc:125: Stack trace: 
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m  /home/s223540177/.conda/envs/searchr1_new/lib/python3.10/site-packages/ray/_raylet.so(+0x178074a) [0x7f70a272574a] ray::operator<<()
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m /home/s223540177/.conda/envs/searchr1_new/lib/python3.10/site-packages/ray/_raylet.so(+0x17811fc) [0x7f70a27261fc] ray::RayLog::operator<< <>()
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m /home/s223540177/.conda/envs/searchr1_new/lib/python3.10/site-packages/ray/_raylet.so(+0x17837b8) [0x7f70a27287b8] ray::TerminateHandler()
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m /vast/s223540177/.conda/envs/searchr1_new/bin/../lib/libstdc++.so.6(+0xc2519) [0x7f70a0e56519] __cxxabiv1::__terminate()
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m /vast/s223540177/.conda/envs/searchr1_new/bin/../lib/libstdc++.so.6(_ZSt10unexpectedv+0) [0x7f70a0e50063] std::unexpected()
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m /vast/s223540177/.conda/envs/searchr1_new/bin/../lib/libstdc++.so.6(+0xc2512) [0x7f70a0e56512] __cxxabiv1::__terminate()
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m /home/s223540177/.conda/envs/searchr1_new/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so(+0xe5ab35) [0x7f53e998eb35] c10d::ProcessGroupNCCL::ncclCommWatchdog()
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m /vast/s223540177/.conda/envs/searchr1_new/bin/../lib/libstdc++.so.6(+0xdf0e6) [0x7f70a0e730e6] execute_native_thread_routine
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m /lib/x86_64-linux-gnu/libc.so.6(+0x94ac3) [0x7f70a360eac3]
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m /lib/x86_64-linux-gnu/libc.so.6(+0x1268d0) [0x7f70a36a08d0]
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m 
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m *** SIGABRT received at time=1776599431 on cpu 6 ***
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m PC: @     0x7f70a36109fc  (unknown)  pthread_kill
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m     @     0x7f70a35bc520  (unknown)  (unknown)
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m [2026-04-19 21:50:31,234 E 1231225 1231319] logging.cc:474: *** SIGABRT received at time=1776599431 on cpu 6 ***
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m [2026-04-19 21:50:31,234 E 1231225 1231319] logging.cc:474: PC: @     0x7f70a36109fc  (unknown)  pthread_kill
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m [2026-04-19 21:50:31,234 E 1231225 1231319] logging.cc:474:     @     0x7f70a35bc520  (unknown)  (unknown)
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m Fatal Python error: Aborted
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m 
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m 
+[36m(WorkerDict pid=1231225, ip=10.72.191.70)[0m Extension modules: msgpack._cmsgpack, google._upb._message, psutil._psutil_linux, charset_normalizer.md, charset_normalizer.cd, requests.packages.charset_normalizer.md, requests.packages.chardet.md, requests.packages.charset_normalizer.cd, requests.packages.chardet.cd, yaml._yaml, uvloop.loop, ray._raylet, numpy.core._multiarray_umath, numpy.core._multiarray_tests, numpy.linalg._umath_linalg, numpy.fft._pocketfft_internal, numpy.random._common, numpy.random.bit_generator, numpy.random._bounded_integers, numpy.random._mt19937, numpy.random.mtrand, numpy.random._philox, numpy.random._pcg64, numpy.random._sfc64, numpy.random._generator, torch._C, torch._C._fft, torch._C._linalg, torch._C._nested, torch._C._nn, torch._C._sparse, torch._C._special, regex._regex, markupsafe._speedups, PIL._imaging, PIL._imagingft, msgspec._core, sentencepiece._sentencepiece, multidict._multidict, yarl._quoting_c, propcache._helpers_c, aiohttp._http_writer, aiohttp._http_parser, aiohttp._websocket.mask, aiohttp._websocket.reader_c, frozenlist._frozenlist (total: 46)
+[36m(WorkerDict pid=2673641, ip=10.72.191.90)[0m 
+[36m(WorkerDict pid=2673641, ip=10.72.191.90)[0m 
+[36m(WorkerDict pid=2673641, ip=10.72.191.90)[0m 
+[36m(WorkerDict pid=2673641, ip=10.72.191.90)[0m 
+[36m(WorkerDict pid=2673641, ip=10.72.191.90)[0m 
+[36m(WorkerDict pid=2673641, ip=10.72.191.90)[0m 
+[36m(WorkerDict pid=2673641, ip=10.72.191.90)[0m 
+[36m(WorkerDict pid=2673641, ip=10.72.191.90)[0m 
+[36m(WorkerDict pid=2673641, ip=10.72.191.90)[0m 
+[36m(WorkerDict pid=2673641, ip=10.72.191.90)[0m 
+[36m(WorkerDict pid=2673641, ip=10.72.191.90)[0m 
+[36m(WorkerDict pid=2673641, ip=10.72.191.90)[0m 
+[36m(WorkerDict pid=2673641, ip=10.72.191.90)[0m 
+[36m(WorkerDict pid=2673641, ip=10.72.191.90)[0m 
+[36m(WorkerDict pid=2673641, ip=10.72.191.90)[0m 
+[36m(WorkerDict pid=2673641, ip=10.72.191.90)[0m 
+[36m(WorkerDict pid=2673641, ip=10.72.191.90)[0m 
+[36m(WorkerDict pid=2673641, ip=10.72.191.90)[0m 
+[36m(WorkerDict pid=2673641, ip=10.72.191.90)[0m  remoteGidsfe80::526b:4bff:fecd:c636
+[36m(WorkerDict pid=2673641, ip=10.72.191.90)[0m 
+[36m(WorkerDict pid=2673641, ip=10.72.191.90)[0m /vast/s223540177/.conda/envs/searchr1_new/bin/../lib/libstdc++.so.6(+0xc2519) [0x7f5afb963519] __cxxabiv1::__terminate()
+[36m(WorkerDict pid=2673641, ip=10.72.191.90)[0m /vast/s223540177/.conda/envs/searchr1_new/bin/../lib/libstdc++.so.6(+0xc2512) [0x7f5afb963512] __cxxabiv1::__terminate()
+[36m(WorkerDict pid=2673641, ip=10.72.191.90)[0m /home/s223540177/.conda/envs/searchr1_new/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so(+0xe5ab35) [0x7f35ed98eb35] c10d::ProcessGroupNCCL::ncclCommWatchdog()
+[36m(WorkerDict pid=2673641, ip=10.72.191.90)[0m /lib/x86_64-linux-gnu/libc.so.6(+0x94ac3) [0x7f5afe11dac3]
+[36m(WorkerDict pid=2673641, ip=10.72.191.90)[0m /lib/x86_64-linux-gnu/libc.so.6(+0x1268d0) [0x7f5afe1af8d0]
+[36m(WorkerDict pid=2673641, ip=10.72.191.90)[0m 
+[36m(WorkerDict pid=2673641, ip=10.72.191.90)[0m /vast/s223540177/.conda/envs/searchr1_new/bin/../lib/libstdc++.so.6(+0xc2519) [0x7f5afb963519] __cxxabiv1::__terminate()
+[36m(WorkerDict pid=2673641, ip=10.72.191.90)[0m /vast/s223540177/.conda/envs/searchr1_new/bin/../lib/libstdc++.so.6(+0xc2512) [0x7f5afb963512] __cxxabiv1::__terminate()
+[36m(WorkerDict pid=2673641, ip=10.72.191.90)[0m /home/s223540177/.conda/envs/searchr1_new/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so(+0xe5ab35) [0x7f35ed98eb35] c10d::ProcessGroupNCCL::ncclCommWatchdog()
+[36m(WorkerDict pid=2673641, ip=10.72.191.90)[0m /lib/x86_64-linux-gnu/libc.so.6(+0x94ac3) [0x7f5afe11dac3]
+[36m(WorkerDict pid=2673641, ip=10.72.191.90)[0m /lib/x86_64-linux-gnu/libc.so.6(+0x1268d0) [0x7f5afe1af8d0]
+[36m(WorkerDict pid=2673641, ip=10.72.191.90)[0m 
+[36m(WorkerDict pid=2673641, ip=10.72.191.90)[0m 
+[36m(WorkerDict pid=2673641, ip=10.72.191.90)[0m 
+[33m(raylet)[0m A worker died or was killed while executing a task by an unexpected system error. To troubleshoot the problem, check the logs for the dead worker. Lease ID: 0e000000059bc963aa00527fe2d2950f8cf23766947804e48af799b946da126e Worker ID: d33d98a52ced069a8c48c4e084325e6519aa960caa0c4c78d5523aa4 Node ID: de58f4e83d408ea5e0a6de0dfe2f70b98a0622f6f1d53742675c222c Worker IP address: 10.72.191.70 Worker port: 10002 Worker PID: 1231225 Worker exit type: SYSTEM_ERROR Worker exit detail: Worker unexpectedly exits with a connection error code 2. End of file. Some common causes include: (1) the process was killed by the OOM killer due to high memory usage, (2) ray stop --force was called, or (3) the worker crashed unexpectedly due to SIGSEGV or another unexpected error.
+Error executing job with overrides: ['data.train_files=data/nq_search/train.parquet', 'data.val_files=data/nq_search/test.parquet', 'data.train_data_num=null', 'data.val_data_num=null', 'data.train_batch_size=512', 'data.val_batch_size=256', 'data.max_prompt_length=4096', 'data.max_response_length=500', 'data.max_start_length=2048', 'data.max_obs_length=500', 'data.shuffle_train_dataloader=True', 'algorithm.adv_estimator=gae', 'actor_rollout_ref.model.path=Qwen/Qwen3-1.7B-Base', 'actor_rollout_ref.actor.optim.lr=1e-6', 'actor_rollout_ref.model.enable_gradient_checkpointing=true', 'actor_rollout_ref.model.use_remove_padding=False', '+actor_rollout_ref.model.attn_implementation=sdpa', 'actor_rollout_ref.actor.optim.lr_warmup_steps_ratio=0.285', 'actor_rollout_ref.actor.ppo_mini_batch_size=256', 'actor_rollout_ref.actor.ppo_micro_batch_size=64', '+actor_rollout_ref.actor.autocast_dtype=fp16', 'actor_rollout_ref.actor.fsdp_config.param_offload=true', 'actor_rollout_ref.actor.fsdp_config.grad_offload=true', 'actor_rollout_ref.actor.fsdp_config.optimizer_offload=true', '+actor_rollout_ref.actor.fsdp_config.mixed_precision.param_dtype=fp16', '+actor_rollout_ref.actor.fsdp_config.mixed_precision.reduce_dtype=fp32', '+actor_rollout_ref.actor.fsdp_config.mixed_precision.buffer_dtype=fp32', 'actor_rollout_ref.rollout.log_prob_micro_batch_size=128', 'actor_rollout_ref.rollout.tensor_model_parallel_size=1', 'actor_rollout_ref.rollout.name=vllm', 'actor_rollout_ref.rollout.dtype=half', 'actor_rollout_ref.rollout.gpu_memory_utilization=0.6', 'actor_rollout_ref.ref.log_prob_micro_batch_size=128', 'actor_rollout_ref.ref.fsdp_config.param_offload=True', 'actor_rollout_ref.rollout.n_agent=1', 'actor_rollout_ref.rollout.temperature=1', 'actor_rollout_ref.actor.state_masking=true', 'critic.optim.lr=1e-5', 'critic.model.use_remove_padding=False', '+critic.model.attn_implementation=sdpa', '+critic.autocast_dtype=fp16', 'critic.optim.lr_warmup_steps_ratio=0.015', 'critic.model.path=Qwen/Qwen3-1.7B-Base', 'critic.model.enable_gradient_checkpointing=true', 'critic.ppo_micro_batch_size=8', 'critic.model.fsdp_config.param_offload=true', 'critic.model.fsdp_config.grad_offload=true', 'critic.model.fsdp_config.optimizer_offload=true', '+critic.model.fsdp_config.mixed_precision.param_dtype=fp16', '+critic.model.fsdp_config.mixed_precision.reduce_dtype=fp32', '+critic.model.fsdp_config.mixed_precision.buffer_dtype=fp32', 'algorithm.kl_ctrl.kl_coef=0.001', 'algorithm.no_think_rl=false', 'trainer.critic_warmup=0', 'trainer.logger=[wandb]', '+trainer.val_only=false', '+trainer.val_before_train=true', 'trainer.default_hdfs_dir=null', 'trainer.n_gpus_per_node=1', 'trainer.nnodes=8', 'trainer.save_freq=100', 'trainer.test_freq=50', 'trainer.project_name=Search-R1', 'trainer.experiment_name=nq-search-r1-ppo-qwen3-1.7b-em', 'trainer.total_epochs=15', 'trainer.total_training_steps=1005', 'trainer.default_hdfs_dir=null', 'trainer.default_local_dir=verl_checkpoints/nq-search-r1-ppo-qwen3-1.7b-em', 'max_turns=2', 'retriever.url=http://10.72.191.62:8000/retrieve', 'retriever.topk=3']
+[36m(WorkerDict pid=2103463, ip=10.72.191.77)[0m 
+[36m(WorkerDict pid=2103463, ip=10.72.191.77)[0m v100-f-17:2103463:2103575 [0] transport/net_ib.cc:1698 NCCL WARN NET/IB : Got completion from peer 10.72.191.91<38581> with status=12 opcode=0 len=32506 vendor err 129 (Send) localGid fe80::ba59:9fff:fecf:afc2 remoteGidsfe80::526b:4bff:fecd:c636
+[36m(WorkerDict pid=2103463, ip=10.72.191.77)[0m 
+[36m(WorkerDict pid=2103463, ip=10.72.191.77)[0m v100-f-17:2103463:2103575 [0] transport/net_ib.cc:1698 NCCL WARN NET/IB : Got completion from peer 10.72.191.91<38581> with status=5 opcode=0 len=32506 vendor err 249 (Send) localGid fe80::ba59:9fff:fecf:afc2 remoteGidsfe80::526b:4bff:fecd:c636
+[36m(WorkerDict pid=2103463, ip=10.72.191.77)[0m 
+[36m(WorkerDict pid=2103463, ip=10.72.191.77)[0m v100-f-17:2103463:2103575 [0] transport/net_ib.cc:1698 NCCL WARN NET/IB : Got completion from peer 10.72.191.91<38581> with status=5 opcode=0 len=32506 vendor err 249 (Send) localGid fe80::ba59:9fff:fecf:afc2 remoteGidsfe80::526b:4bff:fecd:c636
+[36m(WorkerDict pid=2103463, ip=10.72.191.77)[0m 
+[36m(WorkerDict pid=2103463, ip=10.72.191.77)[0m v100-f-17:2103463:2103575 [0] transport/net_ib.cc:1698 NCCL WARN NET/IB : Got completion from peer 10.72.191.91<38581> with status=5 opcode=0 len=32506 vendor err 249 (Send) localGid fe80::ba59:9fff:fecf:afc2 remoteGidsfe80::526b:4bff:fecd:c636
+[36m(WorkerDict pid=2103463, ip=10.72.191.77)[0m 
+[36m(WorkerDict pid=2103463, ip=10.72.191.77)[0m v100-f-17:2103463:2103575 [0] transport/net_ib.cc:1698 NCCL WARN NET/IB : Got completion from peer 10.72.191.91<38581> with status=5 opcode=0 len=32506 vendor err 249 (Send) localGid fe80::ba59:9fff:fecf:afc2 remoteGidsfe80::526b:4bff:fecd:c636
+[36m(WorkerDict pid=2103463, ip=10.72.191.77)[0m 
+[36m(WorkerDict pid=2103463, ip=10.72.191.77)[0m v100-f-17:2103463:2103575 [0] transport/net_ib.cc:1698 NCCL WARN NET/IB : Got completion from peer 10.72.191.91<38581> with status=5 opcode=0 len=32506 vendor err 249 (Send) localGid fe80::ba59:9fff:fecf:afc2 remoteGidsfe80::526b:4bff:fecd:c636
+[36m(WorkerDict pid=2103463, ip=10.72.191.77)[0m 
+[36m(WorkerDict pid=2103463, ip=10.72.191.77)[0m v100-f-17:2103463:2103575 [0] transport/net_ib.cc:1698 NCCL WARN NET/IB : Got completion from peer 10.72.191.91<38581> with status=5 opcode=0 len=32506 vendor err 249 (Send) localGid fe80::ba59:9fff:fecf:afc2 remoteGidsfe80::526b:4bff:fecd:c636
+[36m(WorkerDict pid=2103463, ip=10.72.191.77)[0m 
+[36m(WorkerDict pid=2103463, ip=10.72.191.77)[0m v100-f-17:2103463:2103575 [0] transport/net_ib.cc:1698 NCCL WARN NET/IB : Got completion from peer 10.72.191.91<38581> with status=5 opcode=0 len=32506 vendor err 249 (Send) localGid fe80::ba59:9fff:fecf:afc2 remoteGidsfe80::526b:4bff:fecd:c636
+[36m(WorkerDict pid=2103463, ip=10.72.191.77)[0m NET/IB : Got completion from peer 10.72.191.91<38581> with status=5 opcode=0 len=32506 vendor err 249 (Send) localGid fe80::ba59:9fff:fecf:afc2 remoteGidsfe80::526b:4bff:fecd:c636
+[36m(WorkerDict pid=2103463, ip=10.72.191.77)[0m 
+Traceback (most recent call last):
+  File "/home/s223540177/Search-R1/.ray_verl_import_2863585/verl/trainer/main_ppo.py", line 120, in main
+    ray.get(main_task.remote(config))
+  File "/home/s223540177/.conda/envs/searchr1_new/lib/python3.10/site-packages/ray/_private/auto_init_hook.py", line 22, in auto_init_wrapper
+    return fn(*args, **kwargs)
+  File "/home/s223540177/.conda/envs/searchr1_new/lib/python3.10/site-packages/ray/_private/client_mode_hook.py", line 107, in wrapper
+    return func(*args, **kwargs)
+  File "/home/s223540177/.conda/envs/searchr1_new/lib/python3.10/site-packages/ray/_private/worker.py", line 2980, in get
+    values, debugger_breakpoint = worker.get_objects(
+  File "/home/s223540177/.conda/envs/searchr1_new/lib/python3.10/site-packages/ray/_private/worker.py", line 1023, in get_objects
+    raise value.as_instanceof_cause()
+ray.exceptions.RayTaskError(ActorDiedError): [36mray::main_task()[39m (pid=221330, ip=10.72.191.171)
+  File "/home/s223540177/Search-R1/.ray_verl_import_2863585/verl/trainer/main_ppo.py", line 207, in main_task
+    trainer.init_workers()
+  File "/home/s223540177/Search-R1/.ray_verl_import_2863585/verl/trainer/ppo/ray_trainer.py", line 609, in init_workers
+    self.critic_wg.init_model()
+  File "/home/s223540177/Search-R1/.ray_verl_import_2863585/verl/single_controller/ray/base.py", line 43, in func
+    output = ray.get(output)
+ray.exceptions.ActorDiedError: The actor died unexpectedly before finishing this task.
+	class_name: create_colocated_worker_cls.<locals>.WorkerDict
+	actor_id: 97531880f76c3b6cf1beb1cc02000000
+	pid: 1231225
+	name: wauhIrWorkerDict_6:0
+	namespace: 79e1fc5f-a7b9-4904-bb35-331e429c9b64
+	ip: 10.72.191.70
+The actor is dead because its worker process has died. Worker exit type: SYSTEM_ERROR Worker exit detail: Worker unexpectedly exits with a connection error code 2. End of file. Some common causes include: (1) the process was killed by the OOM killer due to high memory usage, (2) ray stop --force was called, or (3) the worker crashed unexpectedly due to SIGSEGV or another unexpected error.
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.
+[36m(WorkerDict pid=2103463, ip=10.72.191.77)[0m NET/IB : Got completion from peer 10.72.191.91<38581> with status=5 opcode=0 len=32506 vendor err 249 (Send) localGid fe80::ba59:9fff:fecf:afc2 remoteGidsfe80::526b:4bff:fecd:c636
+[36m(WorkerDict pid=2103463, ip=10.72.191.77)[0m 
+[36m(WorkerDict pid=2103463, ip=10.72.191.77)[0m /vast/s223540177/.conda/envs/searchr1_new/bin/../lib/libstdc++.so.6(+0xc2519) [0x7f18aa02e519] __cxxabiv1::__terminate()
+[36m(WorkerDict pid=2103463, ip=10.72.191.77)[0m /vast/s223540177/.conda/envs/searchr1_new/bin/../lib/libstdc++.so.6(+0xc2512) [0x7f18aa02e512] __cxxabiv1::__terminate()
+[36m(WorkerDict pid=2103463, ip=10.72.191.77)[0m /home/s223540177/.conda/envs/searchr1_new/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so(+0xe5ab35) [0x7efbda216b35] c10d::ProcessGroupNCCL::ncclCommWatchdog()
+[36m(WorkerDict pid=2103463, ip=10.72.191.77)[0m /lib/x86_64-linux-gnu/libc.so.6(+0x94ac3) [0x7f18ac7e6ac3]
+[36m(WorkerDict pid=2103463, ip=10.72.191.77)[0m /lib/x86_64-linux-gnu/libc.so.6(+0x1268d0) [0x7f18ac8788d0]
+[36m(WorkerDict pid=2103463, ip=10.72.191.77)[0m 
+[36m(WorkerDict pid=2103463, ip=10.72.191.77)[0m /vast/s223540177/.conda/envs/searchr1_new/bin/../lib/libstdc++.so.6(+0xc2519) [0x7f18aa02e519] __cxxabiv1::__terminate()
+[36m(WorkerDict pid=2103463, ip=10.72.191.77)[0m /vast/s223540177/.conda/envs/searchr1_new/bin/../lib/libstdc++.so.6(+0xc2512) [0x7f18aa02e512] __cxxabiv1::__terminate()
+[36m(WorkerDict pid=2103463, ip=10.72.191.77)[0m /home/s223540177/.conda/envs/searchr1_new/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so(+0xe5ab35) [0x7efbda216b35] c10d::ProcessGroupNCCL::ncclCommWatchdog()
+[36m(WorkerDict pid=2103463, ip=10.72.191.77)[0m /lib/x86_64-linux-gnu/libc.so.6(+0x94ac3) [0x7f18ac7e6ac3]
+[36m(WorkerDict pid=2103463, ip=10.72.191.77)[0m /lib/x86_64-linux-gnu/libc.so.6(+0x1268d0) [0x7f18ac8788d0]
+[36m(WorkerDict pid=2103463, ip=10.72.191.77)[0m 
+[36m(WorkerDict pid=2103463, ip=10.72.191.77)[0m 
+[36m(WorkerDict pid=2103463, ip=10.72.191.77)[0m 
+[36m(WorkerDict pid=2673641, ip=10.72.191.90)[0m v100l-f-05:2673641:2673971 [0] transport/net_ib.cc:1698 NCCL WARN NET/IB : Got completion from peer 10.72.191.91<59926> with status=5 opcode=0 len=0 vendor err 249 (Recv) localGid fe80::9a03:9bff:fe92:617e[32m [repeated 17x across cluster][0m
+[33m(raylet)[0m A worker died or was killed while executing a task by an unexpected system error. To troubleshoot the problem, check the logs for the dead worker. Lease ID: 08000000356213679ad373a67967c2f72fec78987363b5fb935ed644885fb17b Worker ID: 9dfb0213afad0986fb1b7b00267b6829d513029cbf563974e159c0f2 Node ID: 7b149fcf1544803bcab5618b6c2d5f9ed6c0a4864f11c807b4fd13cd Worker IP address: 10.72.191.77 Worker port: 10002 Worker PID: 2103463 Worker exit type: SYSTEM_ERROR Worker exit detail: Worker unexpectedly exits with a connection error code 2. End of file. Some common causes include: (1) the process was killed by the OOM killer due to high memory usage, (2) ray stop --force was called, or (3) the worker crashed unexpectedly due to SIGSEGV or another unexpected error.[32m [repeated 2x across cluster][0m
+[36m(WorkerDict pid=2103463, ip=10.72.191.77)[0m [rank3]:[E419 21:50:31.469533586 ProcessGroupNCCL.cpp:1664] [PG 0 (default_pg) Rank 3] Exception (either an error or timeout) detected by watchdog at work: 1, last enqueued NCCL work: 1, last completed NCCL work: -1.[32m [repeated 2x across cluster][0m
+[36m(WorkerDict pid=2103463, ip=10.72.191.77)[0m [rank3]:[E419 21:50:31.469595577 ProcessGroupNCCL.cpp:621] [Rank 3] Some NCCL operations have failed or timed out. Due to the asynchronous nature of CUDA kernels, subsequent GPU operations might run on corrupted/incomplete data.[32m [repeated 2x across cluster][0m
+[36m(WorkerDict pid=2103463, ip=10.72.191.77)[0m [rank3]:[E419 21:50:31.469609639 ProcessGroupNCCL.cpp:627] [Rank 3] To avoid data inconsistency, we are taking the entire process down.[32m [repeated 2x across cluster][0m
+[36m(WorkerDict pid=2103463, ip=10.72.191.77)[0m [rank3]:[E419 21:50:31.469696030 ProcessGroupNCCL.cpp:1515] [PG 0 (default_pg) Rank 3] Process group watchdog thread terminated with exception: NCCL error: remote process exited or there was a network error, NCCL version 2.20.5[32m [repeated 2x across cluster][0m
+[36m(WorkerDict pid=2103463, ip=10.72.191.77)[0m ncclRemoteError: A call failed possibly due to a network error or a remote process exiting prematurely.[32m [repeated 4x across cluster][0m
+[36m(WorkerDict pid=2103463, ip=10.72.191.77)[0m Last error:[32m [repeated 4x across cluster][0m
+[36m(WorkerDict pid=2673641, ip=10.72.191.90)[0m NET/IB : Got completion from peer 10.72.191.91<59926> with status=5 opcode=0 len=0 vendor err 249 (Recv) localGid fe80::9a03:9bff:fe92:617e remoteGidsfe80::526b:4bff:fecd:c636[32m [repeated 2x across cluster][0m
+[36m(WorkerDict pid=2103463, ip=10.72.191.77)[0m Exception raised from checkForNCCLErrorsInternal at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1892 (most recent call first):[32m [repeated 4x across cluster][0m
+[36m(WorkerDict pid=2103463, ip=10.72.191.77)[0m frame #0: c10::Error::Error(c10::SourceLocation, std::string) + 0x96 (0x7f1848377f86 in /home/s223540177/.conda/envs/searchr1_new/lib/python3.10/site-packages/torch/lib/libc10.so)[32m [repeated 6x across cluster][0m
+[36m(WorkerDict pid=2103463, ip=10.72.191.77)[0m frame #4: c10d::ProcessGroupNCCL::ncclCommWatchdog() + 0x10c (0x7efbda58d6fc in /home/s223540177/.conda/envs/searchr1_new/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so)[32m [repeated 16x across cluster][0m
+[36m(WorkerDict pid=2103463, ip=10.72.191.77)[0m frame #4: <unknown function> + 0x1268d0 (0x7f18ac8788d0 in /lib/x86_64-linux-gnu/libc.so.6)[32m [repeated 20x across cluster][0m
+[36m(WorkerDict pid=2103463, ip=10.72.191.77)[0m [2026-04-19 21:50:31,829 E 2103463 2103546] logging.cc:118: Unhandled exception: N3c1016DistBackendErrorE. what(): [PG 0 (default_pg) Rank 3] Process group watchdog thread terminated with exception: NCCL error: remote process exited or there was a network error, NCCL version 2.20.5[32m [repeated 2x across cluster][0m
+[36m(WorkerDict pid=2103463, ip=10.72.191.77)[0m Exception raised from ncclCommWatchdog at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1521 (most recent call first):[32m [repeated 2x across cluster][0m
+[36m(WorkerDict pid=2103463, ip=10.72.191.77)[0m  /home/s223540177/.conda/envs/searchr1_new/lib/python3.10/site-packages/ray/_raylet.so(+0x178074a) [0x7f18ab8fd74a] ray::operator<<()[32m [repeated 4x across cluster][0m
+[36m(WorkerDict pid=2103463, ip=10.72.191.77)[0m /home/s223540177/.conda/envs/searchr1_new/lib/python3.10/site-packages/ray/_raylet.so(+0x17811fc) [0x7f18ab8fe1fc] ray::RayLog::operator<< <>()[32m [repeated 4x across cluster][0m
+[36m(WorkerDict pid=2103463, ip=10.72.191.77)[0m /home/s223540177/.conda/envs/searchr1_new/lib/python3.10/site-packages/ray/_raylet.so(+0x17837b8) [0x7f18ab9007b8] ray::TerminateHandler()[32m [repeated 4x across cluster][0m
+[36m(WorkerDict pid=2103463, ip=10.72.191.77)[0m /vast/s223540177/.conda/envs/searchr1_new/bin/../lib/libstdc++.so.6(_ZSt10unexpectedv+0) [0x7f18aa028063] std::unexpected()[32m [repeated 4x across cluster][0m
+[36m(WorkerDict pid=2103463, ip=10.72.191.77)[0m /vast/s223540177/.conda/envs/searchr1_new/bin/../lib/libstdc++.so.6(+0xdf0e6) [0x7f18aa04b0e6] execute_native_thread_routine[32m [repeated 4x across cluster][0m
+[36m(WorkerDict pid=2103463, ip=10.72.191.77)[0m [2026-04-19 21:50:31,841 E 2103463 2103546] logging.cc:125: Stack trace: [32m [repeated 2x across cluster][0m
+[36m(WorkerDict pid=2103463, ip=10.72.191.77)[0m *** SIGABRT received at time=1776599431 on cpu 28 ***[32m [repeated 2x across cluster][0m
+[36m(WorkerDict pid=2103463, ip=10.72.191.77)[0m PC: @     0x7f18ac7e89fc  (unknown)  pthread_kill[32m [repeated 2x across cluster][0m
+[36m(WorkerDict pid=2103463, ip=10.72.191.77)[0m     @     0x7f18ac794520  (unknown)  (unknown)[32m [repeated 2x across cluster][0m
+[36m(WorkerDict pid=2103463, ip=10.72.191.77)[0m [2026-04-19 21:50:31,841 E 2103463 2103546] logging.cc:474: *** SIGABRT received at time=1776599431 on cpu 28 ***[32m [repeated 2x across cluster][0m
+[36m(WorkerDict pid=2103463, ip=10.72.191.77)[0m [2026-04-19 21:50:31,841 E 2103463 2103546] logging.cc:474: PC: @     0x7f18ac7e89fc  (unknown)  pthread_kill[32m [repeated 2x across cluster][0m
+[36m(WorkerDict pid=2103463, ip=10.72.191.77)[0m [2026-04-19 21:50:31,841 E 2103463 2103546] logging.cc:474:     @     0x7f18ac794520  (unknown)  (unknown)[32m [repeated 2x across cluster][0m
+[36m(WorkerDict pid=2103463, ip=10.72.191.77)[0m Fatal Python error: Aborted[32m [repeated 2x across cluster][0m
+[36m(WorkerDict pid=2103463, ip=10.72.191.77)[0m Extension modules: msgpack._cmsgpack, google._upb._message, psutil._psutil_linux, charset_normalizer.md, charset_normalizer.cd, requests.packages.charset_normalizer.md, requests.packages.chardet.md, requests.packages.charset_normalizer.cd, requests.packages.chardet.cd, yaml._yaml, uvloop.loop, ray._raylet, numpy.core._multiarray_umath, numpy.core._multiarray_tests, numpy.linalg._umath_linalg, numpy.fft._pocketfft_internal, numpy.random._common, numpy.random.bit_generator, numpy.random._bounded_integers, numpy.random._mt19937, numpy.random.mtrand, numpy.random._philox, numpy.random._pcg64, numpy.random._sfc64, numpy.random._generator, torch._C, torch._C._fft, torch._C._linalg, torch._C._nested, torch._C._nn, torch._C._sparse, torch._C._special, regex._regex, markupsafe._speedups, PIL._imaging, PIL._imagingft, msgspec._core, sentencepiece._sentencepiece, multidict._multidict, yarl._quoting_c, propcache._helpers_c, aiohttp._http_writer, aiohttp._http_parser, aiohttp._websocket.mask, aiohttp._websocket.reader_c, frozenlist._frozenlist (total: 46)[32m [repeated 2x across cluster][0m
+Stopping Ray cluster

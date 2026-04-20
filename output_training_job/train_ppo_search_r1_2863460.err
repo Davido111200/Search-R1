@@ -1,0 +1,26 @@
+2026-04-18 15:53:21,663	INFO worker.py:1814 -- Connecting to existing Ray cluster at address: 10.72.191.171:6379...
+2026-04-18 15:53:21,705	INFO worker.py:2003 -- Connected to Ray cluster. View the dashboard at [1m[32m10.72.191.171:8265 [39m[22m
+/home/s223540177/.conda/envs/searchr1_new/lib/python3.10/site-packages/ray/_private/worker.py:2051: FutureWarning: Tip: In future versions of Ray, Ray will no longer override accelerator visible devices env var if num_gpus=0 or num_gpus=None (default). To enable this behavior and turn off this error message, set RAY_ACCEL_ENV_VAR_OVERRIDE_ON_ZERO=0
+  warnings.warn(
+srun: Job 2863460 step creation temporarily disabled, retrying (Requested nodes are busy)
+srun: Job 2863460 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863460 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863460 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863460 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863460 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863460 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863460 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863460 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863460 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863460 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863460 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+srun: error: Unable to create step for job 2863460: Job/step already completing or completed
+slurmstepd: error: *** STEP 2863460.4 ON l40s-f-02 CANCELLED AT 2026-04-18T16:21:07 ***
+slurmstepd: error: *** STEP 2863460.3 ON l40s-f-03 CANCELLED AT 2026-04-18T16:21:07 ***
+slurmstepd: error: *** STEP 2863460.2 ON l40s-f-01 CANCELLED AT 2026-04-18T16:21:07 ***
+slurmstepd: error: *** JOB 2863460 ON l40s-f-01 CANCELLED AT 2026-04-18T16:21:07 ***
+slurmstepd: error: *** STEP 2863460.5 ON v100-f-06 CANCELLED AT 2026-04-18T16:21:07 ***

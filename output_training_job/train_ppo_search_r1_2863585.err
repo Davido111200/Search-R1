@@ -1,0 +1,107 @@
+2026-04-19 21:48:54,317	INFO worker.py:1814 -- Connecting to existing Ray cluster at address: 10.72.191.171:6379...
+2026-04-19 21:48:54,358	INFO worker.py:2003 -- Connected to Ray cluster. View the dashboard at [1m[32m10.72.191.171:8265 [39m[22m
+/home/s223540177/.conda/envs/searchr1_new/lib/python3.10/site-packages/ray/_private/worker.py:2051: FutureWarning: Tip: In future versions of Ray, Ray will no longer override accelerator visible devices env var if num_gpus=0 or num_gpus=None (default). To enable this behavior and turn off this error message, set RAY_ACCEL_ENV_VAR_OVERRIDE_ON_ZERO=0
+  warnings.warn(
+srun: Job 2863585 step creation temporarily disabled, retrying (Requested nodes are busy)
+srun: Job 2863585 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863585 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863585 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863585 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863585 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863585 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863585 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863585 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863585 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863585 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863585 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863585 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863585 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863585 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863585 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863585 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863585 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863585 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863585 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863585 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863585 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863585 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863585 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863585 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863585 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863585 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863585 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863585 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863585 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863585 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863585 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863585 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863585 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863585 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863585 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863585 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863585 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863585 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863585 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863585 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863585 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863585 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863585 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863585 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863585 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863585 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863585 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863585 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863585 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863585 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863585 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863585 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863585 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863585 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863585 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863585 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863585 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863585 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863585 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863585 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863585 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863585 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863585 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863585 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863585 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863585 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863585 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863585 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863585 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863585 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863585 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863585 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863585 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863585 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863585 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863585 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863585 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863585 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863585 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863585 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863585 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863585 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863585 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job 2863585 step creation still disabled, retrying (Requested nodes are busy)
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+srun: error: Unable to create step for job 2863585: Job/step already completing or completed
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 2863585.9 ON l40s-f-03 CANCELLED AT 2026-04-20T00:42:15 ***
+slurmstepd: error: *** STEP 2863585.2 ON l40s-f-01 CANCELLED AT 2026-04-20T00:42:15 ***
+slurmstepd: error: *** JOB 2863585 ON l40s-f-01 CANCELLED AT 2026-04-20T00:42:15 ***
+slurmstepd: error: *** STEP 2863585.8 ON v100-f-10 CANCELLED AT 2026-04-20T00:42:15 ***
+slurmstepd: error: *** STEP 2863585.3 ON v100-f-04 CANCELLED AT 2026-04-20T00:42:15 ***
+slurmstepd: error: *** STEP 2863585.5 ON v100-f-17 CANCELLED AT 2026-04-20T00:42:15 ***
+slurmstepd: error: *** STEP 2863585.7 ON v100l-f-05 CANCELLED AT 2026-04-20T00:42:15 ***
+slurmstepd: error: *** STEP 2863585.4 ON v100-f-13 CANCELLED AT 2026-04-20T00:42:15 ***
+slurmstepd: error: *** STEP 2863585.6 ON v100l-f-06 CANCELLED AT 2026-04-20T00:42:15 ***

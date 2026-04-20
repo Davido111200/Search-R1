@@ -1,0 +1,21 @@
+Using verl from: /home/s223540177/Search-R1/.ray_verl_import_2863375/verl/__init__.py
+Using torch: 2.4.0+cu121
+Slurm nodes: l40s-f-02 l40s-f-03 rtxp6000l-f-01 v100-f-11
+Head node: l40s-f-02
+GPUs per node: 2
+CPUs per node: 8
+CUDA_VISIBLE_DEVICES=0,1
+GPU 0: NVIDIA L40S (UUID: GPU-626a4845-9b4c-8ddc-81d6-115d06babe6f)
+GPU 1: NVIDIA L40S (UUID: GPU-0fbea9fc-4222-83f4-ccd4-1dbea9fee4bf)
+Stopping Ray cluster
+Starting Ray head at 10.72.191.172:6379
+Ray head CUDA_VISIBLE_DEVICES=0
+2026-04-18 01:55:02,615	INFO usage_lib.py:474 -- Usage stats collection is enabled by default without user confirmation because this terminal is detected to be non-interactive. To disable this, add `--disable-usage-stats` to the command that starts the cluster, or run the following command: `ray disable-usage-stats` before starting the cluster. See https://docs.ray.io/en/master/cluster/usage-stats.html for more details.
+2026-04-18 01:55:02,615	INFO scripts.py:940 -- [37mLocal node IP[39m: [1m10.72.191.172[22m
+Starting Ray worker on l40s-f-03
+Starting Ray worker on rtxp6000l-f-01
+Starting Ray worker on v100-f-11
+Ray worker CUDA_VISIBLE_DEVICES=0
+Ray worker CUDA_VISIBLE_DEVICES=0
+Ray worker CUDA_VISIBLE_DEVICES=0
+Stopping Ray cluster
